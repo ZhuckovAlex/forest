@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "magforest:pinfire_ore"
+  },
+  "result": "magforest:jirazol",
+  "experience": 12,
+  "cookingtime": 50
+}

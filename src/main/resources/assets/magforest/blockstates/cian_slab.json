@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "magforest:block/cian_slab"
+    },
+    "type=double": {
+      "model": "magforest:block/cian_planks"
+    },
+    "type=top": {
+      "model": "magforest:block/cian_slab_top"
+    }
+  }
+}

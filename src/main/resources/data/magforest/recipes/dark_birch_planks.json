@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "minecraft:dark_birch_logs"
+    }
+  ],
+  "result": {
+    "item": "magforest:dark_birch_planks",
+    "count": 4
+  }
+}

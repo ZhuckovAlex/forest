@@ -1,0 +1,9 @@
+{
+  "name": "item.magforest.magica",
+  "landing_text": "landing.magforest.magica",
+  "version": 1,
+  "custom_book_item": "magforest:magica",
+  "model": "magforest:magica",
+  "dont_generate_book": true,
+  "i18n": true
+}

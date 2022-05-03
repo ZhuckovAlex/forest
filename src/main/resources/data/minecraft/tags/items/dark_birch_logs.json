@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "magforest:dark_birch_log",
+    "magforest:dark_birch_wood",
+    "magforest:stripped_dark_birch_log",
+    "magforest:stripped_dark_birch_wood"
+  ]
+}

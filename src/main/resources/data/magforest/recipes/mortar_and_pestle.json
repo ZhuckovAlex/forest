@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "magforest:pestle"
+    }
+  ],
+  "result": {
+    "item": "magforest:mortar_and_pestle",
+    "count": 1
+  }
+}

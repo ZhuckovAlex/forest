@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "magforest:block/aer_cristal",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "magforest:block/aer_cristal",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "magforest:block/aer_cristal",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "magforest:block/aer_cristal",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "magforest:block/aer_cristal"
+    },
+    "facing=west": {
+      "model": "magforest:block/aer_cristal",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

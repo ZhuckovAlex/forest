@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:elf_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "magforest:elf_stone_bricks_stairs",
+    "count": 4
+  }
+}

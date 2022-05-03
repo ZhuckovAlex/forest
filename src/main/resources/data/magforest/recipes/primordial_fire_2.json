@@ -1,0 +1,15 @@
+{
+  "type": "magforest:lighting",
+  "weather": "clear",
+  "ingredients": [
+    {
+      "item": "magforest:aer_mix"
+    },
+    {
+      "item": "magforest:jirazol"
+    }
+  ],
+  "output": {
+    "item": "magforest:primordial_fire"
+  }
+}

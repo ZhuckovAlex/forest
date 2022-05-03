@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_slab",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:elf_stone"
+    }
+  },
+  "result": {
+    "item": "magforest:elf_stone_slab",
+    "count": 6
+  }
+}

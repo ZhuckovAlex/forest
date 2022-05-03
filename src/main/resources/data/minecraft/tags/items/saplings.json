@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "magforest:cian_sapling",
+    "magforest:dark_birch_sapling",
+    "magforest:crimson_sapling",
+    "magforest:warped_sapling"
+  ]
+}

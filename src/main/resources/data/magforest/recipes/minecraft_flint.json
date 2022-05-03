@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:gravel"
+    },
+    {
+      "item": "magforest:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:flint",
+
+    "count": 1
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magforest:flame_cristal"
+    },
+    {
+      "item": "magforest:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "magforest:flame_powder",
+    "count": 1
+  }
+}

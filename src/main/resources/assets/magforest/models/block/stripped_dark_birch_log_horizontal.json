@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "magforest:block/stripped_dark_birch_log_top",
+    "side": "magforest:block/stripped_dark_birch_log"
+  }
+}

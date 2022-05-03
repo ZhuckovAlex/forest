@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "magforest:block/stripped_cian_log_top",
+    "side": "magforest:block/stripped_cian_log"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "magforest:block/elf_stone_slab"
+    },
+    "type=double": {
+      "model": "magforest:block/elf_stone"
+    },
+    "type=top": {
+      "model": "magforest:block/elf_stone_slab_top"
+    }
+  }
+}

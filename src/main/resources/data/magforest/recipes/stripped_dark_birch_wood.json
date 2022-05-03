@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:stripped_dark_birch_log"
+    }
+  },
+  "result": {
+    "item": "magforest:stripped_dark_birch_wood",
+    "count": 3
+  }
+}

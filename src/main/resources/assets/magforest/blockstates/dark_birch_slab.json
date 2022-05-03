@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "magforest:block/dark_birch_slab"
+    },
+    "type=double": {
+      "model": "magforest:block/dark_birch_planks"
+    },
+    "type=top": {
+      "model": "magforest:block/dark_birch_slab_top"
+    }
+  }
+}

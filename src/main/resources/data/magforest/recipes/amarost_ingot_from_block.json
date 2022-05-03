@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "   ",
+    "   "
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:amarost_block"
+    }
+  },
+  "result": {
+    "item": "magforest:amarost_ingot",
+    "count": 9
+  }
+}

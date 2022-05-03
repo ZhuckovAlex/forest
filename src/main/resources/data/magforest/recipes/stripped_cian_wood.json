@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:stripped_cian_log"
+    }
+  },
+  "result": {
+    "item": "magforest:stripped_cian_wood",
+    "count": 3
+  }
+}

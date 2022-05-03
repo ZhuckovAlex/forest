@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "magforest:block/dark_birch_door_top",
+    "bottom": "magforest:block/dark_birch_door_bottom"
+  }
+}

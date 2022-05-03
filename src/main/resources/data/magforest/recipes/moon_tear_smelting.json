@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "magforest:moon_tear_ore"
+  },
+  "result": "magforest:moon_tear",
+  "experience": 4,
+  "cookingtime": 200
+}

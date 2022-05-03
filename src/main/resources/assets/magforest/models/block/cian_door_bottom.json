@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_bottom",
+  "textures": {
+    "top": "magforest:block/cian_door_top",
+    "bottom": "magforest:block/cian_door_bottom"
+  }
+}

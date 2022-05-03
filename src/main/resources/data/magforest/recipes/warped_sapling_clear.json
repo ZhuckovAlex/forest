@@ -1,0 +1,15 @@
+{
+  "type": "magforest:lighting",
+  "weather": "clear",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_fungus"
+    },
+    {
+      "item": "minecraft:nether_star"
+    }
+  ],
+  "output": {
+    "item": "magforest:warped_sapling"
+  }
+}

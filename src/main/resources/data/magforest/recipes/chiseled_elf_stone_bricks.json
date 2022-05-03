@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "magforest:elf_stone_bricks"
+  },
+  "result": "magforest:chiseled_elf_stone_bricks",
+  "count": 1
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "magforest:moon_tear_block"
+    }
+  ],
+  "result": {
+    "item": "magforest:moon_tear",
+    "count": 9
+  }
+}

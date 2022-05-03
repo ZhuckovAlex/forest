@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "magforest:block/moon_tear_lighting_rod", "y": 180},
+    "facing=south": { "model": "magforest:block/moon_tear_lighting_rod", "y": 0 },
+    "facing=east": { "model": "magforest:block/moon_tear_lighting_rod"  ,"y": 270},
+    "facing=west": { "model": "magforest:block/moon_tear_lighting_rod", "y": 90}
+  }
+}

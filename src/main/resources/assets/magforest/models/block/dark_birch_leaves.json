@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "magforest:block/dark_birch_leaves"
+  }
+}

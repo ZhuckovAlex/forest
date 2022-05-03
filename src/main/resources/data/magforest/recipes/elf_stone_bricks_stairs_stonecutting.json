@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "magforest:elf_stone_bricks"
+  },
+  "result": "magforest:elf_stone_bricks_stairs",
+  "count": 1
+}

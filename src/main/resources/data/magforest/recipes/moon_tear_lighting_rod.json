@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moon_tear",
+  "pattern": [
+    " # ",
+    "I#I",
+    " I "
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:moon_tear"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "magforest:moon_tear_lighting_rod",
+    "count": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "ABC",
+    "DDD",
+    "D D"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:brewing_stand"
+    },
+    "B": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "C": {
+      "item": "magforest:mortar_and_pestle"
+    },
+    "D": {
+      "item": "magforest:elf_stone"
+    }
+  },
+  "result": {
+    "item": "magforest:alchemy_table",
+    "count": 1
+  }
+}

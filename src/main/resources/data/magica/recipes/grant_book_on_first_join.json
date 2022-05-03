@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    " a ",
+    "b#b",
+    " a "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:bookshelf"
+    },
+    "a": {
+      "item": "magforest:ether_powder"
+    },
+    "b": {
+      "item": "minecraft:book"
+    }
+  },
+  "result": {
+    "item": "patchouli:guide_book",
+    "nbt": "{\"patchouli:book\": \"magforest:magica\"}",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "magforest:cian_log",
+    "magforest:cian_wood",
+    "magforest:stripped_cian_log",
+    "magforest:stripped_cian_wood"
+  ]
+}

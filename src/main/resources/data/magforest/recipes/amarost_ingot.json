@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "netherite_ingot",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "minecraft:netherite_scrap"
+    },
+    {
+      "item": "magforest:moon_tear"
+    },
+    {
+      "item": "magforest:moon_tear"
+    },
+    {
+      "item": "magforest:moon_tear"
+    },
+    {
+      "item": "magforest:moon_tear"
+    }
+  ],
+  "result": {
+    "item": "magforest:amarost_ingot"
+  }
+}

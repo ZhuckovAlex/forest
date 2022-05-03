@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "###",
+    "#R#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stone"
+    },
+    "R": {
+      "item": "magforest:moon_tear_powder"
+    }
+  },
+  "result": {
+    "item": "magforest:elf_stone",
+    "count": 8
+  }
+}

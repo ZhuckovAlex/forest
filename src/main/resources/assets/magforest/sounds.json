@@ -1,0 +1,36 @@
+{
+  "cristal_break": {
+    "category": "blocks",
+    "subtitle": "magforest.cristal_break",
+    "sounds": [
+      {
+        "name": "magforest:cristal_break",
+        "stream": true
+      }
+    ]
+  },
+  "craftstart": {
+    "category": "blocks",
+    "subtitle": "magforest.craftstart",
+    "sounds": [
+      {
+        "name": "magforest:craftstart",
+        "stream": true
+      }
+    ]
+  },
+  "moon_tear": {
+    "category": "blocks",
+    "subtitle": "magforest.moon_tear",
+    "sounds": [
+      {
+        "name": "magforest:moon_tear",
+        "stream": true
+      },
+      {
+        "name": "magforest:cristal_break",
+        "stream": true
+      }
+    ]
+  }
+}

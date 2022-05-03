@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_door",
+  "pattern": [
+    "BEB",
+    "BMB",
+    "PPP"
+  ],
+  "key": {
+    "E": {
+      "item": "magforest:focusing_lens"
+    },
+    "M": {
+      "item": "magforest:moon_tear"
+    },
+    "B": {
+      "item": "magforest:elf_stone_bricks"
+    },
+    "P": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "result": {
+    "item": "magforest:solar_converter",
+    "count": 1
+  }
+}

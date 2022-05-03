@@ -1,0 +1,15 @@
+{
+  "type": "magforest:lighting",
+  "weather": "thundering",
+  "ingredients": [
+    {
+      "item": "magforest:moon_tear_axe"
+    },
+    {
+      "item": "magforest:amarost_ingot"
+    }
+  ],
+  "output": {
+    "item": "magforest:amarost_axe"
+  }
+}

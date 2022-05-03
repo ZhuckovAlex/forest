@@ -1,0 +1,15 @@
+{
+  "type": "magforest:lighting",
+  "weather": "thundering",
+  "ingredients": [
+    {
+      "item": "magforest:cian_sapling"
+    },
+    {
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "output": {
+    "item": "magforest:warped_sapling"
+  }
+}

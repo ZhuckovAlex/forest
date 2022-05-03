@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:wooden_slabs",
+    "magforest:elf_stone_slab",
+    "magforest:elf_stone_bricks_slab"
+  ]
+}

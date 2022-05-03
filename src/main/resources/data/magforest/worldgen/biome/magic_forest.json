@@ -1,0 +1,73 @@
+{
+  "surface_builder": "minecraft:grass",
+  "depth": 0.2,
+  "scale": 0.1,
+  "temperature": 0.8,
+  "downfall": 0.4,
+  "precipitation": "none",
+  "category": "none",
+  "effects": {
+    "sky_color": 57855,
+    "fog_color": 61183,
+    "water_color": 49151,
+    "water_fog_color": 40447,
+    "grass_color": 64511,
+    "foliage_color": 64511
+  },
+  "starts": [
+    "minecraft:mineshaft",
+    "minecraft:village_plains",
+    "minecraft:ruined_portal",
+    "minecraft:village_desert",
+    "minecraft:village_savanna",
+    "minecraft:village_snowy",
+    "minecraft:village_taiga"
+  ],
+  "spawners": {
+    "creature": [
+      {
+        "type": "minecraft:cat",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 4
+      },
+      {
+        "type": "minecraft:bee",
+        "weight": 10,
+        "minCount": 1,
+        "maxCount": 1
+      }
+    ]
+  },
+  "spawn_costs": {},
+  "carvers": {
+    "air": [
+      "minecraft:cave"
+    ]
+  },
+  "features": [
+    [
+      "minecraft:ore_iron",
+      "minecraft:ore_lapis",
+      "minecraft:ore_coal",
+      "minecraft:ore_gold",
+      "minecraft:ore_redstone",
+      "minecraft:ore_diamond",
+      "minecraft:ore_gravel",
+      "minecraft:ore_granite"
+    ],
+    [
+      "minecraft:patch_grass_forest",
+      "minecraft:lake_lava",
+      "minecraft:spring_lava",
+      "minecraft:brown_mushroom_normal",
+      "minecraft:glowstone",
+      "minecraft:patch_large_fern",
+      "minecraft:ore_dirt",
+      "minecraft:patch_pumpkin",
+      "minecraft:red_mushroom_normal",
+      "minecraft:patch_sugar_cane",
+      "minecraft:flower_plain_decorated"
+    ]
+  ]
+}

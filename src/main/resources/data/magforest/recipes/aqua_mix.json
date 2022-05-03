@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magforest:moon_tear_powder"
+    },
+    {
+      "item": "magforest:aqua_powder"
+    }
+  ],
+  "result": {
+    "item": "magforest:aqua_mix",
+    "count": 2
+  }
+}

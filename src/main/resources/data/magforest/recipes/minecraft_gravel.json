@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "magforest:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:gravel",
+
+    "count": 1
+  }
+}

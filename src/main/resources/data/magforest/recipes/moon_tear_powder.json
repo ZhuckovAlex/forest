@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magforest:moon_tear"
+    },
+    {
+      "item": "magforest:mortar_and_pestle"
+    }
+  ],
+  "result": {
+    "item": "magforest:moon_tear_powder",
+
+    "count": 1
+  }
+}

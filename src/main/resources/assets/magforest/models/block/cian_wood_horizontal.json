@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "magforest:block/cian_log",
+    "side": "magforest:block/cian_log"
+  }
+}

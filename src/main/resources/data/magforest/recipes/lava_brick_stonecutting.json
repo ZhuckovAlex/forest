@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "magforest:lava_rock"
+  },
+  "result": "magforest:lava_brick",
+  "count": 1
+}

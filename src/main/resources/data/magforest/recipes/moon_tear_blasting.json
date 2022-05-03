@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "magforest:moon_tear_ore"
+  },
+  "result": "magforest:moon_tear",
+  "experience": 7,
+  "cookingtime": 50
+}

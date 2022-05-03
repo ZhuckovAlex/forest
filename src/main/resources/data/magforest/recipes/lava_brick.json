@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moon_tear",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:lava_rock"
+    }
+  },
+  "result": {
+    "item": "magforest:lava_brick",
+    "count": 4
+  }
+}

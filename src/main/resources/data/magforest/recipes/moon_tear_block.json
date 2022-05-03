@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "moon_tear",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:moon_tear"
+    }
+  },
+  "result": {
+    "item": "magforest:moon_tear_block",
+    "count": 1
+  }
+}

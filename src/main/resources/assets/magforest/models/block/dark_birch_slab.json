@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "magforest:block/dark_birch_planks",
+    "top": "magforest:block/dark_birch_planks",
+    "side": "magforest:block/dark_birch_planks"
+  }
+}

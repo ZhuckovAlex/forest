@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "magforest:block/solar_converter"
+    },
+    "facing=west": {
+      "model": "magforest:block/solar_converter",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "magforest:block/solar_converter",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "magforest:block/solar_converter",
+      "y": 270
+    }
+  }
+}

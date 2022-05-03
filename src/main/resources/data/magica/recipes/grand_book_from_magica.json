@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magforest:magica"
+    },
+    {
+      "item": "magforest:ether_mix"
+    }
+  ],
+  "result": {
+    "item": "patchouli:guide_book",
+    "nbt": "{\"patchouli:book\": \"magforest:magica\"}",
+    "count": 1
+  }
+}

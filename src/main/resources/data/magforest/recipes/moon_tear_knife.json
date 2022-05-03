@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sign",
+  "pattern": [
+    " #",
+    "X "
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:moon_tear"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "magforest:moon_tear_knife",
+    "count": 1
+  }
+}

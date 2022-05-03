@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sign",
+  "pattern": [
+    "###",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:moon_tear"
+    }
+  },
+  "result": {
+    "item": "magforest:moon_tear_helmet",
+    "count": 1
+  }
+}
