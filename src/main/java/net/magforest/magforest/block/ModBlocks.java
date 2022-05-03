@@ -238,6 +238,9 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> LAVA_ROCK = registerBlock("lava_rock",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(1).sound(SoundType.NETHER_ORE)));
+    public static final RegistryObject<Block> LAVA_ROCK_OBSIDIAN = registerBlock("lava_rock_obsidian",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(1).sound(SoundType.NETHER_ORE)));
     public static final RegistryObject<Block> LAVA_BRICK = registerBlock("lava_brick",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(1).sound(SoundType.NETHER_ORE)));
