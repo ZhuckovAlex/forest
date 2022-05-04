@@ -3,6 +3,7 @@ package net.magforest.magforest.world.structure;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import net.magforest.magforest.magforest;
+import net.magforest.magforest.world.structure.structures.CrystalSaveStructure;
 import net.magforest.magforest.world.structure.structures.WizardTowerStructure;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
@@ -24,10 +25,14 @@ public class ModStructures {
 
     public static final RegistryObject<Structure<NoFeatureConfig>> WIZARD_TOWER =
             STRUCTURES.register("wizard_tower", WizardTowerStructure::new);
+    public static final RegistryObject<Structure<NoFeatureConfig>> CRYSTAL_SAVE =
+            STRUCTURES.register("crystal_save", CrystalSaveStructure::new);
 
     public static void setupStructures() {
         setupMapSpacingAndLand(WIZARD_TOWER.get(),
                 new StructureSeparationSettings(30,15, 1234567890), true);
+        setupMapSpacingAndLand(CRYSTAL_SAVE.get(),
+                new StructureSeparationSettings(50,25, 1234567890), true);
     }
 
     public static <F extends Structure<?>> void setupMapSpacingAndLand(F structure, StructureSeparationSettings structureSeparationSettings,

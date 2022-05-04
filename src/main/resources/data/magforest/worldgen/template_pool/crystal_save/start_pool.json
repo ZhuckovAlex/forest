@@ -3,9 +3,9 @@
   "fallback": "minecraft:empty",
   "elements": [
     {
-      "weight": 25,
+      "weight": 5,
       "element": {
-        "location": "magforest:wizard_tower",
+        "location": "magforest:crystal_save",
         "processors": "minecraft:empty",
         "projection": "rigid",
         "element_type": "minecraft:single_pool_element"
