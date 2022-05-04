@@ -32,11 +32,11 @@ public class AlchemyTableContainer extends Container {
 
         if (tileEntity != null){
             tileEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(h -> {
-                addSlot(new SlotItemHandler(h,  0, 13, 27));
-                addSlot(new SlotItemHandler(h, 1, 33, 27));
-                addSlot(new SlotItemHandler(h,   2, 53, 27));
-                addSlot(new SlotItemHandler(h,   3, 73, 27));
-                addSlot(new SlotItemHandler(h,  4, 129, 36){
+                addSlot(new SlotItemHandler(h,  0, 12, 28));
+                addSlot(new SlotItemHandler(h, 1, 32, 28));
+                addSlot(new SlotItemHandler(h,   2, 52, 28));
+                addSlot(new SlotItemHandler(h,   3, 72, 28));
+                addSlot(new SlotItemHandler(h,  4, 128, 37){
                     @Override
                     public boolean isItemValid(ItemStack stack) {
                         return false;
