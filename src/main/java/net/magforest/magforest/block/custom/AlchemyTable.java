@@ -1,11 +1,11 @@
 package net.magforest.magforest.block.custom;
 
 import net.magforest.magforest.container.AlchemyTableContainer;
-import net.magforest.magforest.container.LightningMachineContainer;
-import net.magforest.magforest.container.SolarConverterContainer;
-import net.magforest.magforest.tileentity.LightMachineTile;
+
+import net.magforest.magforest.tileentity.AlchemicalTableTile;
+
 import net.magforest.magforest.tileentity.ModTileEntities;
-import net.magforest.magforest.tileentity.SolarConverterTile;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
@@ -126,7 +126,7 @@ public class AlchemyTable extends HorizontalBlock {
         if(!worldIn.isRemote()) {
             TileEntity tileEntity = worldIn.getTileEntity(pos);
 
-            if(tileEntity instanceof SolarConverterTile) {
+            if(tileEntity instanceof AlchemicalTableTile) {
                 INamedContainerProvider containerProvider = createContainerProvider(worldIn, pos);
 
                 NetworkHooks.openGui(((ServerPlayerEntity)player), containerProvider, tileEntity.getPos());
