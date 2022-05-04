@@ -1,8 +1,11 @@
 package net.magforest.magforest.block.custom;
 
+import net.magforest.magforest.container.AlchemyTableContainer;
 import net.magforest.magforest.container.LightningMachineContainer;
+import net.magforest.magforest.container.SolarConverterContainer;
 import net.magforest.magforest.tileentity.LightMachineTile;
 import net.magforest.magforest.tileentity.ModTileEntities;
+import net.magforest.magforest.tileentity.SolarConverterTile;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
@@ -110,5 +113,48 @@ public class AlchemyTable extends HorizontalBlock {
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
         super.fillStateContainer(builder);
         builder.add(FACING);
+    }
+
+
+    @Override
+    public boolean hasTileEntity(BlockState state) {
+        return true;
+    }
+    @Override
+    public ActionResultType onBlockActivated(BlockState state, World worldIn, BlockPos pos,
+                                             PlayerEntity player, Hand handIn, BlockRayTraceResult hit) {
+        if(!worldIn.isRemote()) {
+            TileEntity tileEntity = worldIn.getTileEntity(pos);
+
+            if(tileEntity instanceof SolarConverterTile) {
+                INamedContainerProvider containerProvider = createContainerProvider(worldIn, pos);
+
+                NetworkHooks.openGui(((ServerPlayerEntity)player), containerProvider, tileEntity.getPos());
+            } else {
+                throw new IllegalStateException("Our Container provider is missing!");
+            }
+        }
+        return ActionResultType.SUCCESS;
+    }
+
+    private INamedContainerProvider createContainerProvider(World worldIn, BlockPos pos) {
+        return new INamedContainerProvider() {
+            @Override
+            public ITextComponent getDisplayName() {
+                return new TranslationTextComponent("screen.alchemical_table");
+            }
+
+            @Nullable
+            @Override
+            public Container createMenu(int i, PlayerInventory playerInventory, PlayerEntity playerEntity) {
+                return new AlchemyTableContainer(i, worldIn, pos, playerInventory, playerEntity);
+            }
+        };
+    }
+
+    @Nullable
+    @Override
+    public TileEntity createTileEntity(BlockState state, IBlockReader world) {
+        return ModTileEntities.ALCHEMICAL_TABLE_TILE.get().create();
     }
 }
