@@ -23,5 +23,10 @@ public class ModStructureGeneration {
 
             structures.add(() -> ModStructures.WIZARD_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         }
+        if(event.getName().equals(MagicForest.MAGIC_FOREST.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
     }
 }
