@@ -3,7 +3,6 @@ package net.magforest.magforest.screen;
 import com.mojang.blaze3d.matrix.MatrixStack;
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.magforest.magforest.container.AlchemyTableContainer;
-import net.magforest.magforest.container.SolarConverterContainer;
 import net.magforest.magforest.magforest;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;

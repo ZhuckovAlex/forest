@@ -30,7 +30,7 @@ public class ModContainers {
                 return new SolarConverterContainer(windowId, world, pos, inv, inv.player);
             })));
     public static final RegistryObject<ContainerType<AlchemyTableContainer>> ALCHEMY_TABLE_CONTAINER
-            = CONTAINERS.register("solar_converter_container",
+            = CONTAINERS.register("alchemy_table_container",
             () -> IForgeContainerType.create(((windowId, inv, data) -> {
                 BlockPos pos = data.readBlockPos();
                 World world = inv.player.getEntityWorld();
