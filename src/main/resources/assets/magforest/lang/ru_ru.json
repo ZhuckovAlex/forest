@@ -58,7 +58,7 @@
   "block.magforest.elf_glass": "§5Эльфийское стекло",
   "block.magforest.elf_glass_pane": "§5Эльфийская стеклянная панель",
   "block.magforest.solar_converter": "§5Солнечный преобразователь",
-  "block.magforest.alchemy_table": "А§5лхимический стол",
+  "block.magforest.alchemy_table": "§5Алхимический стол",
   "block.magforest.lava_rock": "§5Лавовый камень",
   "block.magforest.lava_rock_obsidian": "§5Обсидиановый лавовый камень",
   "block.magforest.lava_brick": "§5Лавовый кирпич",
@@ -67,7 +67,7 @@
   "block.magforest.dark_birch_trapdoor": "§6Люк из тёмной берёзы",
   "screen.lightning_machine": "§eРазрядник",
   "screen.solar_converter": "§eПреобразователь",
-  "screen.alchemical_table": "Алхимический стол",
+  "screen.alchemical_table": "§3Алхимический стол",
 
   "item.magforest.moon_tear": "§3Лунная слеза",
   "block.magforest.moon_tear_ore": "§3Руда лунных слёз",
