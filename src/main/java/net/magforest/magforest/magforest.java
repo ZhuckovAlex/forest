@@ -11,6 +11,7 @@ import net.magforest.magforest.entity.renderer.ModCianBoatRenderer;
 import net.magforest.magforest.entity.renderer.ModDarkBirchBoatRenderer;
 import net.magforest.magforest.entity.villager.ModVillager;
 import net.magforest.magforest.item.ModItems;
+import net.magforest.magforest.screen.AlchemyTableScreen;
 import net.magforest.magforest.screen.LightingMachineScreen;
 import net.magforest.magforest.screen.SolarConverterScreen;
 import net.magforest.magforest.tileentity.ModTileEntities;
@@ -247,6 +248,8 @@ event.enqueueWork(() -> registerRecipes());
                 LightingMachineScreen::new);
         ScreenManager.registerFactory(ModContainers.SOLAR_CONVERTER_CONTAINER.get(),
                 SolarConverterScreen::new);
+        ScreenManager.registerFactory(ModContainers.ALCHEMY_TABLE_CONTAINER.get(),
+                AlchemyTableScreen::new);
         RenderTypeLookup.setRenderLayer(ModBlocks.CIAN_LEAVES.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.CIAN_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.CIAN_DOOR.get(), RenderType.getCutout());
