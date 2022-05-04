@@ -21,6 +21,11 @@ public class ModTileEntities {
             TILE_ENTITIES.register("solar_converter_tile", () -> TileEntityType.Builder.create(
                     SolarConverterTile::new, ModBlocks.SOLAR_CONVERTER.get()).build(null));
 
+    public static RegistryObject<TileEntityType<AlchemicalTableTile>> ALCHEMICAL_TABLE_TILE =
+            TILE_ENTITIES.register("alchemical_table_tile", () -> TileEntityType.Builder.create(
+                    AlchemicalTableTile::new, ModBlocks.ALCHEMY_TABLE.get()).build(null));
+
+
     public static final RegistryObject<TileEntityType<ModSignTileEntity>> SIGN_TILE_ENTITIES =
             TILE_ENTITIES.register("sign", () -> TileEntityType.Builder.create(ModSignTileEntity::new,
                     ModBlocks.CIAN_SIGN.get(),
