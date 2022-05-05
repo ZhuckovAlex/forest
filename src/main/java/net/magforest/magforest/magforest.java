@@ -135,6 +135,9 @@ event.enqueueWork(() -> {
         event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.HYACINTH.get(), 0.35f);
         });
+        event.enqueueWork(() -> {
+            ComposterBlock.CHANCES.put(ModItems.THE_CALL_OF_THE_ANCESTORS.get(), 0.35f);
+        });
 
 event.enqueueWork(() -> {
     AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
@@ -259,6 +262,7 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_DOOR.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_TRAPDOOR.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.HYACINTH.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THISTLE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.KARAMBOLA.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_SAPLING.get(), RenderType.getCutout());

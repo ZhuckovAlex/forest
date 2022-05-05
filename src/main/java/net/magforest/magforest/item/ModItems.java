@@ -68,6 +68,9 @@ public class ModItems
     public static final RegistryObject<Item> HYACINTH = ITEMS.register("hyacinth",
             () -> new BlockItem(ModBlocks.HYACINTH.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
+    public static final RegistryObject<Item> THE_CALL_OF_THE_ANCESTORS = ITEMS.register("the_call_of_the_ancestors",
+            () -> new BlockItem(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get(), new Item.Properties()
+                    .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> THISTLE = ITEMS.register("thistle",
             () -> new BlockItem(ModBlocks.THISTLE.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
