@@ -254,7 +254,7 @@ public class ModBlocks extends Blocks
             () -> new SlabBlock(AbstractBlock.Properties.create(Material.CLAY)
                     .hardnessAndResistance(1).sound(SoundType.NETHER_BRICK).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool()));
     public static final RegistryObject<Block> STAIRS_CLAY_TILES = registerBlock("stairs_clay_tiles",
-            () -> new SlabBlock(AbstractBlock.Properties.create(Material.CLAY)
+            () -> new StairsBlock(() -> CLAY_TILES.get().getDefaultState(),AbstractBlock.Properties.create(Material.CLAY)
                     .hardnessAndResistance(1).sound(SoundType.NETHER_BRICK).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool()));
     public static final RegistryObject<Block> LAVA_ROCK_OBSIDIAN = registerBlock("lava_rock_obsidian",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
