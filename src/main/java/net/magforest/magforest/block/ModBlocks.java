@@ -235,6 +235,15 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ELF_STONE = registerBlock("elf_stone",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> MOSSY_ELF_STONE_BRICKS = registerBlock("mossy_elf_stone_bricks",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> CRACKED_ELF_STONE_BRICKS = registerBlock("cracked_elf_stone_bricks",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> LAVA_ROCK = registerBlock("lava_rock",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(1).sound(SoundType.NETHER_ORE)));

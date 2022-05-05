@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "magforest:block/cracked_elf_stone_bricks"
+  }
+}
