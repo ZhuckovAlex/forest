@@ -4,6 +4,7 @@ import net.magforest.magforest.world.biome.MagicForest;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraftforge.common.BiomeDictionary;
@@ -23,11 +24,15 @@ public class ModFlowerGeneration {
         if(event.getName().equals(MagicForest.MAGIC_FOREST.getLocation())){
             List<Supplier<ConfiguredFeature<?, ?>>> base =
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-
+            base.add(() -> ModConfiguredFeatures.THE_CALL_OF_THE_ANCESTORS_CONFIG);
             base.add(() -> ModConfiguredFeatures.HYACINTH_CONFIG);
             base.add(() -> ModConfiguredFeatures.THISTLE_CONFIG);
         }
-
+        if(event.getName().equals(Biomes.DARK_FOREST.getLocation())){
+            List<Supplier<ConfiguredFeature<?, ?>>> base =
+                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
+            base.add(() -> ModConfiguredFeatures.THE_CALL_OF_THE_ANCESTORS_CONFIG);
+        }
 
     }
 
