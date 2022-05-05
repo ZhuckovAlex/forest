@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "minecraft:block/slab_top",
   "textures": {
     "bottom": "magforest:block/slab_clay_tiles",
     "top": "magforest:block/slab_clay_tiles",
