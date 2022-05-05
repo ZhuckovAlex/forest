@@ -69,7 +69,7 @@
   "screen.solar_converter": "Преобразователь",
   "screen.alchemical_table": "Алхимический стол",
 
-  "item.magforest.moon_tear": "§6Лунная слеза",
+  "item.magforest.moon_tear": "§eЛунная слеза",
   "block.magforest.moon_tear_ore": "Руда лунных слёз",
   "block.magforest.moon_tear_block": "Лунный блок",
   "block.magforest.moon_tear_lighting_rod": "Лунный разрядный стержень",
