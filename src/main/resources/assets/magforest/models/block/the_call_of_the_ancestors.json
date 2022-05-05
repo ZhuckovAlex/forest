@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "magforest:block/the_call_of_the_ancestors"
+  }
+}

@@ -232,6 +232,7 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> THISTLE = BLOCKS.register("thistle",
             () -> new FlowerBlock(Effects.HUNGER, 20, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
+
     public static final RegistryObject<Block> ELF_STONE = registerBlock("elf_stone",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
@@ -306,6 +307,9 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ALCHEMY_TABLE = registerBlock("alchemy_table",
             () -> new AlchemyTable(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(4).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool().sound(SoundType.NETHER_ORE)));
+    public static final RegistryObject<Block> THE_CALL_OF_THE_ANCESTORS = BLOCKS.register("the_call_of_the_ancestors",
+            () -> new FlowerBlock(Effects.HUNGER, 20, AbstractBlock.Properties.create(Material.PLANTS)
+                    .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
