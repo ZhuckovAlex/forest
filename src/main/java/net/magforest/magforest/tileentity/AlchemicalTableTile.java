@@ -39,7 +39,7 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
         return super.write(compound);
     }
     private ItemStackHandler createHandler(){
-        return new ItemStackHandler(7){
+        return new ItemStackHandler(9){
             @Override
             protected void onContentsChanged(int slot) {
                 markDirty();
