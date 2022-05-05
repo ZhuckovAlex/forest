@@ -7,7 +7,7 @@
       "model": "magforest:block/cracked_elf_stone_bricks"
     },
     "type=top": {
-      "model": "magforest:block/slab_cracked_elf_stone_bricks"
+      "model": "magforest:block/slab_cracked_elf_stone_bricks_top"
     }
   }
 }
