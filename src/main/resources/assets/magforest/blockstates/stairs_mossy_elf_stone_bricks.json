@@ -1,0 +1,209 @@
+{
+  "variants": {
+    "facing=east,half=bottom,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=east,half=bottom,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner"
+    },
+    "facing=east,half=bottom,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=east,half=bottom,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer"
+    },
+    "facing=east,half=bottom,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks"
+    },
+    "facing=east,half=top,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing=east,half=top,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,half=top,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing=east,half=top,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=east,half=top,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,half=bottom,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,half=top,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,half=top,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing=north,half=top,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=north,half=top,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "uvlock": true
+    },
+    "facing=north,half=top,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=south,half=bottom,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner"
+    },
+    "facing=south,half=bottom,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,half=bottom,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer"
+    },
+    "facing=south,half=bottom,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,half=bottom,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,half=top,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,half=top,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,half=top,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=south,half=top,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=south,half=top,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "x": 180,
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=west,half=bottom,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=west,half=bottom,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,half=bottom,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "y": 90,
+      "uvlock": true
+    },
+    "facing=west,half=bottom,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,half=bottom,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,half=top,shape=inner_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,half=top,shape=inner_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_inner",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,half=top,shape=outer_left": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west,half=top,shape=outer_right": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks_outer",
+      "x": 180,
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=west,half=top,shape=straight": {
+      "model": "magforest:block/stairs_mossy_elf_stone_bricks",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
+    }
+  }
+}
