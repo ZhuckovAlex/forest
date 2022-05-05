@@ -133,10 +133,10 @@
   "item.magforest.moon_tear_cap": "Лунный наконечник",
   "item.magforest.cian_boat": "Циановая лодка",
   "item.magforest.dark_birch_boat": "Лодка из тёмной берёзы",
-  "item.magforest.fire_essence": "Огненная эссенция",
-  "item.magforest.water_essence": "Водяная эссенция",
-  "item.magforest.terra_essence": "Земляная эссенция",
-  "item.magforest.aer_essence": "Воздушная эссенция",
+  "item.magforest.fire_essence": "Эссенция Огня",
+  "item.magforest.water_essence": "Эссенция Воды",
+  "item.magforest.terra_essence": "Эссенция Земли",
+  "item.magforest.aer_essence": "Эссенция Воздуха",
   "item.magforest.ether_essence": "Эфирная эссенция",
   "item.magforest.focusing_lens": "Фокусирующая линза",
   "item.magforest.jirazol": "Огарок",
@@ -147,14 +147,15 @@
   "block.magforest.crimson_sapling": "Багровый саженец",
 
   "item.magforest.karambola_fruit": "Плод карамболы",
+  "item.magforest.the_call_of_the_ancestors": "Зов Предков",
 
-  "entity.minecraft.villager.magforest.witcher": "Ведьмак",
+  "entity.minecraft.villager.magforest.witcher": "Исследователь Квенья",
 
   "advancements.husbandry.moon_tear_hoe.description": "Рубин оказался крепче незеритового сплава, а что если его вместо алмаза использовать?",
-  "advancements.husbandry.moon_tear_hoe.title": "Обогнать себя в развитии!",
+  "advancements.husbandry.moon_tear_hoe.title": "Сила Древних Лун!",
   "advancements.husbandry.amarost_hoe.description": "Теперь я полностью уверен, что даже эндер дракон не страшен!",
   "advancements.husbandry.amarost_hoe.title": "Само совершенство!",
 
-  "itemGroup.thaum_items": "Таум предметы",
-  "itemGroup.thaum_blocks": "Таум блоки"
+  "itemGroup.thaum_items": "Эльфийские предметы",
+  "itemGroup.thaum_blocks": "Эльфийские блоки"
 }
