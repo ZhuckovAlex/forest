@@ -33,6 +33,16 @@ public class ModFlowerGeneration {
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> ModConfiguredFeatures.BLACK_TOADSTOOL_CONFIG);
         }
+        if(event.getName().equals(Biomes.MOUNTAINS.getLocation())){
+            List<Supplier<ConfiguredFeature<?, ?>>> base =
+                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
+            base.add(() -> ModConfiguredFeatures.SILVER_SAGE_CONFIG);
+        }
+        if(event.getName().equals(Biomes.MOUNTAIN_EDGE.getLocation())){
+            List<Supplier<ConfiguredFeature<?, ?>>> base =
+                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
+            base.add(() -> ModConfiguredFeatures.SILVER_SAGE_CONFIG);
+        }
     }
 
 }
