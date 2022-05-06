@@ -89,6 +89,9 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ICY_YAWN = BLOCKS.register("icy_yawn",
             () -> new FlowerBlock(Effects.SLOWNESS,80, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
+    public static final RegistryObject<Block> SLEEPY_LEAF = BLOCKS.register("sleepy_leaf",
+            () -> new FlowerBlock(Effects.SLOWNESS,80, AbstractBlock.Properties.create(Material.PLANTS)
+                    .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
     public static final RegistryObject<Block> CIAN_SIGN = BLOCKS.register("cian_sign",
             () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.WOOD)

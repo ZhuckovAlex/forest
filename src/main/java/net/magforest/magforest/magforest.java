@@ -150,6 +150,9 @@ event.enqueueWork(() -> {
         event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.ICY_YAWN.get(), 0.35f);
         });
+        event.enqueueWork(() -> {
+            ComposterBlock.CHANCES.put(ModItems.SLEEPY_LEAF.get(), 0.35f);
+        });
 
 event.enqueueWork(() -> {
     AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
@@ -262,6 +265,7 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_TOADSTOOL.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.SILVER_SAGE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.ICY_YAWN.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.SLEEPY_LEAF.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THISTLE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.KARAMBOLA.get(), RenderType.getCutout());

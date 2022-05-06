@@ -74,6 +74,9 @@ public class ModItems
     public static final RegistryObject<Item> ICY_YAWN = ITEMS.register("icy_yawn",
             () -> new BlockItem(ModBlocks.ICY_YAWN.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
+    public static final RegistryObject<Item> SLEEPY_LEAF = ITEMS.register("sleepy_leaf",
+            () -> new BlockItem(ModBlocks.SLEEPY_LEAF.get(), new Item.Properties()
+                    .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> SILVER_SAGE = ITEMS.register("silver_sage",
             () -> new BlockItem(ModBlocks.SILVER_SAGE.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
