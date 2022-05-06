@@ -169,5 +169,11 @@
   "advancements.husbandry.amarost_hoe.title": "Само совершенство!",
 
   "itemGroup.thaum_items": "Эльфийские предметы",
-  "itemGroup.thaum_blocks": "Эльфийские блоки"
+  "itemGroup.thaum_blocks": "Эльфийские блоки",
+  "item.magforest.alchemical_infusion": "Alchemical infusion",
+  "item.magforest.entropy_potion": "Entropy potion",
+  "block.magforest.black_toadstool": "Black toadstool",
+  "block.magforest.icy_yawn": "Icy yawn",
+  "block.magforest.sleepy_leaf": "Sleepy leaf",
+  "block.magforest.silver_sage": "Silver sage"
 }
