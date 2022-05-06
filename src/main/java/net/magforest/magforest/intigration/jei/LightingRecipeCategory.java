@@ -18,7 +18,7 @@ public class LightingRecipeCategory implements IRecipeCategory<LightRodRecipe>
 {
 
     public final static ResourceLocation UID = new ResourceLocation(magforest.MOD_ID, "lighting");
-    public final static ResourceLocation TEXTURE = new ResourceLocation(magforest.MOD_ID, "textures/gui/lighting_rod_gui.png");
+    public final static ResourceLocation TEXTURE = new ResourceLocation(magforest.MOD_ID, "textures/gui/lighting_machine.png");
 
     private final IDrawable background;
     private final IDrawable icon;

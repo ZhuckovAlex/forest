@@ -81,10 +81,6 @@ public class ModConfiguredFeatures {
             new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.HYACINTH.get().getDefaultState()),
                     SimpleBlockPlacer.PLACER)).tries(1).build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(1);
-    public static final ConfiguredFeature<?, ?> THE_CALL_OF_THE_ANCESTORS_CONFIG = Feature.FLOWER.withConfiguration((
-                    new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get().getDefaultState()),
-                            SimpleBlockPlacer.PLACER)).tries(1).build())
-            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(3);
     public static final ConfiguredFeature<?, ?> THISTLE_CONFIG = Feature.FLOWER.withConfiguration((
                     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.THISTLE.get().getDefaultState()),
                             SimpleBlockPlacer.PLACER)).tries(1).build())
