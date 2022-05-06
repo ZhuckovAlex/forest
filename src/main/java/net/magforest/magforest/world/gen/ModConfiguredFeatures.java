@@ -93,6 +93,10 @@ public class ModConfiguredFeatures {
                     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.ICY_YAWN.get().getDefaultState()),
                             SimpleBlockPlacer.PLACER)).tries(1).build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(2);
+    public static final ConfiguredFeature<?, ?> SILVER_SAGE_CONFIG = Feature.FLOWER.withConfiguration((
+                    new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.SILVER_SAGE.get().getDefaultState()),
+                            SimpleBlockPlacer.PLACER)).tries(1).build())
+            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(1);
 
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String key, ConfiguredFeature<FC, ?> configuredFeature) {
