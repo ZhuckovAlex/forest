@@ -71,6 +71,9 @@ public class ModItems
     public static final RegistryObject<Item> BLACK_TOADSTOOL = ITEMS.register("black_toadstool",
             () -> new BlockItem(ModBlocks.BLACK_TOADSTOOL.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
+    public static final RegistryObject<Item> ICY_YAWN = ITEMS.register("icy_yawn",
+            () -> new BlockItem(ModBlocks.ICY_YAWN.get(), new Item.Properties()
+                    .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> SILVER_SAGE = ITEMS.register("silver_sage",
             () -> new BlockItem(ModBlocks.SILVER_SAGE.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
@@ -196,6 +199,8 @@ public class ModItems
     public static final RegistryObject<Item> ALCHEMICAL_INFUSION = ITEMS.register("alchemical_infusion",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> HEALING_POTION = ITEMS.register("healing_potion",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> ENTROPY_POTION = ITEMS.register("entropy_potion",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
 
