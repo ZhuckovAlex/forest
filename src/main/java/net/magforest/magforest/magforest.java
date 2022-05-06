@@ -138,6 +138,9 @@ event.enqueueWork(() -> {
         event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.THE_CALL_OF_THE_ANCESTORS.get(), 0.35f);
         });
+        event.enqueueWork(() -> {
+            ComposterBlock.CHANCES.put(ModItems.ACORN.get(), 0.35f);
+        });
 
 event.enqueueWork(() -> {
     AxeItem.BLOCK_STRIPPING_MAP = new ImmutableMap.Builder<Block, Block>().putAll(AxeItem.BLOCK_STRIPPING_MAP)
@@ -172,21 +175,6 @@ event.enqueueWork(() -> registerRecipes());
                 Ingredient.fromStacks(PotionUtils.addPotionToItemStack(new ItemStack(Items.LINGERING_POTION), Potions.WATER)),
                 Ingredient.fromItems(ModItems.WARPED_WART.get()),
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.LINGERING_POTION),Potions.AWKWARD)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromStacks(PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION), Potions.AWKWARD)),
-                Ingredient.fromItems(ModItems.HYACINTH.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION),Potions.STRONG_HEALING)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromStacks(PotionUtils.addPotionToItemStack(new ItemStack(Items.SPLASH_POTION), Potions.AWKWARD)),
-                Ingredient.fromItems(ModItems.HYACINTH.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(Items.SPLASH_POTION),Potions.STRONG_HEALING)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromStacks(PotionUtils.addPotionToItemStack(new ItemStack(Items.LINGERING_POTION), Potions.AWKWARD)),
-                Ingredient.fromItems(ModItems.HYACINTH.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(Items.LINGERING_POTION),Potions.STRONG_HEALING)
         ));
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
                 Ingredient.fromStacks(PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION), Potions.AWKWARD)),
