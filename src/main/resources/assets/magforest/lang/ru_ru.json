@@ -143,7 +143,10 @@
   "item.magforest.jirazol": "Огарок",
   "item.magforest.primordial_fire": "Первородный огонь",
   "item.magforest.star_moss": "Звёздный мох",
+  "item.magforest.alchemical_infusion": "Алхимическая инфузия",
+  "item.magforest.entropy_potion": "Зелье энтропии",
 
+  "block.magforest.black_toadstool": "Чёрная поганка",
   "block.magforest.warped_wart": "Искажённый нарост",
   "block.magforest.warped_sapling": "Искажённый саженец",
   "block.magforest.crimson_sapling": "Багровый саженец",

@@ -136,6 +136,9 @@ event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.HYACINTH.get(), 0.35f);
         });
         event.enqueueWork(() -> {
+            ComposterBlock.CHANCES.put(ModItems.BLACK_TOADSTOOL.get(), 0.35f);
+        });
+        event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.THE_CALL_OF_THE_ANCESTORS.get(), 0.35f);
         });
         event.enqueueWork(() -> {
@@ -250,6 +253,7 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_DOOR.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_TRAPDOOR.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.HYACINTH.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.BLACK_TOADSTOOL.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THISTLE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.KARAMBOLA.get(), RenderType.getCutout());
