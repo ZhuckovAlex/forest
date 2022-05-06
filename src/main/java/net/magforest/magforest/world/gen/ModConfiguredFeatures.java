@@ -84,11 +84,15 @@ public class ModConfiguredFeatures {
     public static final ConfiguredFeature<?, ?> BLACK_TOADSTOOL_CONFIG = Feature.FLOWER.withConfiguration((
                     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.BLACK_TOADSTOOL.get().getDefaultState()),
                             SimpleBlockPlacer.PLACER)).tries(1).build())
-            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(12);
+            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(2);
     public static final ConfiguredFeature<?, ?> THISTLE_CONFIG = Feature.FLOWER.withConfiguration((
                     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.THISTLE.get().getDefaultState()),
                             SimpleBlockPlacer.PLACER)).tries(1).build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(30);
+    public static final ConfiguredFeature<?, ?> ICY_YAWN_CONFIG = Feature.FLOWER.withConfiguration((
+                    new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.ICY_YAWN.get().getDefaultState()),
+                            SimpleBlockPlacer.PLACER)).tries(1).build())
+            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(2);
 
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String key, ConfiguredFeature<FC, ?> configuredFeature) {

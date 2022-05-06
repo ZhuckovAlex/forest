@@ -26,6 +26,7 @@ public class ModFlowerGeneration {
                     event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
             base.add(() -> ModConfiguredFeatures.HYACINTH_CONFIG);
             base.add(() -> ModConfiguredFeatures.THISTLE_CONFIG);
+            base.add(() -> ModConfiguredFeatures.ICY_YAWN_CONFIG);
         }
         if(event.getName().equals(Biomes.SWAMP.getLocation())){
             List<Supplier<ConfiguredFeature<?, ?>>> base =
