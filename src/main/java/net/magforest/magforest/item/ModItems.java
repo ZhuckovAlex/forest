@@ -185,6 +185,8 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ACORN = ITEMS.register("acorn",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> STAR_MOSS = ITEMS.register("star_moss",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
 
 
