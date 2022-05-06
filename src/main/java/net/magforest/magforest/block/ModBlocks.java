@@ -230,7 +230,7 @@ public class ModBlocks extends Blocks
                             () -> ModSoundEvents.CRISTAL_BREAK.get(), () -> ModSoundEvents.CRISTAL_BREAK.get(),
                             () -> ModSoundEvents.CRISTAL_BREAK.get())).notSolid()));
     public static final RegistryObject<Block> THISTLE = BLOCKS.register("thistle",
-            () -> new FlowerBlock(Effects.HUNGER, 20, AbstractBlock.Properties.create(Material.PLANTS)
+            () -> new FlowerBlock(Effects.ABSORPTION, 20, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
     public static final RegistryObject<Block> ELF_STONE = registerBlock("elf_stone",
@@ -310,7 +310,7 @@ public class ModBlocks extends Blocks
             () -> new AlchemyTable(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(4).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool().sound(SoundType.NETHER_ORE)));
     public static final RegistryObject<Block> THE_CALL_OF_THE_ANCESTORS = BLOCKS.register("the_call_of_the_ancestors",
-            () -> new FlowerBlock(Effects.HUNGER, 20, AbstractBlock.Properties.create(Material.PLANTS)
+            () -> new FlowerBlock(Effects.INVISIBILITY, 30, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
 
