@@ -27,6 +27,7 @@ public class ModFlowerGeneration {
             base.add(() -> ModConfiguredFeatures.HYACINTH_CONFIG);
             base.add(() -> ModConfiguredFeatures.THISTLE_CONFIG);
             base.add(() -> ModConfiguredFeatures.ICY_YAWN_CONFIG);
+            base.add(() -> ModConfiguredFeatures.SLEEPY_LEAF_CONFIG);
         }
         if(event.getName().equals(Biomes.SWAMP.getLocation())){
             List<Supplier<ConfiguredFeature<?, ?>>> base =
