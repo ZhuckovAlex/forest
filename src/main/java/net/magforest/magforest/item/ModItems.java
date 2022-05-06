@@ -181,6 +181,11 @@ public class ModItems
     public static final RegistryObject<Item> FOCUSING_LENS = ITEMS.register("focusing_lens",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
+    public static final RegistryObject<Item> GOLDEN_LEAF = ITEMS.register("golden_leaf",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> ACORN = ITEMS.register("acorn",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+
 
 
 
