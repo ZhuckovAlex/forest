@@ -82,7 +82,10 @@ public class ModBlocks extends Blocks
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT).setLightLevel(value -> 2)));
     public static final RegistryObject<Block> BLACK_TOADSTOOL = BLOCKS.register("black_toadstool",
             () -> new FlowerBlock(Effects.POISON,80, AbstractBlock.Properties.create(Material.PLANTS)
-                    .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT).setLightLevel(value -> 2)));
+                    .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
+    public static final RegistryObject<Block> SILVER_SAGE = BLOCKS.register("silver_sage",
+            () -> new FlowerBlock(Effects.POISON,80, AbstractBlock.Properties.create(Material.PLANTS)
+                    .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
     public static final RegistryObject<Block> CIAN_SIGN = BLOCKS.register("cian_sign",
             () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.WOOD)

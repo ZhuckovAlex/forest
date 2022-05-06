@@ -147,6 +147,7 @@
   "item.magforest.entropy_potion": "Зелье энтропии",
 
   "block.magforest.black_toadstool": "Чёрная поганка",
+  "block.magforest.silver_sage": "Серебрянный шалфей",
   "block.magforest.warped_wart": "Искажённый нарост",
   "block.magforest.warped_sapling": "Искажённый саженец",
   "block.magforest.crimson_sapling": "Багровый саженец",
@@ -155,6 +156,7 @@
   "item.magforest.the_call_of_the_ancestors": "Зов Предков",
   "item.magforest.golden_leaf": "§eЗолотой Лист",
   "item.magforest.acorn": "Жёлудь",
+  "item.magforest.healing_potion": "Зелье лечения",
 
   "entity.minecraft.villager.magforest.witcher": "Исследователь Квенья",
 
