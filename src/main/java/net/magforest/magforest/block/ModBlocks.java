@@ -86,7 +86,7 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> SILVER_SAGE = BLOCKS.register("silver_sage",
             () -> new FlowerBlock(Effects.REGENERATION,80, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
-    public static final RegistryObject<Block> ICY_YAWN = BLOCKS.register("isy_yawn",
+    public static final RegistryObject<Block> ICY_YAWN = BLOCKS.register("icy_yawn",
             () -> new FlowerBlock(Effects.SLOWNESS,80, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
