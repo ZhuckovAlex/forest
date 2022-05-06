@@ -81,7 +81,7 @@ public class ModBlocks extends Blocks
             () -> new FlowerBlock(Effects.REGENERATION,80, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT).setLightLevel(value -> 2)));
     public static final RegistryObject<Block> BLACK_TOADSTOOL = BLOCKS.register("black_toadstool",
-            () -> new FlowerBlock(Effects.POISON,80, AbstractBlock.Properties.create(Material.PLANTS)
+            () -> new MushroomBlock(AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
     public static final RegistryObject<Block> SILVER_SAGE = BLOCKS.register("silver_sage",
             () -> new FlowerBlock(Effects.REGENERATION,80, AbstractBlock.Properties.create(Material.PLANTS)
