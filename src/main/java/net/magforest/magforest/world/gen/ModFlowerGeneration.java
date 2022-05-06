@@ -27,6 +27,11 @@ public class ModFlowerGeneration {
             base.add(() -> ModConfiguredFeatures.HYACINTH_CONFIG);
             base.add(() -> ModConfiguredFeatures.THISTLE_CONFIG);
         }
+        if(event.getName().equals(Biomes.SWAMP.getLocation())){
+            List<Supplier<ConfiguredFeature<?, ?>>> base =
+                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
+            base.add(() -> ModConfiguredFeatures.BLACK_TOADSTOOL_CONFIG);
+        }
     }
 
 }

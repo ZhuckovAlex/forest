@@ -81,6 +81,10 @@ public class ModConfiguredFeatures {
             new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.HYACINTH.get().getDefaultState()),
                     SimpleBlockPlacer.PLACER)).tries(1).build())
             .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(1);
+    public static final ConfiguredFeature<?, ?> BLACK_TOADSTOOL_CONFIG = Feature.FLOWER.withConfiguration((
+                    new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.BLACK_TOADSTOOL.get().getDefaultState()),
+                            SimpleBlockPlacer.PLACER)).tries(1).build())
+            .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).count(12);
     public static final ConfiguredFeature<?, ?> THISTLE_CONFIG = Feature.FLOWER.withConfiguration((
                     new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(ModBlocks.THISTLE.get().getDefaultState()),
                             SimpleBlockPlacer.PLACER)).tries(1).build())
