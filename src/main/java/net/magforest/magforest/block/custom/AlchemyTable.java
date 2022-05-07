@@ -2,6 +2,7 @@ package net.magforest.magforest.block.custom;
 
 import net.magforest.magforest.container.AlchemyTableContainer;
 
+import net.magforest.magforest.procedures.Alchemy;
 import net.magforest.magforest.tileentity.AlchemicalTableTile;
 
 import net.magforest.magforest.tileentity.ModTileEntities;
@@ -32,15 +33,34 @@ import net.minecraft.world.IBlockReader;
 import net.minecraft.world.IWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.biome.ParticleEffectAmbience;
+import net.minecraft.world.server.ServerWorld;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 import javax.annotation.Nullable;
+import java.util.AbstractMap;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 import java.util.stream.Stream;
 
 public class AlchemyTable extends HorizontalBlock {
     public AlchemyTable(Properties properties) {
         super(properties);
         this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
+    }
+
+    @Override
+    public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+        super.tick(blockstate, world, pos, random);
+        int x = pos.getX();
+        int y = pos.getY();
+        int z = pos.getZ();
+
+        Alchemy.executeProcedure(Stream
+                .of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+                        new AbstractMap.SimpleEntry<>("z", z))
+                .collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
     }
 
     private static final VoxelShape SHAPE_N = Stream.of(
