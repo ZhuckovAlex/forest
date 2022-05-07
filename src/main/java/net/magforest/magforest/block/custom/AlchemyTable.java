@@ -48,7 +48,14 @@ public class AlchemyTable extends HorizontalBlock {
         super(properties);
         this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
     }
-
+    @Override
+    public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
+        super.onBlockAdded(blockstate, world, pos, oldState, moving);
+        int x = pos.getX();
+        int y = pos.getY();
+        int z = pos.getZ();
+        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
+    }
     @Override
     public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
         super.tick(blockstate, world, pos, random);
