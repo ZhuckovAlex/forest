@@ -19,6 +19,8 @@ public class ModSoundEvents {
             registerSoundEvent("moon_tear");
     public static final RegistryObject<SoundEvent> CRAFTSTART =
             registerSoundEvent("craftstart");
+    public static final RegistryObject<SoundEvent> ALCHEMY =
+            registerSoundEvent("alchemy");
 
     private static RegistryObject<SoundEvent> registerSoundEvent(String name) {
         return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(magforest.MOD_ID, name)));

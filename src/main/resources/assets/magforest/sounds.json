@@ -19,6 +19,16 @@
       }
     ]
   },
+  "alchemy": {
+    "category": "blocks",
+    "subtitle": "magforest.alchemy",
+    "sounds": [
+      {
+        "name": "magforest:alchemy",
+        "stream": true
+      }
+    ]
+  },
   "moon_tear": {
     "category": "blocks",
     "subtitle": "magforest.moon_tear",
