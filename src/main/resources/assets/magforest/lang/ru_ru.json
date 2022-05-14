@@ -160,12 +160,12 @@
   "item.magforest.acorn": "Жёлудь",
   "item.magforest.healing_potion": "Зелье лечения",
   "item.magforest.crystal_phial": "Хрустальный фиал",
-  "item.magforest.wind_reflection": "Отражение Ветра",
-  "item.magforest.turf_extract": "Экстракт Дёрна",
-  "item.magforest.spirit_of_the_sea": "Дух Моря",
-  "item.magforest.firewater": "Огненная Вода",
+  "item.magforest.wind_reflection": "Отражение ветра",
+  "item.magforest.turf_extract": "Экстракт дёрна",
+  "item.magforest.spirit_of_the_sea": "Дух моря",
+  "item.magforest.firewater": "Огненная вода",
 
-  "entity.minecraft.villager.magforest.witcher": "Исследователь Квенья",
+  "entity.minecraft.villager.magforest.witcher": "Исследователь квенья",
 
   "advancements.husbandry.moon_tear_hoe.description": "Рубин оказался крепче незеритового сплава, а что если его вместо алмаза использовать?",
   "advancements.husbandry.moon_tear_hoe.title": "Сила Древних Лун!",
