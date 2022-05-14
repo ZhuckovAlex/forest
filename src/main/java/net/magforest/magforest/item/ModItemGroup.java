@@ -19,7 +19,7 @@ public class ModItemGroup
             return new ItemStack(ModItems.KARAMBOLA.get());
         }
     };
-    public static final ItemGroup SCROLLS = new ItemGroup("scrolls") {
+    public static final ItemGroup SPELLS = new ItemGroup("spells") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(ModItems.SCROLL.get());
