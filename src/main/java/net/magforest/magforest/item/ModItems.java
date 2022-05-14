@@ -195,15 +195,15 @@ public class ModItems
     public static final RegistryObject<Item> FOCUSING_LENS = ITEMS.register("focusing_lens",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> SCROLL = ITEMS.register("scroll",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.SCROLLS)));
     public static final RegistryObject<Item> FLAME_SCROLL = ITEMS.register("flame_scroll",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.SCROLLS)));
     public static final RegistryObject<Item> AQUA_SCROLL = ITEMS.register("aqua_scroll",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.SCROLLS)));
     public static final RegistryObject<Item> AER_SCROLL = ITEMS.register("aer_scroll",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.SCROLLS)));
     public static final RegistryObject<Item> TERRA_SCROLL = ITEMS.register("terra_scroll",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.SCROLLS)));
     public static final RegistryObject<Item> MOON_MOTH_SPAWN_EGG = ITEMS.register("moon_moth_spawn_egg",
             () -> new ModSpawnEggItem(ModEntityTypes.MOON_MOTH,0x30d5c8,0x42aaff,
                     new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
