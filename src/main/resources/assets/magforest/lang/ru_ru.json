@@ -164,8 +164,10 @@
   "item.magforest.turf_extract": "Экстракт дёрна",
   "item.magforest.spirit_of_the_sea": "Дух моря",
   "item.magforest.firewater": "Огненная вода",
+  "item.magforest.moon_moth_spawn_egg": "Яйцо призыва лунного мотылька",
 
   "entity.minecraft.villager.magforest.witcher": "Исследователь квенья",
+  "entity.magforest.moon_moth_entity": "Лунный мотылёк",
 
   "advancements.husbandry.moon_tear_hoe.description": "Рубин оказался крепче незеритового сплава, а что если его вместо алмаза использовать?",
   "advancements.husbandry.moon_tear_hoe.title": "Сила Древних Лун!",

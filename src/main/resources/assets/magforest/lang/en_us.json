@@ -165,8 +165,10 @@
   "item.magforest.turf_extract": "Turf extract",
   "item.magforest.spirit_of_the_sea": "Spirit of the sea",
   "item.magforest.firewater": "Firewater",
+  "item.magforest.moon_moth_spawn_egg": "Moon moth spawn egg",
 
   "entity.minecraft.villager.magforest.witcher": "Witcher",
+  "entity.magforest.moon_moth_entity": "Moon moth",
 
 
   "advancements.husbandry.moon_tear_hoe.description": "Ruby turned out to be stronger than non-cerite alloy, but what if it is used instead of diamond?",
