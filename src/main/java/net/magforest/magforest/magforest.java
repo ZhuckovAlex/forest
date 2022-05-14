@@ -7,6 +7,8 @@ import net.magforest.magforest.container.ModContainers;
 import net.magforest.magforest.data.recipes.ModLightningRodRecipeTypes;
 import net.magforest.magforest.entity.ModCianEntityTypes;
 import net.magforest.magforest.entity.ModDarkBirchEntityTypes;
+import net.magforest.magforest.entity.ModEntityTypes;
+import net.magforest.magforest.entity.render.MoonMothRender;
 import net.magforest.magforest.entity.renderer.ModCianBoatRenderer;
 import net.magforest.magforest.entity.renderer.ModDarkBirchBoatRenderer;
 import net.magforest.magforest.entity.villager.ModVillager;
@@ -82,7 +84,7 @@ public class magforest
 
         ModCianEntityTypes.register(eventBus);
         ModDarkBirchEntityTypes.register(eventBus);
-
+        ModEntityTypes.register(eventBus);
         ModItems.register(eventBus);
 
         ModBlocks.register(eventBus);
@@ -274,7 +276,7 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_WART.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_LEAVES.get(), RenderType.getCutout());
-
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.MOON_MOTH.get(), MoonMothRender::new);
         ClientRegistry.bindTileEntityRenderer(ModTileEntities.SIGN_TILE_ENTITIES.get(),
                 SignTileEntityRenderer::new);
         Atlases.addWoodType(ModWoodTypes.BIG_CIAN);

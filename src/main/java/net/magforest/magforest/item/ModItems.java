@@ -2,9 +2,11 @@ package net.magforest.magforest.item;
 
 import net.magforest.magforest.block.ModBlocks;
 
+import net.magforest.magforest.entity.ModEntityTypes;
 import net.magforest.magforest.item.custom.ModCianBoatItem;
 import net.magforest.magforest.item.custom.ModDarkBirchBoatItem;
 import net.magforest.magforest.item.custom.ModItem;
+import net.magforest.magforest.item.custom.ModSpawnEggItem;
 import net.magforest.magforest.magforest;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -192,6 +194,9 @@ public class ModItems
             () -> new ModItem(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> FOCUSING_LENS = ITEMS.register("focusing_lens",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> MOON_MOTH_SPAWN_EGG = ITEMS.register("moon_moth_spawn_egg",
+            () -> new ModSpawnEggItem(ModEntityTypes.MOON_MOTH,0x30d5c8,0x1D6336,
+                    new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> GOLDEN_LEAF = ITEMS.register("golden_leaf",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
