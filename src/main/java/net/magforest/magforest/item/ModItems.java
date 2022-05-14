@@ -195,7 +195,7 @@ public class ModItems
     public static final RegistryObject<Item> FOCUSING_LENS = ITEMS.register("focusing_lens",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MOON_MOTH_SPAWN_EGG = ITEMS.register("moon_moth_spawn_egg",
-            () -> new ModSpawnEggItem(ModEntityTypes.MOON_MOTH,0x30d5c8,0x1D6336,
+            () -> new ModSpawnEggItem(ModEntityTypes.MOON_MOTH,0x30d5c8,0x42aaff,
                     new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> GOLDEN_LEAF = ITEMS.register("golden_leaf",
