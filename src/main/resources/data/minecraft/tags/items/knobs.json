@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "magforest:aer_knob",
+    "magforest:aqua_knob",
+    "magforest:terra_knob",
+    "magforest:flame_knob",
+    "magforest:inert_knob"
+  ]
+}
