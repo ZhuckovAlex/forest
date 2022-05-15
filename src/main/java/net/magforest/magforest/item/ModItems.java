@@ -36,15 +36,15 @@ public class ModItems
             () -> new BlockItem(ModBlocks.CIAN_LEAVES.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> AER_KNOB = ITEMS.register("aer_knob",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.SPELLS)));
     public static final RegistryObject<Item> AQUA_KNOB = ITEMS.register("aqua_knob",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.SPELLS)));
     public static final RegistryObject<Item> FLAME_KNOB = ITEMS.register("flame_knob",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.SPELLS)));
     public static final RegistryObject<Item> INERT_KNOB = ITEMS.register("inert_knob",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.SPELLS)));
     public static final RegistryObject<Item> TERRA_KNOB = ITEMS.register("terra_knob",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.SPELLS)));
     public static final RegistryObject<Item> JIRAZOL = ITEMS.register("jirazol",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> PRIMORDIAL_FIRE = ITEMS.register("primordial_fire",
