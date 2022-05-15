@@ -232,6 +232,8 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> FIREWATER = ITEMS.register("firewater",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard",
+            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
 
 
