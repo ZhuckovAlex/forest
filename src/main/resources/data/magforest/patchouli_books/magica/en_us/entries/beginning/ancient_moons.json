@@ -1,0 +1,15 @@
+{
+  "name": "Ancient moons",
+  "icon": "magforest:moon_tear_obsidian_ore",
+  "category": "beginning",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "At first there was a huge world where elves lived, fragments of crystal meteors hovered above it, which flew around the planet, but because of a flash in the sun, they began to fall and split the planet."
+    },
+    {
+      "type": "patchouli:image",
+      "images": "magforest:textures/gui/entries/ancient_moons.png"
+    }
+  ]
+}
