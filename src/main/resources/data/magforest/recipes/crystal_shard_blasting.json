@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "minecraft:quartz"
+  },
+  "result": "magforest:crystal_shard",
+  "experience": 15,
+  "cookingtime": 25
+}
