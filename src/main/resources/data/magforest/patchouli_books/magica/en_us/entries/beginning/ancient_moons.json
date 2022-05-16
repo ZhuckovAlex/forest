@@ -5,11 +5,19 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "At first there was a huge world where elves lived, fragments of crystal meteors hovered above it, which flew around the planet they were called the Moon, as well as the planet. They were the source of primordial magic. One day, due to a solar flare, they began to fall and split the planet."
+      "text": "At first there was a huge world where elves lived, fragments of crystal meteors hovered above it, which flew around the planet they were called the Moon, as well as the neighboring planet. They were the source of primordial magic. One day, due to a solar flare, they began to fall and split the planet..."
     },
     {
       "type": "patchouli:image",
       "images": ["magforest:textures/gui/entries/ancient_moons.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Now our planet has been restored and these fragments are everywhere, but rarely. They became known from an elf who lived 2 centuries ago, who found a strange cave..."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I decided to explore the world in order to find traces of magic. I used to grow up in one of the peasant villages, now I know the world."
     }
   ]
 }
