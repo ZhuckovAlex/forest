@@ -1,12 +1,12 @@
 {
-  "name": "Scrolls",
+  "name": "Свитки",
   "icon": "magforest:scroll",
   "category": "beginning",
   "advancement": "magforest:starting/get_paper",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Paper is an interesting thing... I decided to roll it up and make a scroll. What spells and how can I write them on it?"
+      "text": "Бумага интересная вещь... я её решил свернуть и сделать свиток. Какие заклинания и как можно записать их на него?"
     },
     {
       "type": "patchouli:crafting",

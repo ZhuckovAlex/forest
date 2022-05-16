@@ -1,0 +1,36 @@
+{
+  "name": "Moon tear",
+  "icon": "magforest:moon_tear",
+  "category": "beginning",
+  "advancement": "magforest:starting/get_paper",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I found those moons, or rather a moon tear! It is already possible to make some things out of it, it seems that it can create energy vibrations and attract lightning when paired with iron... I'll make a lightning discharge rod!"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_smelting"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_blasting"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_lighting_rod"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Moon tears can also be crushed using a mortar and pestle."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_powder"
+    }
+  ]
+}
