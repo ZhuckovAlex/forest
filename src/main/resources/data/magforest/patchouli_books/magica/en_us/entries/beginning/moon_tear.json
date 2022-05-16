@@ -2,7 +2,7 @@
   "name": "Moon tear",
   "icon": "magforest:moon_tear",
   "category": "beginning",
-  "advancement": "magforest:starting/get_paper",
+  "advancement": "magforest:starting/moon_tear",
   "pages": [
     {
       "type": "patchouli:text",
@@ -13,11 +13,11 @@
       "recipe": "magforest:moon_tear"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "patchouli:smelting",
       "recipe": "magforest:moon_tear_smelting"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "patchouli:blasting",
       "recipe": "magforest:moon_tear_blasting"
     },
     {

@@ -13,11 +13,11 @@
       "recipe": "magforest:moon_tear"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "patchouli:smelting",
       "recipe": "magforest:moon_tear_smelting"
     },
     {
-      "type": "patchouli:crafting",
+      "type": "patchouli:blasting",
       "recipe": "magforest:moon_tear_blasting"
     },
     {

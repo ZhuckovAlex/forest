@@ -1,0 +1,41 @@
+{
+  "name": "Mortar and pestle",
+  "icon": "magforest:mortar_and_pestle",
+  "category": "beginning",
+  "advancement": "magforest:starting/get_flint",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ступка и пестик это универсальное средство измельчения в порошок, что только можно измельчить..."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:minecraft_gravel"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:minecraft_flint"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:ether_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:aer_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:flame_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:aqua_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:terra_powder"
+    }
+
+  ]
+}
