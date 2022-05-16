@@ -1,5 +1,5 @@
 {
-  "name": "Mortar and pestle",
+  "name": "Ступка и пестик",
   "icon": "magforest:mortar_and_pestle",
   "category": "beginning",
   "advancement": "magforest:starting/get_flint",
@@ -35,7 +35,10 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:terra_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_powder"
     }
-
   ]
 }

@@ -35,7 +35,10 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:terra_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_powder"
     }
-
   ]
 }
