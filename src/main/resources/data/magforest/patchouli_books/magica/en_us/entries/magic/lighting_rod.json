@@ -1,0 +1,16 @@
+{
+  "name": "Lighting rod",
+  "icon": "magforest:moon_tear_lighting_rod",
+  "category": "magic",
+  "advancement": "magforest:starting/lighting_rod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I created a discharge rod, in theory, this unit converts the energy of lightning into primordial magic, which is able to transmute objects."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/lighting_rod.png"]
+    }
+  ]
+}

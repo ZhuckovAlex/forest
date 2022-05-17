@@ -17,21 +17,6 @@
       "type": "patchouli:crafting",
       "recipe": "magforest:minecraft_gravel",
       "recipe2": "magforest:minecraft_flint"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:ether_powder",
-      "recipe2": "magforest:aer_powder"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:flame_powder",
-      "recipe2": "magforest:aqua_powder"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:terra_powder",
-      "recipe2": "magforest:moon_tear_powder"
     }
   ]
 }

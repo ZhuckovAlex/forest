@@ -1,0 +1,38 @@
+{
+  "name": "Эльфийский камень",
+  "icon": "magforest:elf_stone",
+  "category": "magic",
+  "advancement": "magforest:starting/elf_stone",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Эльфийский камень очень красив и необычен, но из него возможно, скорее всего, воссоздать какие-нибудь магические верстаки. По крайней мере декоративные блоки и кирпич можно..."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_stone_bricks"
+    },
+    {
+      "type": "patchouli:stonecutting",
+      "recipe": "magforest:elf_stone_bricks_stonecutting"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_stone_slab",
+      "recipe2": "magforest:elf_stone_stairs"
+    },
+    {
+      "type": "patchouli:stonecutting",
+      "recipe": "magforest:elf_stone_slab_stonecutting",
+      "recipe2": "magforest:elf_stone_stairs_stonecutting"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_stone_bricks"
+    },
+    {
+      "type": "patchouli:stonecutting",
+      "recipe": "magforest:chiseled_elf_stone_bricks"
+    }
+  ]
+}

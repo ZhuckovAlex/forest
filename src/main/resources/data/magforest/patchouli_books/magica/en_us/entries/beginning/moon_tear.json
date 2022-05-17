@@ -23,14 +23,6 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:moon_tear_lighting_rod"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "Moon tears can also be crushed using a mortar and pestle."
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:moon_tear_powder"
     }
   ]
 }

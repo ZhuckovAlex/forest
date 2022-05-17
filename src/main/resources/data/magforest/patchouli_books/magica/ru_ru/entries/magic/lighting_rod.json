@@ -1,0 +1,16 @@
+{
+  "name": "Разрядный стержень",
+  "icon": "magforest:moon_tear_lighting_rod",
+  "category": "magic",
+  "advancement": "magforest:starting/lighting_rod",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Я создал разрядный стержень, по идее данный агрегат преобразует энергию молнии в первородную магию, которая способна трансмутировать предметы."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/lighting_rod.png"]
+    }
+  ]
+}

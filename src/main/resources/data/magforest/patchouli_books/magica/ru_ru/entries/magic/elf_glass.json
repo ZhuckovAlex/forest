@@ -1,0 +1,24 @@
+{
+  "name": "Эльфийское стекло",
+  "icon": "magforest:elf_glass",
+  "category": "magic",
+  "advancement": "magforest:starting/elf_glass",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Эльфийское стекло весьма интересно тем, что не разбивается в дребезги, но из него можно создать линзу обрамив золотом. Она пригодится наверняка, я это чувствую."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_glass_pane"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Фокусирующая линза может собирать свет в пучок, ещё от неё исходят при том живые вибрации"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:focusing_lens"
+    }
+  ]
+}

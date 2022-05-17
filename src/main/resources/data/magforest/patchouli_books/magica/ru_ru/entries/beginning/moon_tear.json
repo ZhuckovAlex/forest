@@ -23,14 +23,6 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:moon_tear_lighting_rod"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "Также лунные слёзы можно измельчить искользуя ступку и пестик"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:moon_tear_powder"
     }
   ]
 }
