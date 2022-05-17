@@ -6,7 +6,12 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Ступка и пестик это универсальное средство измельчения в порошок, что только можно измельчить..."
+      "text": "Ступка и пестик это универсальное средство измельчения в порошок всего, что только можно измельчить..."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:pestle",
+      "recipe2": "magforest:mortar_and_pestle"
     },
     {
       "type": "patchouli:crafting",
