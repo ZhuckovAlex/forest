@@ -1,0 +1,16 @@
+{
+  "name": "Focusing lens",
+  "icon": "magforest:focusing_lens",
+  "category": "magic",
+  "advancement": "magforest:starting/solar_converter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created a focusing lens, I came up with such an invention as a solar converter that converts objects using sunlight. It works during the day and if there are no blocks on top."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:solar_converter"
+    }
+  ]
+}

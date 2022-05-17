@@ -1,0 +1,28 @@
+{
+  "name": "Quartz",
+  "icon": "minecraft:quartz",
+  "category": "beginning",
+  "advancement": "magforest:starting/quartz_magic",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Quartz is an unusual stone, it can be melted into crystal."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "magforest:crystal_shard_smelting"
+    },
+    {
+      "type": "patchouli:blasting",
+      "recipe": "magforest:crystal_shard_blasting"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Quartz can be used to make a knob in a solar converter, which, in theory, is put on a staff. The knob in an inert state is already a conductor of magic, but it must be charged with a spell..."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/inert_knob.png"]
+    }
+  ]
+}

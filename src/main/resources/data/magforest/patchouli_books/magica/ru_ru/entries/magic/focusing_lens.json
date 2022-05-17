@@ -1,0 +1,16 @@
+{
+  "name": "Фокусирующие линзы",
+  "icon": "magforest:focusing_lens",
+  "category": "magic",
+  "advancement": "magforest:starting/solar_converter",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав фокусирующую линзу, я придумал такое изобретение, как солнечный преобразователь преобразующий с помощью солнечного света предметы. Он работает днём и если сверху нет блоков."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:solar_converter"
+    }
+  ]
+}
