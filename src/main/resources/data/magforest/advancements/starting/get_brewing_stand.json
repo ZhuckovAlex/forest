@@ -31,12 +31,22 @@
         ]
       }
     },
-    "elf_bricks": {
+    "elf_stone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "magforest:elf_bricks"
+            "item": "magforest:elf_stone"
+          }
+        ]
+      }
+    },
+    "mortar_and_pestle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:mortar_and_pestle"
           }
         ]
       }

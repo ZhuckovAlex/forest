@@ -1,0 +1,16 @@
+{
+  "name": "Alchemy table",
+  "icon": "magforest:alchemy_table",
+  "category": "alchemy",
+  "advancement": "magforest:starting/get_brewing_stand",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created a potion maker and an elfstone, I decided to continue further by combining these elements in my thoughts I created an alchemical table."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:alchemy_table"
+    }
+  ]
+}

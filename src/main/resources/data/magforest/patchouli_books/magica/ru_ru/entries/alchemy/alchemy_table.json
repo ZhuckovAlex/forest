@@ -1,0 +1,16 @@
+{
+  "name": "Алхимический стол",
+  "icon": "magforest:alchemy_table",
+  "category": "alchemy",
+  "advancement": "magforest:starting/get_brewing_stand",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав зельеварку и эльфийский камень я решил продолжить дальше соединив эти элементы в мыслях создал алхимический стол."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:alchemy_table"
+    }
+  ]
+}
