@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "netherite_ingot",
+  "ingredients": [
+    {
+      "item": "magforest:mortar_and_pestle"
+    },
+    {
+      "item": "magforest:the_call_of_the_ancestors"
+    },
+    {
+      "item": "magforest:primordial_fire"
+    }
+  ],
+  "result": {
+    "item": "magforest:miraculum_flammas"
+  }
+}

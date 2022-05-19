@@ -93,11 +93,11 @@ public class TurningDarkBirchLogs {
                 (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ModBlocks.DARK_BIRCH_LOG.get() ||
                 (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ModBlocks.STRIPPED_DARK_BIRCH_WOOD.get() ||
                 (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ModBlocks.DARK_BIRCH_WOOD.get())
-                && (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == ModItems.ETHER_MIX.get()
+                && (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == ModItems.MIRACULUM_FLAMAS.get()
                 .asItem()))) {
             world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
             if (entity instanceof PlayerEntity) {
-                ItemStack _stktoremove = new ItemStack(ModItems.ETHER_MIX.get());
+                ItemStack _stktoremove = new ItemStack(ModItems.MIRACULUM_FLAMAS.get());
                 ((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
                         ((PlayerEntity) entity).container.func_234641_j_());
             }
