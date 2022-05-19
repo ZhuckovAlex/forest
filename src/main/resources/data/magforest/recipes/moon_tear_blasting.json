@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "ingredient": {
-    "item": "magforest:moon_tear_ore"
+    "item": "magforest:moon_tear_obsidian_ore"
   },
   "result": "magforest:moon_tear",
   "experience": 7,
