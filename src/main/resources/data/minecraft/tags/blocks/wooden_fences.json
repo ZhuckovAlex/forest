@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "magforest:cian_fence",
+    "magforest:ancient_elf_stone_fence",
+    "magforest:ancient_elf_bricks_fence",
     "magforest:dark_birch_fence"
   ]
 }

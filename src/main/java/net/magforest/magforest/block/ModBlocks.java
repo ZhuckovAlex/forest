@@ -323,6 +323,24 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ANCIENT_ELF_PILLAR = registerBlock("ancient_elf_pillar",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_STONE_SLAB = registerBlock("ancient_elf_stone_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_STONE_STAIRS = registerBlock("ancient_elf_stone_stairs",
+            () -> new StairsBlock(() -> ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_BRICKS_SLAB = registerBlock("ancient_elf_bricks_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_BRICKS_STAIRS = registerBlock("ancient_elf_bricks_stairs",
+            () -> new StairsBlock(() -> ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_STONE_FENCE = registerBlock("ancient_elf_stone_fence",
+            () -> new FenceBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_BRICKS_FENCE = registerBlock("ancient_elf_bricks_fence",
+            () -> new FenceBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
