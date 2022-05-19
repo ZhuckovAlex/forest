@@ -323,6 +323,16 @@ public class ModBlocks extends Blocks
             () -> new FlowerBlock(Effects.INVISIBILITY, 30, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
 
+    public static final RegistryObject<Block> ANCIENT_ELF_BRICKS = registerBlock("ancient_elf_bricks",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_STONE = registerBlock("ancient_elf_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> ANCIENT_ELF_PILLAR = registerBlock("ancient_elf_pillar",
+            () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
             () -> new SaplingBlock(new CrimsonTree(), AbstractBlock.Properties.create(Material.PLANTS, MaterialColor.RED)
