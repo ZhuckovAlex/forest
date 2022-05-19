@@ -21,7 +21,6 @@ import java.util.Arrays;
 
 public class ModOreGeneration {
     public static void generateOres(final BiomeLoadingEvent event) {
-        spawnOreInAllBiomes(OreType.MOON_TEAR, event, Dimension.OVERWORLD.toString());
         spawnOreInAllBiomes(OreType.PINFIRE_ORE, event, Dimension.THE_NETHER.toString());
     }
 
