@@ -1,6 +1,15 @@
 {
   "item.magforest.magicitem": "Magitem",
 
+  "block.magforest.ancient_elf_bricks": "Ancient elf bricks",
+  "block.magforest.ancient_elf_stone": "Ancient elf stone",
+  "block.magforest.ancient_elf_pillar": "Ancient elf pillar",
+  "block.magforest.ancient_elf_stone_slab": "Ancient elf stone slab",
+  "block.magforest.ancient_elf_stone_stairs": "Ancient elf stone stairs",
+  "block.magforest.ancient_elf_bricks_slab": "Ancient elf bricks slab",
+  "block.magforest.ancient_elf_bricks_stairs": "Ancient elf bricks stairs",
+  "block.magforest.ancient_elf_stone_fence": "Ancient elf stone fence",
+  "block.magforest.ancient_elf_bricks_fence": "Ancient elf bricks fence",
   "block.magforest.aer_cristal": "Aer cristal",
   "block.magforest.aer_cristal_ore": "Aer cristal ore",
   "block.magforest.flame_cristal": "Flame cristal",

@@ -173,6 +173,9 @@ event.enqueueWork(() -> {
 event.enqueueWork(() -> registerRecipes());
     }
 
+
+
+
     private void registerRecipes(){
 
         BrewingRecipeRegistry.addRecipe(new BrewingRecipe(

@@ -1,6 +1,14 @@
 {
   "item.magforest.magicitem": "Магпредмет",
-
+  "block.magforest.ancient_elf_bricks": "Древние эльфийские кирпичи",
+  "block.magforest.ancient_elf_stone": "Древний эльфийский камень",
+  "block.magforest.ancient_elf_pillar": "Древний эльфийский столб",
+  "block.magforest.ancient_elf_stone_slab": "Древняя эльфийская плита",
+  "block.magforest.ancient_elf_stone_stairs": "Древние эльфийские ступеньки",
+  "block.magforest.ancient_elf_bricks_slab": "Древняя эльфийская кирпичная плита",
+  "block.magforest.ancient_elf_bricks_stairs": "Древние эльфийские кирпичные ступеньки",
+  "block.magforest.ancient_elf_stone_fence": "Древний эльфийский забор",
+  "block.magforest.ancient_elf_bricks_fence": "Древний эльфийский кирпичный забор",
   "block.magforest.aer_cristal": "Кристалл воздуха",
   "block.magforest.aer_cristal_ore": "Руда кристалла воздуха",
   "block.magforest.flame_cristal": "Кристалл огня",

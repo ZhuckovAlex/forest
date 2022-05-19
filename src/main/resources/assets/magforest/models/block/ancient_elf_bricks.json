@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "magforest:block/ancient_elf_bricks"
-  }
+      "textures": {
+        "all": "magforest:block/ancient_elf_bricks"
+      }
 }
