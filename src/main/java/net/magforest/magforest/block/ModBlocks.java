@@ -154,12 +154,7 @@ public class ModBlocks extends Blocks
             () -> new ModWallSignBlock(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(1).sound(SoundType.WOOD), ModWoodTypes.DARK_BIRCH));
 
-    public static final RegistryObject<Block> MOON_TEAR_ORE = registerBlock("moon_tear_ore",
-            () -> new ModOreBlockMoonTear(AbstractBlock.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).harvestLevel(2).setRequiresTool()
-                    .hardnessAndResistance(6).sound(new ForgeSoundType(1f, 1f,
-                            () -> ModSoundEvents.MOON_TEAR.get(), () -> ModSoundEvents.MOON_TEAR.get(),
-                            () -> ModSoundEvents.MOON_TEAR.get(), () -> ModSoundEvents.MOON_TEAR.get(),
-                            () -> ModSoundEvents.MOON_TEAR.get()))));
+
     public static final RegistryObject<Block> MOON_TEAR_OBSIDIAN_ORE = registerBlock("moon_tear_obsidian_ore",
             () -> new ModOreBlockMoonTear(AbstractBlock.Properties.create(Material.ROCK).harvestTool(ToolType.PICKAXE).harvestLevel(3).setRequiresTool()
                     .hardnessAndResistance(18).sound(new ForgeSoundType(1f, 1f,

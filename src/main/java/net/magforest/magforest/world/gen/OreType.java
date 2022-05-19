@@ -6,7 +6,6 @@ import net.magforest.magforest.block.ModBlocks;
 
 public enum OreType {
 
-    MOON_TEAR(Lazy.of(ModBlocks.MOON_TEAR_ORE), 5, 5, 17, 1),
     PINFIRE_ORE(Lazy.of(ModBlocks.PINFIRE_ORE), 5, 8, 110, 2);
 
     private final Lazy<Block> block;

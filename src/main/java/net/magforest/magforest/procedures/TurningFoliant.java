@@ -90,11 +90,11 @@ public class TurningFoliant {
         double sy = 0;
         double sz = 0;
         if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.BOOKSHELF
-                && (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == ModItems.ETHER_MIX.get()
+                && (((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == ModItems.MIRACULUM_FLAMAS.get()
                 .asItem())))) {
             world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.AIR.getDefaultState(), 3);
             if (entity instanceof PlayerEntity) {
-                ItemStack _stktoremove = new ItemStack(ModItems.ETHER_MIX.get());
+                ItemStack _stktoremove = new ItemStack(ModItems.MIRACULUM_FLAMAS.get());
                 ((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
                         ((PlayerEntity) entity).container.func_234641_j_());
             }

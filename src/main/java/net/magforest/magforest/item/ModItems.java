@@ -236,6 +236,9 @@ public class ModItems
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> WING_OF_THE_MOON_MOTH = ITEMS.register("wing_of_the_moon_moth",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> MIRACULUM_FLAMAS = ITEMS.register("miraculum_flammas",
+            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+
 
 
 
