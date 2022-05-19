@@ -8,6 +8,7 @@ import java.util.function.Supplier;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
+import net.minecraft.world.biome.Biomes;
 import net.minecraft.world.gen.feature.IFeatureConfig;
 import net.minecraft.world.gen.feature.StructureFeature;
 import net.minecraftforge.common.BiomeDictionary;
@@ -24,6 +25,131 @@ public class ModStructureGeneration {
             structures.add(() -> ModStructures.WIZARD_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         }
         if(event.getName().equals(MagicForest.MAGIC_FOREST.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.MOUNTAINS.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.DESERT.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.PLAINS.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.SWAMP.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.DARK_FOREST.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.BAMBOO_JUNGLE.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.MUSHROOM_FIELDS.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.FOREST.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.BEACH.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.JUNGLE.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.FLOWER_FOREST.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.BIRCH_FOREST.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.TAIGA.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.ICE_SPIKES.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.SAVANNA.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.SAVANNA_PLATEAU.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.DESERT_LAKES.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.RIVER.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.FROZEN_RIVER.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.OCEAN.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.COLD_OCEAN.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.FROZEN_OCEAN.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.LUKEWARM_OCEAN.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.GIANT_SPRUCE_TAIGA.getLocation())) {
+            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
+
+            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
+        }
+        if(event.getName().equals(Biomes.GIANT_SPRUCE_TAIGA_HILLS.getLocation())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
