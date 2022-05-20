@@ -1,7 +1,7 @@
 {
   "name": "Эльфийский камень",
   "icon": "magforest:elf_stone",
-  "category": "magic",
+  "category": "beginning",
   "advancement": "magforest:starting/elf_stone",
   "pages": [
     {

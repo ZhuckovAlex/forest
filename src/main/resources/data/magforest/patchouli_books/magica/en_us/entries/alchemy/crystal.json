@@ -1,5 +1,5 @@
 {
-  "name": "Crystal",
+  "name": "Creating vessels for alchemy",
   "icon": "magforest:crystal_shard",
   "category": "alchemy",
   "advancement": "magforest:starting/crystal",
@@ -19,6 +19,14 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:crystal_shard"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Also, by powdering crystal miraculum flammas for greater strength, you can create unbreakable glass"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_glass"
     }
   ]
 }

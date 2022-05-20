@@ -1,5 +1,5 @@
 {
-  "name": "Crystal",
+  "name": "Создание сосудов для алхимии",
   "icon": "magforest:crystal_shard",
   "category": "alchemy",
   "advancement": "magforest:starting/crystal",
@@ -19,6 +19,14 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:crystal_phial"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Также припорошив хрусталь miraculum flammas для большей прочности можно создать небьющееся стекло"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_glass"
     }
   ]
 }
