@@ -1,0 +1,24 @@
+{
+  "name": "Crystal",
+  "icon": "magforest:crystal_shard",
+  "category": "beginning",
+  "advancement": "magforest:starting/crystal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created an alchemical table, I decided that a couple of vials were missing for experiments. I had a vision that these vessels are created from crystal, which is melted from quartz."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "magforest:crystal_shard"
+    },
+    {
+      "type": "patchouli:blasting",
+      "recipe": "magforest:crystal_shard"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:crystal_shard"
+    }
+  ]
+}

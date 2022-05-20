@@ -1,0 +1,25 @@
+{
+  "name": "Begin",
+  "icon": "magforest:mortar_and_pestle",
+  "category": "beginning",
+  "advancement": "magforest:starting/the_call_of_the_ancestors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I plucked an unusual flower and immediately a vision appeared on the spot in which some elf was working with an alchemical table. He crushed this flower with a mortar and pestle, as well as a stone similar to fire and mixed them into powder. Then he performed two miracles, turning glass and stone into their unusual analogues with the help of this powder."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I decided to call the flower the call of the ancestors, because apparently it was someone from the past, the stone was the original fire, and the transformed analogues of stone and glass were elvish. I decided to repeat these steps to find out how true what I saw was."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:pestle",
+      "recipe2": "magforest:mortar_and_pestle"
+    },    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:miraculum_flammas",
+      "recipe2": "magforest:elf_stone"
+    }
+  ]
+}

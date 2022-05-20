@@ -1,0 +1,26 @@
+{
+  "name": "Начало",
+  "icon": "magforest:mortar_and_pestle",
+  "category": "beginning",
+  "advancement": "magforest:starting/the_call_of_the_ancestors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Я сорвал необычный цветок и тут же на месте появилось видение, в котором какой-то эльф работал с алхимическим столом. Он растолок этот цветок с помощью ступки и пестика, а также камень похожий на огонь и смешал их в порошок. Далее он проделал два чуда, превратив, стекло и камень в необычные их аналоги с помощью данного порошка."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Цветок я решил назвать зов предков, потому что видимо это был кто-то из прошлого, камень — первородным огнём, а превращённые аналоги камня и стекла эльфийскими. Я решил повторить данные действия, чтобы узнать насколько правда то, что я видел."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:pestle",
+      "recipe2": "magforest:mortar_and_pestle"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:miraculum_flammas",
+      "recipe2": "magforest:elf_stone"
+    }
+  ]
+}

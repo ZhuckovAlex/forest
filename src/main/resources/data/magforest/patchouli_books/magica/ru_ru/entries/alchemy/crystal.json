@@ -1,0 +1,24 @@
+{
+  "name": "Crystal",
+  "icon": "magforest:crystal_shard",
+  "category": "beginning",
+  "advancement": "magforest:starting/crystal",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав алхимический стол, я решил, что не хватает пары фиалов, для опытов. У меня появилось видение, что данные сосуды создаются из хрусталя, который выплавляется из кварца."
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "magforest:crystal_shard"
+    },
+    {
+      "type": "patchouli:blasting",
+      "recipe": "magforest:crystal_shard"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:crystal_shard"
+    }
+  ]
+}
