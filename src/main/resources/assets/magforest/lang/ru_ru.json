@@ -48,7 +48,7 @@
   "block.magforest.the_call_of_the_ancestors": "Зов предков",
   "block.magforest.cian_sign": "Циановая табличка",
   "block.magforest.cian_wall_sign": "Циановая настенная табличка",
-  "block.magforest.karambola_crops": "Семена Карамболы",
+  "block.magforest.karambola_crops": "Семена чистоплода",
   "block.magforest.dark_birch_log": "Бревно тёмной берёзы",
   "block.magforest.dark_birch_wood": "Древесина тёмной берёзы",
   "block.magforest.dark_birch_leaves": "Листва тёмной берёзы",
@@ -163,7 +163,7 @@
   "block.magforest.warped_sapling": "Искажённый саженец",
   "block.magforest.crimson_sapling": "Багровый саженец",
 
-  "item.magforest.karambola_fruit": "Плод карамболы",
+  "item.magforest.karambola_fruit": "Чистоплод",
   "item.magforest.the_call_of_the_ancestors": "Зов Предков",
   "item.magforest.golden_leaf": "§eЗолотой Лист",
   "item.magforest.acorn": "Жёлудь",
