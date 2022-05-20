@@ -1,7 +1,7 @@
 {
   "name": "Crystal",
   "icon": "magforest:crystal_shard",
-  "category": "beginning",
+  "category": "alchemy",
   "advancement": "magforest:starting/crystal",
   "pages": [
     {
@@ -10,15 +10,15 @@
     },
     {
       "type": "patchouli:smelting",
-      "recipe": "magforest:crystal_shard"
+      "recipe": "magforest:crystal_shard_smelting"
     },
     {
       "type": "patchouli:blasting",
-      "recipe": "magforest:crystal_shard"
+      "recipe": "magforest:crystal_shard_blasting"
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "magforest:crystal_shard"
+      "recipe": "magforest:crystal_phial"
     }
   ]
 }

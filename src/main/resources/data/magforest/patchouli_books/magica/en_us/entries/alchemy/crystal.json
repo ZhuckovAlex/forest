@@ -1,7 +1,7 @@
 {
   "name": "Crystal",
   "icon": "magforest:crystal_shard",
-  "category": "beginning",
+  "category": "alchemy",
   "advancement": "magforest:starting/crystal",
   "pages": [
     {
