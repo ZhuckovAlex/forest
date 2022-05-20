@@ -2,16 +2,11 @@
   "name": "Mortar and pestle",
   "icon": "magforest:mortar_and_pestle",
   "category": "beginning",
-  "advancement": "magforest:starting/get_flint",
+  "advancement": "magforest:starting/miraculum_flammas",
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Mortar and pestle is a universal means of grinding into powder everything that can be crushed..."
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:pestle",
-      "recipe2": "magforest:mortar_and_pestle"
+      "text": "After I ground the primordial fire into powder, the idea came to me to grind the cobblestone into gravel, and the gravel into flint."
     },
     {
       "type": "patchouli:crafting",

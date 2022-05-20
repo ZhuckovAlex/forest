@@ -22,6 +22,7 @@ import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import java.util.Map;
+import java.util.Random;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -197,7 +198,7 @@ public class Alchemy
                 }
                 return _retval.get();
             }
-        }.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (8)) <= 63) {
+        }.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (8)) < 1) {
             if (world instanceof World && !world.isRemote()) {
                 ((World) world)
                         .playSound(null, new BlockPos((int) x, (int) y, (int) z),
@@ -429,7 +430,7 @@ public class Alchemy
                 }
                 return _retval.get();
             }
-        }.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (8)) <= 63) {
+        }.getAmount(world, new BlockPos((int) x, (int) y, (int) z), (int) (8)) < 1) {
             if (world instanceof World && !world.isRemote()) {
                 ((World) world)
                         .playSound(null, new BlockPos((int) x, (int) y, (int) z),
@@ -917,7 +918,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -931,7 +935,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -1185,7 +1192,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -1439,7 +1449,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -1693,7 +1706,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -1947,7 +1963,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -2151,7 +2170,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -2369,7 +2391,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -2587,7 +2612,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });
@@ -2805,7 +2833,10 @@ public class Alchemy
                     _ent.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, null).ifPresent(capability -> {
                         if (capability instanceof IItemHandlerModifiable) {
                             ItemStack _stk = capability.getStackInSlot(_sltid).copy();
-                            _stk.shrink(_amount);
+                            if (_stk.attemptDamageItem(_amount, new Random(), null)) {
+                                _stk.shrink(1);
+                                _stk.setDamage(0);
+                            }
                             ((IItemHandlerModifiable) capability).setStackInSlot(_sltid, _stk);
                         }
                     });

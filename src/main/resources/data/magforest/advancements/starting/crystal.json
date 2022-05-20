@@ -1,8 +1,8 @@
 {
-  "parent": "magforest:starting/moon_tear",
+  "parent": "magforest:starting/get_paper",
   "display": {
     "icon": {
-      "item": "magforest:moon_tear_powder",
+      "item": "magforest:alchemy_table",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -21,21 +21,20 @@
     "experience": 0
   },
   "criteria": {
-    "moon_tear": {
+    "paper": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
-          {"item": "magforest:moon_tear"}
-        ]
-      }
-    },
-    "mortar_and_pestle": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {"item": "magforest:mortar_and_pestle"}
+          {
+            "item": "magforest:alchemy_table"
+          }
         ]
       }
     }
-  }
+  },
+  "requirements": [
+    [
+      "paper"
+    ]
+  ]
 }

@@ -11,14 +11,6 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:elf_glass_pane"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "\nThe focusing lens can collect light into a beam, and at the same time live vibrations come from it"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:elf_glass_lens"
     }
   ]
 }

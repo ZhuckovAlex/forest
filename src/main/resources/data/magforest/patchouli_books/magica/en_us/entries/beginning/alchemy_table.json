@@ -1,7 +1,7 @@
 {
   "name": "Alchemy table",
   "icon": "magforest:alchemy_table",
-  "category": "alchemy",
+  "category": "beginning",
   "advancement": "magforest:starting/get_brewing_stand",
   "pages": [
     {

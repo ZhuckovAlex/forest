@@ -2,7 +2,7 @@
   "parent": "magforest:starting/get_paper",
   "display": {
     "icon": {
-      "item": "magforest:moon_tear",
+      "item": "magforest:miraculum_flammas",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -21,12 +21,12 @@
     "experience": 0
   },
   "criteria": {
-    "paper": {
+    "flint": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "magforest:moon_tear"
+            "item": "magforest:miraculum_flammas"
           }
         ]
       }
@@ -34,7 +34,7 @@
   },
   "requirements": [
     [
-      "paper"
+      "flint"
     ]
   ]
 }

@@ -49,7 +49,7 @@
   "block.magforest.hyacinth": "Sunflower",
   "block.magforest.cian_sign": "Cian sign",
   "block.magforest.cian_wall_sign": "Cian wall sing",
-  "block.magforest.karambola_crops": "Karambola crops",
+  "block.magforest.karambola_crops": "Purebred seeds",
   "block.magforest.dark_birch_log": "Dark birch log",
   "block.magforest.dark_birch_wood": "Dark birch wood",
   "block.magforest.dark_birch_leaves": "Dark birch leaves",
@@ -166,7 +166,7 @@
   "block.magforest.warped_sapling": "Warped sapling",
   "block.magforest.crimson_sapling": "Crimson sapling",
 
-  "item.magforest.karambola_fruit": "Karambola fruit",
+  "item.magforest.karambola_fruit": "Purebred",
   "item.magforest.the_call_of_the_ancestors": "The call of the ancestors",
   "item.magforest.golden_leaf": "§eGolden Leaf",
   "item.magforest.acorn": "Acorn",

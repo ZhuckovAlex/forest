@@ -2,7 +2,7 @@
   "parent": "magforest:starting/get_paper",
   "display": {
     "icon": {
-      "item": "minecraft:flint",
+      "item": "magforest:the_call_of_the_ancestors",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -26,7 +26,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:flint"
+            "item": "magforest:the_call_of_the_ancestors"
           }
         ]
       }
