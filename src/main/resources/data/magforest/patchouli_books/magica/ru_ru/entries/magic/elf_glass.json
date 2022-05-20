@@ -11,14 +11,6 @@
     {
       "type": "patchouli:crafting",
       "recipe": "magforest:elf_glass_pane"
-    },
-    {
-      "type": "patchouli:text",
-      "text": "Фокусирующая линза может собирать свет в пучок, ещё от неё исходят при том живые вибрации"
-    },
-    {
-      "type": "patchouli:crafting",
-      "recipe": "magforest:focusing_lens"
     }
   ]
 }
