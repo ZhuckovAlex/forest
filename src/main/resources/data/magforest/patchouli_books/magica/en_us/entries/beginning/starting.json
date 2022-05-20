@@ -1,0 +1,35 @@
+{
+  "name": "Мои воспоминания",
+  "icon": "minecraft:crafting_table",
+  "category": "beginning",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I will tell you a story about how I found myself in such an unenviable position. I lost everything, the house, the gold, only part of my diary survived... I lived in a village that was located in a forest thicket. I grew up and got stronger in it. When I was still a child, I went with my father on trade trips with a caravan for rare goods to other villages."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I loved traveling very much, but trade repelled me. I dreamed that one day I would leave the village in search of ancient knowledge, which our healer told me about. This grandpa was an amazing person, he knew a lot of stories about how it used to be, he told about some kind of catastrophe that destroyed the world that once closed our current one from sunlight. That's how I gradually grew up listening to the sage's stories."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "One hot summer day I decided to take a walk in the forest to a fresh lake, a mile from the village. Along the way, I kept thinking about the exploits and mysteries of existence, listening to the beautiful singing of forest birds, approaching the lake step by step. And suddenly there was a strange rustling in the bushes not far from the path. There can't be bears in our area, robber? I gathered all my willpower into a fist and decided to check what was there."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "After checking, I was not very surprised to find nothing there, but then I again heard footsteps and rustling from the bushes that were even further from the trail, for a second it seemed to me that someone was playing hide-and-seek with me, I ran to them, but there was no one there either. The picture became more and more interesting, the rustling did not stop, clearly someone was trying to escape from me. Without thinking twice, I took a heavy branch and began to pursue."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The time was approaching evening, it was getting dark, it was clear that I could not find a path, I went into a deep thicket and got lost. I was disappointed in myself, to be so naive as to chase after something I wasn't even sure about. Lonely in a dense forest, lost, I began to be visited by fears. For a long time, desperately searching in the forest, I saw a glow over the tops of the trees, forgetting about everything, I ran headlong there."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I returned to the village in the evening, approaching the village there was a heavy smell of burning and soot in the air, feeling something wrong, I ran to the village and saw only chaos and destruction, running to the house I collapsed to my knees from what I saw, no one was left alive, the house and shop were looted and burned, and in the courtyard there was a deathly silence, diluted only by the fall of burnt-out roof ceilings."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "I didn't have anything left that could hold me anymore, and the last thing that survived as a memory of my past life was just this book, after burying my father and mother, I stayed for some time on the ruins of my house, remembering my childhood and the stories that the healer told me, after which I found the strength to go on a long and dangerous journey."
+    }
+  ]
+}
