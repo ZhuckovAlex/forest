@@ -4,7 +4,13 @@
   "block.magforest.ancient_elf_stone": "Древний эльфийский камень",
   "block.magforest.ancient_elf_pillar": "Древний эльфийский столб",
   "block.magforest.ancient_elf_stone_slab": "Древняя эльфийская плита",
+  "block.magforest.cracked_ancient_elf_stone_slab": "Потресканная древняя эльфийская плита",
+  "block.magforest.mossy_ancient_elf_stone_slab": "Замшелая древняя эльфийская плита",
   "block.magforest.ancient_elf_stone_stairs": "Древние эльфийские ступеньки",
+  "block.magforest.cracked_ancient_elf_bricks_stairs": "Потресканные древние эльфийские ступеньки",
+  "block.magforest.mossy_ancient_elf_bricks_stairs": "Замшелые древние эльфийские ступеньки",
+  "block.magforest.cracked_ancient_elf_bricks_slab": "Потресканная древняя эльфийская кирпичная плита",
+  "block.magforest.mossy_ancient_elf_bricks_slab": "Замшелая древняя эльфийская кирпичная плита",
   "block.magforest.ancient_elf_bricks_slab": "Древняя эльфийская кирпичная плита",
   "block.magforest.ancient_elf_bricks_stairs": "Древние эльфийские кирпичные ступеньки",
   "block.magforest.ancient_elf_stone_fence": "Древний эльфийский забор",
@@ -81,6 +87,10 @@
   "block.magforest.lava_rock_obsidian": "Обсидиановый лавовый камень",
   "block.magforest.lava_brick": "Лавовый кирпич",
   "block.magforest.pinfire_ore": "Руда пинфайр",
+  "block.magforest.cracked_ancient_elf_bricks": "Потресканные древние эльфийские кирпичи",
+  "block.magforest.mossy_ancient_elf_bricks": "Замшелые древние эльфийские кирпичи",
+  "block.magforest.cracked_ancient_elf_stone": "Потресканный древний эльфийский камень",
+  "block.magforest.mossy_ancient_elf_stone": "Замшелый древний эльфийский камень",
 
   "block.magforest.dark_birch_trapdoor": "Люк из тёмной берёзы",
   "screen.lightning_machine": "Разрядник",
@@ -112,6 +122,7 @@
   "item.magforest.amarost_boots": "Амаростовые ботинки",
   "block.magforest.amarost_block": "Амаростовый блок",
   "block.magforest.moon_tear_obsidian_ore": "Руда лунных слёз",
+
 
   "item.magforest.aer_mix": "Смесь воздуха",
   "item.magforest.aqua_mix": "Смесь воды",
@@ -180,6 +191,7 @@
   "item.magforest.firewater": "Огненная вода",
   "item.magforest.moon_moth_spawn_egg": "Яйцо призыва лунного мотылька",
   "item.magforest.crystal_shard": "Осколок хрусталя",
+  "item.magforest.alchemical_silver": "Алхимическое серебро",
   "item.magforest.wing_of_the_moon_moth": "Крыло лунного мотылька",
 
   "entity.minecraft.villager.magforest.witcher": "Исследователь квенья",
