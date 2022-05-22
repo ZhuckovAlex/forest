@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "magforest:block/mossy_ancient_elf_bricks_slab"
+    },
+    "type=double": {
+      "model": "magforest:block/mossy_ancient_elf_bricks"
+    },
+    "type=top": {
+      "model": "magforest:block/mossy_ancient_elf_bricks_slab_top"
+    }
+  }
+}

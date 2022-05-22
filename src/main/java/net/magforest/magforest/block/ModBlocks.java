@@ -317,24 +317,69 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ANCIENT_ELF_BRICKS = registerBlock("ancient_elf_bricks",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_BRICKS = registerBlock("cracked_ancient_elf_bricks",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANCIENT_ELF_BRICKS = registerBlock("mossy_ancient_elf_bricks",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
+
     public static final RegistryObject<Block> ANCIENT_ELF_STONE = registerBlock("ancient_elf_stone",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_STONE = registerBlock("cracked_ancient_elf_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANCIENT_ELF_STONE = registerBlock("mossy_ancient_elf_stone",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
+
+
     public static final RegistryObject<Block> ANCIENT_ELF_PILLAR = registerBlock("ancient_elf_pillar",
             () -> new RotatedPillarBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
     public static final RegistryObject<Block> ANCIENT_ELF_STONE_SLAB = registerBlock("ancient_elf_stone_slab",
             () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_STONE_SLAB = registerBlock("cracked_ancient_elf_stone_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANCIENT_ELF_STONE_SLAB = registerBlock("mossy_ancient_elf_stone_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> ANCIENT_ELF_STONE_STAIRS = registerBlock("ancient_elf_stone_stairs",
             () -> new StairsBlock(() -> ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_STONE_STAIRS = registerBlock("cracked_ancient_elf_stone_stairs",
+            () -> new StairsBlock(() -> CRACKED_ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANCIENT_ELF_STONE_STAIRS = registerBlock("mossy_ancient_elf_stone_stairs",
+            () -> new StairsBlock(() -> MOSSY_ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> ANCIENT_ELF_BRICKS_SLAB = registerBlock("ancient_elf_bricks_slab",
             () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_BRICKS_SLAB = registerBlock("cracked_ancient_elf_bricks_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANCIENT_ELF_BRICKS_SLAB = registerBlock("mossy_ancient_elf_bricks_slab",
+            () -> new SlabBlock(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> ANCIENT_ELF_BRICKS_STAIRS = registerBlock("ancient_elf_bricks_stairs",
             () -> new StairsBlock(() -> ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_BRICKS_STAIRS = registerBlock("cracked_ancient_elf_bricks_stairs",
+            () -> new StairsBlock(() -> ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> MOSSY_ANCIENT_ELF_BRICKS_STAIRS = registerBlock("mossy_ancient_elf_bricks_stairs",
+            () -> new StairsBlock(() -> ANCIENT_ELF_STONE.get().getDefaultState(),AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
+
     public static final RegistryObject<Block> ANCIENT_ELF_STONE_FENCE = registerBlock("ancient_elf_stone_fence",
             () -> new FenceBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
