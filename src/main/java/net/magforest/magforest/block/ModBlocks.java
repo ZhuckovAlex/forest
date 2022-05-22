@@ -317,6 +317,9 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ANCIENT_ELF_BRICKS = registerBlock("ancient_elf_bricks",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> CHISELED_ANCIENT_ELF_BRICK = registerBlock("chiseled_ancient_elf_brick",
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE)));
     public static final RegistryObject<Block> CRACKED_ANCIENT_ELF_BRICKS = registerBlock("cracked_ancient_elf_bricks",
             () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
