@@ -1,5 +1,5 @@
 {
-  "parent": "magforest:starting/moon_tear",
+  "parent": "magforest:starting/get_paper",
   "display": {
     "icon": {
       "item": "magforest:moon_tear_lighting_rod",
@@ -31,10 +31,5 @@
         ]
       }
     }
-  },
-  "requirements": [
-    [
-      "paper"
-    ]
-  ]
+  }
 }

@@ -3,9 +3,6 @@
   "ingredients": [
     {
       "item": "magforest:magica"
-    },
-    {
-      "item": "magforest:ether_mix"
     }
   ],
   "result": {
