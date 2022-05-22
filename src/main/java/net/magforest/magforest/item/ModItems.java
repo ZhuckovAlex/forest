@@ -223,6 +223,8 @@ public class ModItems
 
     public static final RegistryObject<Item> CRYSTAL_PHIAL = ITEMS.register("crystal_phial",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> ALCHEMICAL_SILVER = ITEMS.register("alchemical_silver",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> WIND_REFLECTION = ITEMS.register("wind_reflection",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));

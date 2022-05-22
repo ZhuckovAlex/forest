@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "magforest:block/mossy_ancient_elf_stone",
+    "top": "magforest:block/mossy_ancient_elf_stone",
+    "side": "magforest:block/mossy_ancient_elf_stone"
+  }
+}
