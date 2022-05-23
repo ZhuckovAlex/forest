@@ -1,7 +1,5 @@
 {
   "variants": {
-    "": {
-      "model": "magforest:block/cracked_ancient_elf_stone"
-    }
+    "": [{"model": "magforest:block/cracked_ancient_elf_stone" },{"model": "magforest:block/cracked_ancient_elf_stone2" },{"model": "magforest:block/cracked_ancient_elf_stone3" }]
   }
 }
