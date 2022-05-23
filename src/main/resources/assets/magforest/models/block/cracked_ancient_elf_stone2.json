@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "magforest:block/cracked_ancient_elf_stone2"
+    "all": "magforest:block/cracked_ancient_elf_stone_2"
   }
 }
