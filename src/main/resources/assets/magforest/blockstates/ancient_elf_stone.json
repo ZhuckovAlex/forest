@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
-      "model": "magforest:block/ancient_elf_stone"
-    }
+    "":
+    [
+      {"model": "magforest:block/ancient_elf_stone"},
+      {"model": "magforest:block/ancient_elf_stone_1"},
+      {"model": "magforest:block/ancient_elf_stone_2"}
+    ]
   }
 }
