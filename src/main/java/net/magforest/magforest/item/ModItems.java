@@ -219,8 +219,8 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ALCHEMICAL_INFUSION = ITEMS.register("alchemical_infusion",
             () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(80).group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> HEALING_POTION = ITEMS.register("healing_potion",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> POTION_HEALING = ITEMS.register("potion_healing",
+            () -> new PotionHealing(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ENTROPY_POTION = ITEMS.register("entropy_potion",
             () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(25).group(ModItemGroup.THAUM_ITEMS)));
 

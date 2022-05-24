@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "magforest:item/healing_potion"
+    "layer0": "magforest:item/potion_healing"
   }
 }
