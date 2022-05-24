@@ -1,14 +1,14 @@
 package net.magforest.magforest.procedures;
-import net.magforest.magforest.magforest;
-import net.minecraft.potion.Effects;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
 
+import net.magforest.magforest.magforest;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 
 import java.util.Map;
 
-public class PotionCatVisionProcedure {
+public class PotionCheerfulnessProcedure {
     public static void executeProcedure(Map<String, Object> dependencies) {
         if (dependencies.get("entity") == null) {
             if (!dependencies.containsKey("entity"))
@@ -17,7 +17,7 @@ public class PotionCatVisionProcedure {
         }
         Entity entity = (Entity) dependencies.get("entity");
         if (entity instanceof LivingEntity)
-            ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, (int) 4800, (int) 0));
+            ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.HASTE, (int) 4800, (int) 0));
     }
 
 }

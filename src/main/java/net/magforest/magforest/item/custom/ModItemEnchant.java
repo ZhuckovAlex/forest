@@ -5,13 +5,13 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class ModItem extends Item {
+public class ModItemEnchant extends Item {
     @Override
     @OnlyIn(Dist.CLIENT)
     public boolean hasEffect(ItemStack itemstack) {
         return true;
     }
-    public ModItem(Properties properties) {
+    public ModItemEnchant(Properties properties) {
         super(properties);
     }
 }

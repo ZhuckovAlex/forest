@@ -180,15 +180,15 @@ public class ModItems
     public static final RegistryObject<Item> DARK_BIRCH_BOAT = ITEMS.register("dark_birch_boat",
             () -> new ModDarkBirchBoatItem(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS),"dark_birch"));
     public static final RegistryObject<Item> FIRE_ESSENCE = ITEMS.register("fire_essence",
-            () -> new ModItem(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new ModItemEnchant(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> WATER_ESSENCE = ITEMS.register("water_essence",
-            () -> new ModItem(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new ModItemEnchant(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> TERRA_ESSENCE = ITEMS.register("terra_essence",
-            () -> new ModItem(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new ModItemEnchant(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> AER_ESSENCE = ITEMS.register("aer_essence",
-            () -> new ModItem(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new ModItemEnchant(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ETHER_ESSENCE = ITEMS.register("ether_essence",
-            () -> new ModItem(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new ModItemEnchant(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> FOCUSING_LENS = ITEMS.register("focusing_lens",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> SCROLL = ITEMS.register("scroll",
@@ -210,9 +210,9 @@ public class ModItems
     public static final RegistryObject<Item> ACORN = ITEMS.register("acorn",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_STONE_SKIN = ITEMS.register("potion_stone_skin",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionStoneSkin(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_CHEERFULNESS = ITEMS.register("potion_cheerfulness",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionCheerfulness(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_CAT_VISION = ITEMS.register("potion_cat_vision",
             () -> new PotionCatVision(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> STAR_MOSS = ITEMS.register("star_moss",
