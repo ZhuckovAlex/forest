@@ -3,10 +3,7 @@ package net.magforest.magforest.item;
 import net.magforest.magforest.block.ModBlocks;
 
 import net.magforest.magforest.entity.ModEntityTypes;
-import net.magforest.magforest.item.custom.ModCianBoatItem;
-import net.magforest.magforest.item.custom.ModDarkBirchBoatItem;
-import net.magforest.magforest.item.custom.ModItem;
-import net.magforest.magforest.item.custom.ModSpawnEggItem;
+import net.magforest.magforest.item.custom.*;
 import net.magforest.magforest.magforest;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.*;
@@ -217,7 +214,7 @@ public class ModItems
     public static final RegistryObject<Item> POTION_CHEERFULNESS = ITEMS.register("potion_cheerfulness",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_CAT_VISION = ITEMS.register("potion_cat_vision",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionCatVision(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> STAR_MOSS = ITEMS.register("star_moss",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ALCHEMICAL_INFUSION = ITEMS.register("alchemical_infusion",
