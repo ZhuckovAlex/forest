@@ -247,6 +247,12 @@ public class ModItems
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MIRACULUM_FLAMAS = ITEMS.register("miraculum_flammas",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> ANCIENT_POT = ITEMS.register("ancient_pot",
+            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> FIRE_POT = ITEMS.register("fire_pot",
+            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> POT_OF_POISON = ITEMS.register("pot_of_poison",
+            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
 
 
