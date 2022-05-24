@@ -38,11 +38,7 @@ public class PotionCatVisionProcedure {
                 return false;
             }
         }.checkGamemode(entity))) {
-            if (entity instanceof PlayerEntity) {
-                ItemStack _setstack = new ItemStack(ModItems.CRYSTAL_PHIAL.get());
-                _setstack.setCount((int) 1);
-                ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
-            }
+
             if (entity instanceof LivingEntity)
                 ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.NIGHT_VISION, (int) 4800, (int) 0));
         } else {
