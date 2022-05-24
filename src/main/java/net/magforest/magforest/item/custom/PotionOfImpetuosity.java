@@ -1,6 +1,6 @@
 package net.magforest.magforest.item.custom;
 
-import net.magforest.magforest.procedures.PotionCatVisionProcedure;
+import net.magforest.magforest.procedures.PotionOfImpetuosityProcedure;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -36,7 +36,7 @@ public class PotionOfImpetuosity extends Item {
         double y = entity.getPosY();
         double z = entity.getPosZ();
 
-        PotionCatVisionProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
+        PotionOfImpetuosityProcedure.executeProcedure(Stream.of(new AbstractMap.SimpleEntry<>("entity", entity)).collect(HashMap::new,
                 (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
         return retval;
     }
