@@ -626,7 +626,7 @@ public class Alchemy
                 }
                 return _retval.get();
             }
-        }.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (8))).getItem() == ModItems.HEALING_POTION.get().asItem() || (new Object() {
+        }.getItemStack(new BlockPos((int) x, (int) y, (int) z), (int) (8))).getItem() == ModItems.POTION_HEALING.get().asItem() || (new Object() {
             public ItemStack getItemStack(BlockPos pos, int sltid) {
                 AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
                 TileEntity _ent = world.getTileEntity(pos);
@@ -724,7 +724,7 @@ public class Alchemy
                 TileEntity _ent = world.getTileEntity(new BlockPos((int) x, (int) y, (int) z));
                 if (_ent != null) {
                     final int _sltid = (int) (8);
-                    final ItemStack _setstack = new ItemStack(ModItems.HEALING_POTION.get());
+                    final ItemStack _setstack = new ItemStack(ModItems.POTION_HEALING.get());
                     _setstack.setCount((int) (new Object() {
                         public int getAmount(IWorld world, BlockPos pos, int sltid) {
                             AtomicInteger _retval = new AtomicInteger(0);
