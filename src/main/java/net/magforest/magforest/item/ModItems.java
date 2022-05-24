@@ -215,6 +215,8 @@ public class ModItems
             () -> new PotionCheerfulness(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_CAT_VISION = ITEMS.register("potion_cat_vision",
             () -> new PotionCatVision(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> POTION_OF_IMPETUOSITY = ITEMS.register("potion_of_impetuosity",
+            () -> new PotionOfImpetuosity(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> STAR_MOSS = ITEMS.register("star_moss",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ALCHEMICAL_INFUSION = ITEMS.register("alchemical_infusion",
