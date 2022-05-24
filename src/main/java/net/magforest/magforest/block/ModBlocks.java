@@ -13,9 +13,9 @@ import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.item.BlockItem;
-import net.minecraft.item.DyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.potion.Effects;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.common.util.ForgeSoundType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -30,6 +30,7 @@ public class ModBlocks extends Blocks
 {
     public static final DeferredRegister<Block> BLOCKS
             = DeferredRegister.create(ForgeRegistries.BLOCKS, magforest.MOD_ID);
+
 
     public static final RegistryObject<Block> CIAN_LOG = registerBlock("cian_log",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
