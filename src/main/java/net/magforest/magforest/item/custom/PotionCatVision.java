@@ -5,6 +5,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.UseAction;
+import net.minecraft.util.SoundEvents;
 import net.minecraft.world.World;
 
 import java.util.AbstractMap;
@@ -25,7 +26,7 @@ public class PotionCatVision extends Item {
 
     @Override
     public net.minecraft.util.SoundEvent getEatSound() {
-        return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
+        return SoundEvents.BLOCK_BREWING_STAND_BREW;
     }
 
     @Override

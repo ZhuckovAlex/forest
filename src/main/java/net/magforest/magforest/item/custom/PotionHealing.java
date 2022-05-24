@@ -24,7 +24,7 @@ public class PotionHealing extends Item {
 
     @Override
     public net.minecraft.util.SoundEvent getEatSound() {
-        return net.minecraft.util.SoundEvents.ENTITY_GENERIC_DRINK;
+        return net.minecraft.util.SoundEvents.BLOCK_BREWING_STAND_BREW;
     }
 
     @Override
