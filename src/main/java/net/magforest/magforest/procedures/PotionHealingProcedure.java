@@ -17,7 +17,7 @@ public class PotionHealingProcedure {
         }
         Entity entity = (Entity) dependencies.get("entity");
         if (entity instanceof LivingEntity)
-            ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INSTANT_HEALTH, (int) 0, (int) 0));
+            ((LivingEntity) entity).addPotionEffect(new EffectInstance(Effects.INSTANT_HEALTH, (int) 2.5, (int) 1, false,false));
     }
 
 }
