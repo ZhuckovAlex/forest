@@ -43,35 +43,5 @@ public class ModThrowablePotionItem extends Item {
 
         return ActionResult.func_233538_a_(itemstack, worldIn.isRemote());
     }
-    @SubscribeEvent
-    public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
-        PlayerEntity entity = event.getPlayer();
-        if (event.getHand() != entity.getActiveHand()) {
-            return;
-        }
-        double i = event.getPos().getX();
-        double j = event.getPos().getY();
-        double k = event.getPos().getZ();
-        IWorld world = event.getWorld();
-        Map<String, Object> dependencies = new HashMap<>();
-        dependencies.put("x", i);
-        dependencies.put("y", j);
-        dependencies.put("z", k);
-        dependencies.put("world", world);
-        dependencies.put("entity", entity);
-        dependencies.put("event", event);
-        executeProcedure(dependencies);
-    }
 
-
-    public static void executeProcedure(Map<String, Object> dependencies) {
-        if (dependencies.get("entity") == null) {
-            if (!dependencies.containsKey("entity"))
-                magforest.LOGGER.warn("Failed to load dependency entity for procedure PotionGlotok!");
-            return;
-        }
-        Entity entity = (Entity) dependencies.get("entity");
-        if (!entity.world.isRemote())
-            entity.remove();
-    }
 }
