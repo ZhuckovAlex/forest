@@ -1,7 +1,11 @@
 {
   "variants": {
-    "": {
-      "model": "magforest:block/mossy_ancient_elf_stone"
-    }
+    "":
+    [
+      {"model": "magforest:block/mossy_ancient_elf_stone"},
+      {"model": "magforest:block/mossy_ancient_elf_stone_1"},
+      {"model": "magforest:block/mossy_ancient_elf_stone_2"},
+      {"model": "magforest:block/mossy_ancient_elf_stone_3"}
+    ]
   }
 }
