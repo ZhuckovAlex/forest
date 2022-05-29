@@ -70,6 +70,16 @@ public class ModWorldEvents {
             tempMap.putIfAbsent(ModStructures.WIZARD_TOWER.get(),
                     DimensionStructuresSettings.field_236191_b_.get(ModStructures.WIZARD_TOWER.get()));
             serverWorld.getChunkProvider().generator.func_235957_b_().field_236193_d_ = tempMap;
+
+            new HashMap<>(serverWorld.getChunkProvider().generator.func_235957_b_().func_236195_a_());
+            tempMap.putIfAbsent(ModStructures.ANCIENT_TOWER.get(),
+                    DimensionStructuresSettings.field_236191_b_.get(ModStructures.ANCIENT_TOWER.get()));
+            serverWorld.getChunkProvider().generator.func_235957_b_().field_236193_d_ = tempMap;
+
+            new HashMap<>(serverWorld.getChunkProvider().generator.func_235957_b_().func_236195_a_());
+            tempMap.putIfAbsent(ModStructures.CRYSTAL_SAVE.get(),
+                    DimensionStructuresSettings.field_236191_b_.get(ModStructures.CRYSTAL_SAVE.get()));
+            serverWorld.getChunkProvider().generator.func_235957_b_().field_236193_d_ = tempMap;
         }
     }
 

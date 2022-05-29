@@ -25,7 +25,6 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class SolarConverterContainer extends Container {
-
     private final TileEntity tileEntity;
     private final PlayerEntity playerEntity;
     private final IItemHandler playerInventory;
