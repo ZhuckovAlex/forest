@@ -67,7 +67,7 @@ public class AncientTowerStructure extends Structure<NoFeatureConfig> {
             // Turns the chunk coordinates into actual coordinates we can use. (Gets center of that chunk)
             int x = (chunkX << 4) + 7;
             int z = (chunkZ << 4) + 7;
-            BlockPos blockpos = new BlockPos(x, -17, z);
+            BlockPos blockpos = new BlockPos(x, -15, z);
             //addpieces()
             JigsawManager.func_242837_a(dynamicRegistryManager,
                     new VillageConfig(() -> dynamicRegistryManager.getRegistry(Registry.JIGSAW_POOL_KEY)
