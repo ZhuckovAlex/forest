@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+      "textures": {
+        "all": "magforest:block/mossy_ancient_elf_stone_1"
+      }
+}
