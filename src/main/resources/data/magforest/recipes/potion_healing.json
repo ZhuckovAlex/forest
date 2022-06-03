@@ -5,13 +5,16 @@
       "item": "minecraft:air"
     },
     {
-      "item": "minecraft:air"
-    },
-    {
       "item": "magforest:crystal_phial"
     },
     {
-      "item": "magforest:moon_tear"
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "magforest:hyacinth"
+    },
+    {
+      "item": "minecraft:oxeye_daisy"
     },
     {
       "item": "minecraft:air"
@@ -20,17 +23,14 @@
       "item": "minecraft:air"
     },
     {
-      "item": "magforest:alchemical_infusion"
-    },
-    {
-      "item": "magforest:entropy_potion"
+      "item": "minecraft:air"
     },
     {
       "item": "minecraft:air"
     }
   ],
   "output": {
-    "item": "magforest:ether_essence",
-    "count": 1
+    "item": "magforest:potion_healing",
+    "count": 3
   }
 }

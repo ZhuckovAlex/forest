@@ -14,12 +14,16 @@ import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.Direction;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.server.ServerWorld;
+import net.minecraftforge.client.event.sound.PlaySoundEvent;
+import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -94,7 +98,6 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
                 .getRecipe(AlchemicalRecipeTypes.ALCHEMY_RECIPE, inv, world);
 
         recipe.ifPresent(iRecipe ->{
-
             ItemStack output = iRecipe.getRecipeOutput();
             craftTheItem(output);
             markDirty();
@@ -104,12 +107,12 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
     private void craftTheItem(ItemStack output) {
         itemHandler.extractItem(0, 1, false);
         itemHandler.extractItem(1, 1, false);
-        itemHandler.extractItem(2, 2, false);
-        itemHandler.extractItem(3, 3, false);
-        itemHandler.extractItem(4, 4, false);
-        itemHandler.extractItem(5, 5, false);
-        itemHandler.extractItem(6, 6, false);
-        itemHandler.extractItem(7, 7, false);
+        itemHandler.extractItem(2, 1, false);
+        itemHandler.extractItem(3, 1, false);
+        itemHandler.extractItem(4, 1, false);
+        itemHandler.extractItem(5, 1, false);
+        itemHandler.extractItem(6, 1, false);
+        itemHandler.extractItem(7, 1, false);
         itemHandler.insertItem(8, output, false);
     }
 
