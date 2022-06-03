@@ -222,11 +222,11 @@ public class ModItems
     public static final RegistryObject<Item> STAR_MOSS = ITEMS.register("star_moss",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ALCHEMICAL_INFUSION = ITEMS.register("alchemical_infusion",
-            () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(80).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new DamageItem(new Item.Properties().maxStackSize(1).maxDamage(80).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_HEALING = ITEMS.register("potion_healing",
             () -> new PotionHealing(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).fastToEat().setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ENTROPY_POTION = ITEMS.register("entropy_potion",
-            () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(25).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new DamageItem(new Item.Properties().maxStackSize(1).maxDamage(25).group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> CRYSTAL_PHIAL = ITEMS.register("crystal_phial",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));

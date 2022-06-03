@@ -61,19 +61,7 @@ public class AlchemyTable extends HorizontalBlock {
         int z = pos.getZ();
         world.getPendingBlockTicks().scheduleTick(pos, this, 10);
     }
-    @Override
-    public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-        super.tick(blockstate, world, pos, random);
-        int x = pos.getX();
-        int y = pos.getY();
-        int z = pos.getZ();
 
-        Alchemy.executeProcedure(Stream
-                .of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-                        new AbstractMap.SimpleEntry<>("z", z))
-                .collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
-    }
 
     private static final VoxelShape SHAPE_N = Stream.of(
             Block.makeCuboidShape(8, 5, 1.1302599999999998, 13, 11, 15.13026),

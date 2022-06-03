@@ -1,0 +1,14 @@
+{
+  "type": "magforest:lighting",
+  "ingredients": [
+    {
+      "item": "magforest:liquid_silver"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:alchemical_silver"
+  }
+}
