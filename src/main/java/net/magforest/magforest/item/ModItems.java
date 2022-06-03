@@ -230,7 +230,13 @@ public class ModItems
 
     public static final RegistryObject<Item> CRYSTAL_PHIAL = ITEMS.register("crystal_phial",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> MAGIC_CLOTH = ITEMS.register("magic_cloth",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> STONE_OF_TRANSFORMATION = ITEMS.register("stone_of_transformation",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ALCHEMICAL_SILVER = ITEMS.register("alchemical_silver",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> LIQUID_SILVER = ITEMS.register("liquid_silver",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> WIND_REFLECTION = ITEMS.register("wind_reflection",

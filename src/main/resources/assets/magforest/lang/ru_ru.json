@@ -93,6 +93,7 @@
   "block.magforest.mossy_ancient_elf_bricks": "Замшелые древние эльфийские кирпичи",
   "block.magforest.cracked_ancient_elf_stone": "Потресканный древний эльфийский камень",
   "block.magforest.mossy_ancient_elf_stone": "Замшелый древний эльфийский камень",
+  "block.magforest.chiseled_ancient_elf_brick": "Резной древний эльфийский камень",
 
   "block.magforest.dark_birch_trapdoor": "Люк из тёмной берёзы",
   "screen.lightning_machine": "Разрядник",
@@ -198,11 +199,15 @@
   "item.magforest.firewater": "Огненная вода",
   "item.magforest.moon_moth_spawn_egg": "Яйцо призыва лунного мотылька",
   "item.magforest.crystal_shard": "Осколок хрусталя",
-  "item.magforest.alchemical_silver": "Алхимическое серебро",
+  "item.magforest.alchemical_silver": "§eСлиток алхимического серебра",
+  "item.magforest.liquid_silver": "§eАлхимическое серебро",
   "item.magforest.wing_of_the_moon_moth": "Крыло лунного мотылька",
   "item.magforest.ancient_pot": "Древний горшок",
   "item.magforest.fire_pot": "Огненный горшок",
   "item.magforest.pot_of_poison": "Горшок с ядом",
+  "item.magforest.stone_of_transformation": "Камень преобразования",
+  "item.magforest.magic_cloth": "Магическая ткань",
+
 
   "entity.minecraft.villager.magforest.witcher": "Исследователь квенья",
   "entity.magforest.moon_moth_entity": "Лунный мотылёк",
