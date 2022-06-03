@@ -96,6 +96,7 @@
   "block.magforest.mossy_ancient_elf_bricks": "Mossy ancient elf bricks",
   "block.magforest.cracked_ancient_elf_stone": "Cracked ancient elf stone",
   "block.magforest.mossy_ancient_elf_stone": "Mossy ancient elf stone",
+  "block.magforest.chiseled_ancient_elf_brick": "Chiseled ancient elf brick",
 
   "block.magforest.moon_tear_lighting_rod": "Moon tear lighting rod",
   "screen.lightning_machine": "Lighting rod",
@@ -126,6 +127,9 @@
   "item.magforest.amarost_leggings": "Amarost leggings",
   "item.magforest.amarost_boots": "Amarost boots",
   "block.magforest.amarost_block": "Amarost block",
+  "item.magforest.stone_of_transformation": "Stone of transformation",
+  "item.magforest.magic_cloth": "Magic cloth",
+  "item.magforest.liquid_silver": "§eLiquid silver",
 
   "item.magforest.aer_mix": "Aer mix",
   "item.magforest.aqua_mix": "Aqua mix",
