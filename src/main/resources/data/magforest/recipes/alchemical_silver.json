@@ -1,5 +1,6 @@
 {
   "type": "magforest:lighting",
+  "weather": "thundering",
   "ingredients": [
     {
       "item": "magforest:liquid_silver"

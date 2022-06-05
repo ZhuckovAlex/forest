@@ -2,16 +2,8 @@
   "type": "magforest:alchemical",
   "ingredients": [
     {
-      "item": "minecraft:air"
-    },
-    {
-      "item": "minecraft:air"
-    },
-    {
-      "item": "magforest:crystal_phial"
-    },
-    {
-      "item": "magforest:moon_tear"
+      "item": "minecraft:stick",
+      "i": 4
     },
     {
       "item": "minecraft:air"
@@ -20,17 +12,25 @@
       "item": "minecraft:air"
     },
     {
-      "item": "magforest:alchemical_infusion"
+      "item": "minecraft:air"
     },
     {
-      "item": "magforest:entropy_potion"
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
     },
     {
       "item": "minecraft:air"
     }
   ],
   "output": {
-    "item": "magforest:ether_essence",
-    "count": 1
+    "item": "magforest:alchemical_silver"
   }
 }
