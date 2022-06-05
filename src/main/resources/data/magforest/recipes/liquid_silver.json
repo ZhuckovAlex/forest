@@ -1,0 +1,35 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "magforest:miraculum_flammas"
+    },
+    {
+      "item": "minecraft:iron_ore"
+    },
+    {
+      "item": "magforest:silver_sage"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:alchemical_infusion"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:liquid_silver"
+  }
+}

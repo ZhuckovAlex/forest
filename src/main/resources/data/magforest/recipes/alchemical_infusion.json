@@ -1,0 +1,35 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "magforest:sleepy_leaf"
+    },
+    {
+      "item": "magforest:icy_yawn"
+    },
+    {
+      "item": "magforest:silver_sage"
+    },
+    {
+      "item": "magforest:black_toadstool"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:alchemical_infusion"
+  }
+}

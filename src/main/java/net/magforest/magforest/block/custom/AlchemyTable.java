@@ -111,20 +111,6 @@ public class AlchemyTable extends HorizontalBlock {
                 return SHAPE_N;
         }
     }
-    @Override
-    public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-        super.tick(blockstate, world, pos, random);
-        int x = pos.getX();
-        int y = pos.getY();
-        int z = pos.getZ();
-
-        Alchemy.executeProcedure(Stream
-                .of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
-                        new AbstractMap.SimpleEntry<>("z", z))
-                .collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
-        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
-    }
-
     @SuppressWarnings("deprecation")
     @Override
     public BlockState mirror(BlockState state, Mirror mirrorIn) {

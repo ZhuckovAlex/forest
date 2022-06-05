@@ -1,0 +1,35 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:ether_essence"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "magforest:wind_reflection"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:alchemical_infusion"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:aer_essence"
+  }
+}

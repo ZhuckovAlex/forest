@@ -2,26 +2,25 @@
   "type": "magforest:alchemical",
   "ingredients": [
     {
-      "item": "minecraft:stick",
-      "i": 4
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:pufferfish"
     },
     {
       "item": "minecraft:air"
     },
     {
-      "item": "minecraft:air"
-    },
-    {
-      "item": "minecraft:air"
-    },
-    {
-      "item": "minecraft:air"
-    },
-    {
-      "item": "minecraft:air"
-    },
-    {
-      "item": "minecraft:air"
+      "item": "magforest:alchemical_infusion"
     },
     {
       "item": "minecraft:air"
@@ -31,6 +30,6 @@
     }
   ],
   "output": {
-    "item": "magforest:alchemical_silver"
+    "item": "magforest:spirit_of_the_sea"
   }
 }

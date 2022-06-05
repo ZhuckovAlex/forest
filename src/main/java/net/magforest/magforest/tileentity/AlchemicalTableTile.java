@@ -58,17 +58,12 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
                 switch (slot) {
-                    case 6: return stack.getItem() == ModItems.ALCHEMICAL_INFUSION.get()
-                            ||
-                            stack.getItem() == ModItems.ENTROPY_POTION.get();
-                    case 7: return stack.getItem() == ModItems.ALCHEMICAL_INFUSION.get()
-                            ||
-                            stack.getItem() == ModItems.ENTROPY_POTION.get();
+                    case 6: return stack.getItem() == ModItems.ALCHEMICAL_INFUSION.get();
+                    case 7: return stack.getItem() == ModItems.ENTROPY_POTION.get();
                     default:
                         return true;
                 }
             }
-
 
             @Nonnull
             @Override
