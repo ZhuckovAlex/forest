@@ -1,0 +1,12 @@
+{
+  "name": "Moon tear",
+  "icon": "magforest:moon_tear",
+  "category": "beginning",
+  "advancement": "magforest:starting/moon_tear",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The moon tear is an interesting crystal that seemed to give me an epiphany... maybe I'll invent something new..."
+    }
+  ]
+}

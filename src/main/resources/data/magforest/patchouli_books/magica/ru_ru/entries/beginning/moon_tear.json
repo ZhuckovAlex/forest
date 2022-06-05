@@ -1,0 +1,12 @@
+{
+  "name": "Лунная слеза",
+  "icon": "magforest:moon_tear",
+  "category": "beginning",
+  "advancement": "magforest:starting/moon_tear",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Лунная слеза интересный кристалл, который как будто передал мне озарение... воз можно, я что-то новое изобрету..."
+    }
+  ]
+}
