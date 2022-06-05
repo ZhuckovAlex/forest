@@ -21,7 +21,7 @@
     "experience": 0
   },
   "criteria": {
-    "paper": {
+    "focusing_lens": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -30,11 +30,26 @@
           }
         ]
       }
+    },
+    "moon_tear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:moon_tear"
+          }
+        ]
+      }
+    },
+    "elf_stone_bricks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:elf_stone_bricks"
+          }
+        ]
+      }
     }
-  },
-  "requirements": [
-    [
-      "paper"
-    ]
-  ]
+  }
 }

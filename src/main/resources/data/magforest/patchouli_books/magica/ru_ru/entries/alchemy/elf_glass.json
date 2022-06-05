@@ -6,11 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "Подержав эльфийское стекло я подумал создать из него что-то на подобии увеличительного стекла, обрамив золотом..."
+      "text": "Подержав эльфийское стекло я подумал создать из него что-то на подобии увеличительного стекла, обрамив золотом хрусталь..."
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "magforest:elf_stone_pane"
+      "recipe": "magforest:elf_glass_pane"
     },
     {
       "type": "patchouli:crafting",

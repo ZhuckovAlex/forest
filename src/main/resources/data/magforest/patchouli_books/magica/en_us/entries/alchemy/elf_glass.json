@@ -6,11 +6,11 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "After holding the elven glass, I thought to create something like a magnifying glass from it, framed in gold..."
+      "text": "After holding the elven glass, I thought to create something like a magnifying glass from it, framing the crystal with gold..."
     },
     {
       "type": "patchouli:crafting",
-      "recipe": "magforest:elf_stone_pane"
+      "recipe": "magforest:elf_glass_pane"
     },
     {
       "type": "patchouli:crafting",
