@@ -2,26 +2,16 @@ package net.magforest.magforest.tileentity;
 
 import net.magforest.magforest.data.recipes.AlchemicalRecipe;
 import net.magforest.magforest.data.recipes.AlchemicalRecipeTypes;
-import net.magforest.magforest.data.recipes.LightRodRecipe;
-import net.magforest.magforest.data.recipes.ModLightningRodRecipeTypes;
-import net.magforest.magforest.item.DamageItem;
 import net.magforest.magforest.item.ModItems;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.SpawnReason;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.tileentity.ITickableTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.server.ServerWorld;
-import net.minecraftforge.client.event.sound.PlaySoundEvent;
-import net.minecraftforge.client.event.sound.SoundEvent;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -144,7 +134,7 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
             }
             ((IItemHandlerModifiable) itemHandler).setStackInSlot(6, _stk);
         }
-    }
+}
 
     @Override
     public void tick() {
