@@ -1,5 +1,4 @@
 {
-  "parent": "magforest:starting/get_paper",
   "display": {
     "icon": {
       "item": "magforest:elf_glass",

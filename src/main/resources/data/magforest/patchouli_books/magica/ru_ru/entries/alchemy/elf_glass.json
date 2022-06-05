@@ -1,0 +1,20 @@
+{
+  "name": "Эльфийское стекло",
+  "icon": "magforest:elf_glass",
+  "category": "alchemy",
+  "advancement": "magforest:starting/elf_glass",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Подержав эльфийское стекло я подумал создать из него что-то на подобии увеличительного стекла, обрамив золотом..."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:elf_stone_pane"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:focusing_lens"
+    }
+  ]
+}
