@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "magforest:the_call_of_the_ancestors",
+      "item": "magforest:silver_sage",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -25,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "item": "magforest:the_call_of_the_ancestors"
+            "item": "magforest:silver_sage"
           }
         ]
       }

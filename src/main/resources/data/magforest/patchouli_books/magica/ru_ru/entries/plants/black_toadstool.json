@@ -1,0 +1,16 @@
+{
+  "name": "Чёрная поганка",
+  "icon": "magforest:black_toadstool",
+  "category": "plants",
+  "advancement": "magforest:starting/black_toadstool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Чёрная поганка не опасна, если не есть её, но довольно сильный алхимический ингредиент, по крайней мере я так слышал"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:black_toadstool"
+    }
+  ]
+}

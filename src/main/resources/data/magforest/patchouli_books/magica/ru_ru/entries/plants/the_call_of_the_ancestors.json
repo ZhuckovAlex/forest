@@ -1,0 +1,16 @@
+{
+  "name": "Зов предков",
+  "icon": "magforest:the_call_of_the_ancestors",
+  "category": "plants",
+  "advancement": "magforest:starting/the_call_of_the_ancestors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "С этого я и поверил в магию, начал искать истины. Это неизвестное растение, но кажется его можно размножить..."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:the_call_of_the_ancestors"
+    }
+  ]
+}

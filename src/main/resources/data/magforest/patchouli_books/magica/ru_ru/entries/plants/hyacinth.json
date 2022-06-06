@@ -1,0 +1,16 @@
+{
+  "name": "Солнцецвет",
+  "icon": "magforest:hyacinth",
+  "category": "plants",
+  "advancement": "magforest:starting/hyacinth",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Солнцецвет согревающий приятный цветок, кажется, что заживают те раны, даже которых нет, стоит выпить из него отвар!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:hyacinth"
+    }
+  ]
+}

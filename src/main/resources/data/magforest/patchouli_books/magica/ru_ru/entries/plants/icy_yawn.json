@@ -1,0 +1,16 @@
+{
+  "name": "Ледяной зёв",
+  "icon": "magforest:icy_yawn",
+  "category": "plants",
+  "advancement": "magforest:starting/icy_yawn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Ледяной зёв, довольно интересное растение, которое медлено, но верно может усыпить или остудить пыл бойкого товарища. Вторая валерьянка из волшебного леса."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:icy_yawn"
+    }
+  ]
+}

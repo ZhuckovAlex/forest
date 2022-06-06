@@ -1,0 +1,16 @@
+{
+  "name": "The Call of the Ancestors",
+  "icon": "magforest:the_call_of_the_ancestors",
+  "category": "plants",
+  "advancement": "magforest:starting/the_call_of_the_ancestors",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "That's when I believed in magic, and I started looking for the truth. This is an unknown plant, but it seems it can be propagated..."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:the_call_of_the_ancestors"
+    }
+  ]
+}

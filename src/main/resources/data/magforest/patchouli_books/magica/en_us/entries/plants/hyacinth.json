@@ -1,0 +1,16 @@
+{
+  "name": "Sunflower",
+  "icon": "magforest:hyacinth",
+  "category": "plants",
+  "advancement": "magforest:starting/hyacinth",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The sunflower is a warming pleasant flower, it seems that those wounds heal, even which are not there, it is worth drinking a decoction from it!"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:hyacinth"
+    }
+  ]
+}

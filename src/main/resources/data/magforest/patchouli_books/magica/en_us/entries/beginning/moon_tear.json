@@ -7,6 +7,10 @@
     {
       "type": "patchouli:text",
       "text": "The moon tear is an interesting crystal that seemed to give me an epiphany... maybe I'll invent something new..."
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "magforest:moon_tear_lighting_rod"
     }
   ]
 }

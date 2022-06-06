@@ -1,0 +1,16 @@
+{
+  "name": "Icy yawn",
+  "icon": "magforest:icy_yawn",
+  "category": "plants",
+  "advancement": "magforest:starting/icy_yawn",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Icy yawn, a rather interesting plant that can slowly but surely put to sleep or cool down the ardor of a brisk comrade. The second valerian from the magic forest."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:icy_yawn"
+    }
+  ]
+}

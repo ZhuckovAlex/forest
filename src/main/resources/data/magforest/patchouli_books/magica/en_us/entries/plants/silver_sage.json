@@ -1,0 +1,16 @@
+{
+  "name": "Silver sage",
+  "icon": "magforest:silver_sage",
+  "category": "plants",
+  "advancement": "magforest:starting/silver_sage",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Silver sage grows in the mountains, it's cold to look at it, and it blows cold itself. Refreshes the breath at least."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:silver_sage"
+    }
+  ]
+}

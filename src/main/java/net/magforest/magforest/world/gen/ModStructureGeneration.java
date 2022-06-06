@@ -143,11 +143,6 @@ public class ModStructureGeneration {
 
             structures.add(() -> ModStructures.ANCIENT_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         }
-        if(event.getName().equals(Biomes.MOUNTAINS.getLocation())) {
-            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
-
-            structures.add(() -> ModStructures.ANCIENT_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-        }
         if(event.getName().equals(Biomes.DESERT.getLocation())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
@@ -204,11 +199,6 @@ public class ModStructureGeneration {
             structures.add(() -> ModStructures.ANCIENT_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         }
         if(event.getName().equals(Biomes.TAIGA.getLocation())) {
-            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
-
-            structures.add(() -> ModStructures.ANCIENT_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-        }
-        if(event.getName().equals(Biomes.ICE_SPIKES.getLocation())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 
             structures.add(() -> ModStructures.ANCIENT_TOWER.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));

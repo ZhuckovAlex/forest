@@ -1,0 +1,16 @@
+{
+  "name": "Black toadstool",
+  "icon": "magforest:black_toadstool",
+  "category": "plants",
+  "advancement": "magforest:starting/black_toadstool",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Black toadstool isn't dangerous if you don't eat it, but it's a pretty strong alchemical ingredient, at least that's what I've heard"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:black_toadstool"
+    }
+  ]
+}
