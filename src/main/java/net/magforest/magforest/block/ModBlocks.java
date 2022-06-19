@@ -48,7 +48,7 @@ public class ModBlocks extends Blocks
             () -> new FlameBlock(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6)));
     public static final RegistryObject<Block> CIAN_LEAVES = BLOCKS.register("cian_leaves",
-            () -> new FlameLeaves(AbstractBlock.Properties.create(Material.LEAVES)
+            () -> new FlameLeaves(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)
                     .hardnessAndResistance(0.2f).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> CIAN_SAPLING = BLOCKS.register("cian_sapling",
             () -> new FlameSaplings(new BigCianTree(), AbstractBlock.Properties.create(Material.PLANTS)

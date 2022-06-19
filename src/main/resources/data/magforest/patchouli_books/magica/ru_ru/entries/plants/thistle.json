@@ -1,0 +1,16 @@
+{
+  "name": "Чертополох",
+  "icon": "magforest:thistle",
+  "category": "plants",
+  "advancement": "magforest:starting/thistle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Чертополох странное магическое растение, которое как то связано с загадочным тонким миром, уж шёлк и нить из неё сделать можно, но нужна прялка, которая мне привиделась, как только я сорвал этот цветок."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:thistle"
+    }
+  ]
+}

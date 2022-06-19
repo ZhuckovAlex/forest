@@ -31,11 +31,6 @@ public class ModStructureGeneration {
 
             structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
         }
-        if(event.getName().equals(Biomes.MOUNTAINS.getLocation())) {
-            List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
-
-            structures.add(() -> ModStructures.CRYSTAL_SAVE.get().withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG));
-        }
         if(event.getName().equals(Biomes.DESERT.getLocation())) {
             List<Supplier<StructureFeature<?, ?>>> structures = event.getGeneration().getStructures();
 

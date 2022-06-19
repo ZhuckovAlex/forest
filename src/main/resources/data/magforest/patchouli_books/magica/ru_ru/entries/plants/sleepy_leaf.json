@@ -1,0 +1,16 @@
+{
+  "name": "Сонный лист",
+  "icon": "magforest:sleepy_leaf",
+  "category": "plants",
+  "advancement": "magforest:starting/sleepy_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Сонный лист, так назван потому, что сонных людей бодрит и даёт силы, ещё является мощным ингредиентом в алхимии."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:sleepy_leaf"
+    }
+  ]
+}

@@ -20,6 +20,10 @@
       "type": "patchouli:crafting",
       "recipe": "magforest:miraculum_flammas",
       "recipe2": "magforest:elf_stone"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "nbt": "{\"patchouli:book\": \"magforest:magica\"}"
     }
   ]
 }

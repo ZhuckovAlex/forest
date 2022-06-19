@@ -45,7 +45,7 @@ public class MoonMothEntity extends ParrotEntity {
 
     @Override
     public SoundEvent getAmbientSound() {
-        this.playSound(SoundEvents.ENTITY_CHICKEN_AMBIENT, 0.2F, 1.0F);
+        this.playSound(SoundEvents.ENTITY_RABBIT_JUMP, 0.2F, 1.0F);
         return null;
     }
 

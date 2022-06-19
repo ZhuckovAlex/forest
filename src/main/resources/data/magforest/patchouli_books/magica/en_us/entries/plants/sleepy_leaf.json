@@ -1,0 +1,16 @@
+{
+  "name": "Sleepy leaf",
+  "icon": "magforest:sleepy_leaf",
+  "category": "plants",
+  "advancement": "magforest:starting/sleepy_leaf",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The sleepy leaf, so named because it invigorates and gives strength to sleepy people, is also a powerful ingredient in alchemy."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:sleepy_leaf"
+    }
+  ]
+}

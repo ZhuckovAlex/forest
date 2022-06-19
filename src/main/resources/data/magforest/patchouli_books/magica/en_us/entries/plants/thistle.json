@@ -1,0 +1,16 @@
+{
+  "name": "Thistle",
+  "icon": "magforest:thistle",
+  "category": "plants",
+  "advancement": "magforest:starting/thistle",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Thistle is a strange magical plant that is somehow connected with the mysterious subtle world, you can make silk and thread from it, but you need a spinning wheel, which I dreamed as soon as I plucked this flower."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:thistle"
+    }
+  ]
+}
