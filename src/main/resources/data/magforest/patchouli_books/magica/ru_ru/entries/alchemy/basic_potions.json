@@ -1,0 +1,40 @@
+{
+  "name": "Первые зелья",
+  "icon": "magforest:questable_potion",
+  "category": "alchemy",
+  "advancement": "magforest:starting/questable_potion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Я получил озарение, как создавать зелья после того, как создал сомнительное зелье. Первое из идей создать зелье лечения"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_healing.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Вторая идея, как создать зелье дубовой кожи, которое защищает от урона."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_stone_skin.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Третья идея создать зелье кошачьего зрения, потому, что в темноте монстров не видно!"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_cat_vision.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Четвёртая мысль, так как в любой момент в пещере может кто-то появится, то нужно создать зелье спешки, чтобы быстрее копать"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_cheerfulness.png"]
+    }
+  ]
+}

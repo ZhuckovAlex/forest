@@ -1,0 +1,40 @@
+{
+  "name": "First potions",
+  "icon": "magforest:questable_potion",
+  "category": "alchemy",
+  "advancement": "magforest:starting/questable_potion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "I got an epiphany on how to create potions after I created a questionable potion. The first of the ideas is to create a healing potion"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_healing.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The second idea is how to create an oak leather potion that protects against damage."
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_stone_skin.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The third idea is to create a potion of cat vision, because in the dark monsters are not visible!"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_cat_vision.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The fourth thought, since at any moment someone may appear in the cave, you need to create a hurry potion to dig faster"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/potion_cheerfulness.png"]
+    }
+  ]
+}
