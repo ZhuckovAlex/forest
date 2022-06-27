@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "I got an epiphany on how to create potions after I created a questionable potion. The first of the ideas is to create a healing potion"
+      "text": "I got an epiphany on how to create potions after I created a questionable potion. The first of the ideas is to create a healing potion. To do this, you need: a crystal violet, a bottle of honey, a sunflower and a chamomile"
     },
     {
       "type": "patchouli:image",
@@ -14,7 +14,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The second idea is how to create an oak leather potion that protects against damage."
+      "text": "The second idea is how to create an oak leather potion that protects against damage. To create it, you need: crystal violet, acorn, obsidian and leather."
     },
     {
       "type": "patchouli:image",
@@ -22,7 +22,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The third idea is to create a potion of cat vision, because in the dark monsters are not visible!"
+      "text": "The third idea is to create a potion of cat vision, because in the dark monsters are not visible! The following ingredients are needed: crystal violet, star moss, pure fruit, light dust."
     },
     {
       "type": "patchouli:image",
@@ -30,7 +30,7 @@
     },
     {
       "type": "patchouli:text",
-      "text": "The fourth thought, since at any moment someone may appear in the cave, you need to create a hurry potion to dig faster"
+      "text": "The fourth thought, since at any moment someone may appear in the cave, you need to create a hurry potion to dig faster. The recipe is as follows: crystal violet, silver sage, golden pickaxe and golden carrot."
     },
     {
       "type": "patchouli:image",
