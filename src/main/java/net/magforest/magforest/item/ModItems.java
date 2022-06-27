@@ -259,6 +259,8 @@ public class ModItems
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POT_OF_POISON = ITEMS.register("pot_of_poison",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> QUESTIONABLE_POTION = ITEMS.register("questionable_potion",
+            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
 
 
