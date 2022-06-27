@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "magforest:questable_potion",
+      "item": "magforest:questionable_potion",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -25,7 +25,7 @@
       "conditions": {
         "items": [
           {
-            "item": "magforest:questable_potion"
+            "item": "magforest:questionable_potion"
           }
         ]
       }

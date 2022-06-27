@@ -1,8 +1,8 @@
 {
   "name": "First potions",
-  "icon": "magforest:questable_potion",
+  "icon": "magforest:questionable_potion",
   "category": "alchemy",
-  "advancement": "magforest:starting/questable_potion",
+  "advancement": "magforest:starting/questionable_potion",
   "pages": [
     {
       "type": "patchouli:text",
