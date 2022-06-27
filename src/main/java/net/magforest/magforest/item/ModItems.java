@@ -210,26 +210,26 @@ public class ModItems
     public static final RegistryObject<Item> ACORN = ITEMS.register("acorn",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> POTION_STONE_SKIN = ITEMS.register("potion_stone_skin",
-            () -> new PotionStoneSkin(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionStoneSkin(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> POTION_CHEERFULNESS = ITEMS.register("potion_cheerfulness",
-            () -> new PotionCheerfulness(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionCheerfulness(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> POTION_CAT_VISION = ITEMS.register("potion_cat_vision",
-            () -> new PotionCatVision(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionCatVision(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> POTION_OF_IMPETUOSITY = ITEMS.register("potion_of_impetuosity",
-            () -> new PotionOfImpetuosity(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionOfImpetuosity(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> THE_SMELL_OF_LOVE = ITEMS.register("the_smell_of_love",
-            () -> new PotionLove(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionLove(new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> STAR_MOSS = ITEMS.register("star_moss",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ALCHEMICAL_INFUSION = ITEMS.register("alchemical_infusion",
-            () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(80).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(80).group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> POTION_HEALING = ITEMS.register("potion_healing",
-            () -> new PotionHealing(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).fastToEat().setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionHealing(new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).fastToEat().setAlwaysEdible().build()).group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> ENTROPY_POTION = ITEMS.register("entropy_potion",
-            () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(25).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().maxStackSize(1).maxDamage(25).group(ModItemGroup.POTIONS)));
 
     public static final RegistryObject<Item> CRYSTAL_PHIAL = ITEMS.register("crystal_phial",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> MAGIC_CLOTH = ITEMS.register("magic_cloth",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> STONE_OF_TRANSFORMATION = ITEMS.register("stone_of_transformation",
@@ -254,13 +254,13 @@ public class ModItems
     public static final RegistryObject<Item> MIRACULUM_FLAMAS = ITEMS.register("miraculum_flammas",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> ANCIENT_POT = ITEMS.register("ancient_pot",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> FIRE_POT = ITEMS.register("fire_pot",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> POT_OF_POISON = ITEMS.register("pot_of_poison",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item( new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> QUESTIONABLE_POTION = ITEMS.register("questionable_potion",
-            () -> new PotionQuestionable( new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionQuestionable( new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.POTIONS)));
 
 
 

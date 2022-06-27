@@ -1,0 +1,36 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "magforest:silver_sage"
+    },
+    {
+      "item": "minecraft:golden_pickaxe"
+    },
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:entropy_potion"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:potion_cheerfulness",
+    "count": 3
+  }
+}

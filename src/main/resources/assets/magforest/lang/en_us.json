@@ -170,8 +170,8 @@
   "item.magforest.jirazol": "Jirazol",
   "item.magforest.primordial_fire": "Primordial fire",
   "item.magforest.star_moss": "Star moss",
-  "item.magforest.alchemical_infusion": "Alchemical infusion",
-  "item.magforest.entropy_potion": "Entropy potion",
+  "item.magforest.alchemical_infusion": "§eAlchemical infusion",
+  "item.magforest.entropy_potion": "§6Entropy potion",
   "item.magforest.potion_healing": "Healing potion",
   "item.magforest.potion_of_impetuosity": "Elixir of impetuosity",
   "item.magforest.the_smell_of_love": "The smell of love",
@@ -222,6 +222,6 @@
 
   "itemGroup.thaum_items": "Elf items",
   "itemGroup.thaum_blocks": "Elf blocks",
-  "itemGroup.spells": "Spells"
-
+  "itemGroup.spells": "Spells",
+  "itemGroup.potions": "Potions"
 }

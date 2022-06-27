@@ -1,0 +1,36 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "magforest:star_moss"
+    },
+    {
+      "item": "magforest:karambola_fruit"
+    },
+    {
+      "item": "minecraft:glowstone_dust"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:potion_cat_vision",
+    "count": 3
+  }
+}

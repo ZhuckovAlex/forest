@@ -166,8 +166,8 @@
   "item.magforest.jirazol": "Огарок",
   "item.magforest.primordial_fire": "Первородный огонь",
   "item.magforest.star_moss": "Звёздный мох",
-  "item.magforest.alchemical_infusion": "Алхимический настой",
-  "item.magforest.entropy_potion": "Зелье энтропии",
+  "item.magforest.alchemical_infusion": "§eАлхимический настой",
+  "item.magforest.entropy_potion": "§6Зелье энтропии",
   "item.magforest.miraculum_flammas": "Miraculum flammas",
   "item.magforest.potion_stone_skin": "Зелье дубовой кожи",
   "item.magforest.potion_cheerfulness": "Зелье спешки",
@@ -220,5 +220,6 @@
 
   "itemGroup.thaum_items": "Эльфийские предметы",
   "itemGroup.thaum_blocks": "Эльфийские блоки",
-  "itemGroup.spells": "Заклинания"
+  "itemGroup.spells": "Заклинания",
+  "itemGroup.potions": "Зелья"
 }

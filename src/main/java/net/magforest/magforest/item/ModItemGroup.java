@@ -25,6 +25,12 @@ public class ModItemGroup
             return new ItemStack(ModItems.SCROLL.get());
         }
     };
+    public static final ItemGroup POTIONS = new ItemGroup("potions") {
+        @Override
+        public ItemStack createIcon() {
+            return new ItemStack(ModItems.POTION_STONE_SKIN.get());
+        }
+    };
 
 
 }

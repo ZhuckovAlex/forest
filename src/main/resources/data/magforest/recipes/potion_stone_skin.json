@@ -1,0 +1,36 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "magforest:acorn"
+    },
+    {
+      "item": "minecraft:obsidian"
+    },
+    {
+      "item": "minecraft:leather"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:potion_stone_skin",
+    "count": 3
+  }
+}
