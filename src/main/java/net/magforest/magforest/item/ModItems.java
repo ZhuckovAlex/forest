@@ -260,7 +260,7 @@ public class ModItems
     public static final RegistryObject<Item> POT_OF_POISON = ITEMS.register("pot_of_poison",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> QUESTIONABLE_POTION = ITEMS.register("questionable_potion",
-            () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new PotionQuestionable( new Item.Properties().food(new Food.Builder().hunger(0).saturation(0).setAlwaysEdible().build()).group(ModItemGroup.THAUM_ITEMS)));
 
 
 

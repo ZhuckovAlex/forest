@@ -1,0 +1,36 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    },
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:poppy"
+    },
+    {
+      "item": "minecraft:dandelion"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:questionable_potion",
+    "count": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "magforest:crystal_phial",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": ""
+    },
+    "description": {
+      "translate": ""
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "magforest:textures/gui/advancements/backgrounds/dark_birch_log.png"
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "criteria": {
+    "flint": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:crystal_phial"
+          }
+        ]
+      }
+    }
+  }
+}

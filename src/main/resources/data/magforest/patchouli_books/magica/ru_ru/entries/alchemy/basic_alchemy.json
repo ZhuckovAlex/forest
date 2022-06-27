@@ -1,0 +1,16 @@
+{
+  "name": "Начальная алхимия",
+  "icon": "magforest:crystal_phial",
+  "category": "alchemy",
+  "advancement": "magforest:starting/crystal_phial",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Получив хрустальный фиал, я решил смешать одуванчик и мак в алхимическом столе, чтобы сделать своё первое зелье"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/basic_alchemy.png"]
+    }
+  ]
+}

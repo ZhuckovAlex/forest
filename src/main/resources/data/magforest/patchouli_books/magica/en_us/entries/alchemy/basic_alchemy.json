@@ -1,0 +1,16 @@
+{
+  "name": "Basic alchemy",
+  "icon": "magforest:crystal_phial",
+  "category": "alchemy",
+  "advancement": "magforest:starting/crystal_phial",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "After receiving the crystal phial, I decided to mix dandelion and poppy in the alchemy table to make my first potion"
+    },
+    {
+      "type": "patchouli:image",
+      "images": ["magforest:textures/gui/entries/basic_alchemy.png"]
+    }
+  ]
+}
