@@ -6,11 +6,19 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "After receiving the crystal phial, I decided to mix dandelion and poppy in the alchemy table to make my first potion. Ingredients: crystal violet, redstone dust, poppy, dandelion."
+      "text": "After receiving a crystal phial, I decided to mix dandelion and poppy in the alchemy table to make my first potion."
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The ingredients are laid out in the bottom six cells, the catalyst is placed in the upper left, and the reagent is placed in the upper right. The catalyst is marked yellow, and the reagent is orange."
     },
     {
       "type": "patchouli:image",
-      "images": ["magforest:textures/gui/entries/basic_alchemy.png"]
+      "images": ["magforest:textures/gui/entries/potion_skin.png"]
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The recipe entry looks like this: [1,2,3,4,5,6] REAGENT - 7, CATALYST - 8. The recipe for the first potion: [empty, crystal phial, redstone dust, poppy, dandelion, empty]."
     }
   ]
 }

@@ -6,35 +6,19 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "I got an epiphany on how to create potions after I created a questionable potion. The first of the ideas is to create a healing potion. To do this, you need: a crystal violet, a bottle of honey, a sunflower and a chamomile"
-    },
-    {
-      "type": "patchouli:image",
-      "images": ["magforest:textures/gui/entries/potion_healing.png"]
+      "text": "I got an epiphany on how to create potions after I created a questionable potion. The first of the ideas is to create a healing potion. Recipe: [empty, crystal phial, bottle of honey, sunflower, chamomile, empty]."
     },
     {
       "type": "patchouli:text",
-      "text": "The second idea is how to create an oak leather potion that protects against damage. To create it, you need: crystal violet, acorn, obsidian and leather."
-    },
-    {
-      "type": "patchouli:image",
-      "images": ["magforest:textures/gui/entries/potion_stone_skin.png"]
+      "text": "The second idea is how to create an oak leather potion that protects against damage. Recipe: [empty, crystal phial, acorn, obsidian, leather, empty]."
     },
     {
       "type": "patchouli:text",
-      "text": "The third idea is to create a potion of cat vision, because in the dark monsters are not visible! The following ingredients are needed: crystal violet, star moss, pure fruit, light dust."
-    },
-    {
-      "type": "patchouli:image",
-      "images": ["magforest:textures/gui/entries/potion_cat_vision.png"]
+      "text": "The third idea is to create a potion of cat vision, because in the dark monsters are not visible! Recipe: [empty, crystal phial, star moss, thistle, glowstone dust, empty]."
     },
     {
       "type": "patchouli:text",
-      "text": "The fourth thought, since at any moment someone may appear in the cave, you need to create a hurry potion to dig faster. The recipe is as follows: crystal violet, silver sage, golden pickaxe and golden carrot. An entropy potion is placed as a reagent (orange cell)."
-    },
-    {
-      "type": "patchouli:image",
-      "images": ["magforest:textures/gui/entries/potion_cheerfulness.png"]
+      "text": "The fourth thought, since at any moment someone may appear in the cave, you need to create a hurry potion to dig faster. Recipe: [empty, crystal phial, silver sage, golden pickaxe, golden carrot, empty]. REAGENT - Entropy potion"
     }
   ]
 }

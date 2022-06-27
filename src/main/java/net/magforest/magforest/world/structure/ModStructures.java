@@ -38,7 +38,7 @@ public class ModStructures {
         setupMapSpacingAndLand(CRYSTAL_SAVE.get(),
                 new StructureSeparationSettings(10,4, 1234567890), true);
         setupMapSpacingAndLand(ANCIENT_TOWER.get(),
-                new StructureSeparationSettings(15,7, 9885656), true);
+                new StructureSeparationSettings(23,8, 9885656), true);
     }
 
     public static <F extends Structure<?>> void setupMapSpacingAndLand(F structure, StructureSeparationSettings structureSeparationSettings,
