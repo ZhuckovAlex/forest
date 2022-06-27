@@ -6,11 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "After receiving a crystal phial, I decided to mix dandelion and poppy in the alchemy table to make my first potion."
-    },
-    {
-      "type": "patchouli:text",
-      "text": "The ingredients are laid out in the bottom six cells, the catalyst is placed in the upper left, and the reagent is placed in the upper right. The catalyst is marked yellow, and the reagent is orange."
+      "text": "After receiving a crystal phial, I decided to mix dandelion and poppy in the alchemy table to make my first potion. The ingredients are laid out in the bottom six cells, the catalyst is placed in the upper left, and the reagent is placed in the upper right. The catalyst is marked yellow, and the reagent is orange."
     },
     {
       "type": "patchouli:image",
