@@ -94,15 +94,6 @@ public class BlockMagic {
             if (world instanceof ServerWorld) {
                 ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
             }
-            if (world instanceof World && !world.isRemote()) {
-                ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1);
-            } else {
-                ((World) world).playSound(x, y, z,
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-            }
         }
 
         if (Blocks.DANDELION == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() && ModItems.MIRACULUM_FLAMAS.get()
@@ -117,15 +108,6 @@ public class BlockMagic {
             if (world instanceof ServerWorld) {
                 ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
             }
-            if (world instanceof World && !world.isRemote()) {
-                ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1);
-            } else {
-                ((World) world).playSound(x, y, z,
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-            }
         }
         if (Blocks.BLUE_ORCHID == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() && ModItems.MIRACULUM_FLAMAS.get()
                 .asItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()) {
@@ -138,15 +120,6 @@ public class BlockMagic {
             }
             if (world instanceof ServerWorld) {
                 ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
-            }
-            if (world instanceof World && !world.isRemote()) {
-                ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1);
-            } else {
-                ((World) world).playSound(x, y, z,
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
             }
         }
 
@@ -162,15 +135,6 @@ public class BlockMagic {
             if (world instanceof ServerWorld) {
                 ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
             }
-            if (world instanceof World && !world.isRemote()) {
-                ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1);
-            } else {
-                ((World) world).playSound(x, y, z,
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-            }
         }
 
         if (Blocks.OXEYE_DAISY == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() && ModItems.MIRACULUM_FLAMAS.get()
@@ -185,15 +149,6 @@ public class BlockMagic {
             if (world instanceof ServerWorld) {
                 ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
             }
-            if (world instanceof World && !world.isRemote()) {
-                ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1);
-            } else {
-                ((World) world).playSound(x, y, z,
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
-            }
         }
 
         if (Blocks.CORNFLOWER == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() && ModItems.MIRACULUM_FLAMAS.get()
@@ -207,15 +162,6 @@ public class BlockMagic {
             }
             if (world instanceof ServerWorld) {
                 ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
-            }
-            if (world instanceof World && !world.isRemote()) {
-                ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1);
-            } else {
-                ((World) world).playSound(x, y, z,
-                        (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
-                        SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
             }
         }
 
