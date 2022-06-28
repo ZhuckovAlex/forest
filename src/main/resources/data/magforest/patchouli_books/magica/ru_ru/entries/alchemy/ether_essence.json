@@ -1,0 +1,16 @@
+{
+  "name": "Эфирная эссенция",
+  "icon": "magforest:ether_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/ether_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав алхимический настой и зелье энтропии, а также заполучив лунную слезу, я увидел, что получается из этого эссеция первородной субстанции - эфира. Рецепт эссенции:[пусто, пусто, хрустальный фиал, лунная слеза, пусто, пусто], где КАТАЛИЗАТОР - алхимический настой, РЕАГЕНТ - зелье энтропии."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:ether_essence"
+    }
+  ]
+}

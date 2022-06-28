@@ -1,0 +1,64 @@
+{
+  "display": {
+    "icon": {
+      "item": "magforest:ether_essence",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": ""
+    },
+    "description": {
+      "translate": ""
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "magforest:textures/gui/advancements/backgrounds/dark_birch_log.png"
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "criteria": {
+    "alchemical_infusion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:alchemical_infusion"
+          }
+        ]
+      }
+    },
+    "entropy_potion": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:entropy_potion"
+          }
+        ]
+      }
+    },
+    "moon_tear": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:moon_tear"
+          }
+        ]
+      }
+    },
+    "crystal_phial": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:crystal_phial"
+          }
+        ]
+      }
+    }
+  }
+}
