@@ -1,0 +1,16 @@
+{
+  "name": "Entropy potion",
+  "icon": "magforest:entropy_potion",
+  "category": "alchemy",
+  "advancement": "magforest:starting/entropy_potion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "After collecting some plants, I saw a vision of a wise elf laying out the following ingredients on an alchemical table:[empty, crystal phial, thistle, black toadstool, gunpowder, empty] and receives the entropy potion. This infusion is a reagent."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:entropy_potion"
+    }
+  ]
+}

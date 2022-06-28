@@ -1,0 +1,16 @@
+{
+  "name": "Зелье энтропии",
+  "icon": "magforest:entropy_potion",
+  "category": "alchemy",
+  "advancement": "magforest:starting/entropy_potion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Собрав некоторые растения, я увидел видение, как мудрый эльф раскладывает на алхимическом столе следующие ингридиенты:[пусто, хрустальный фиал, чертополох, чёрная поганка, порох, пусто] и получает зелье энтропии. Данный настой является реагентом."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:entropy_potion"
+    }
+  ]
+}

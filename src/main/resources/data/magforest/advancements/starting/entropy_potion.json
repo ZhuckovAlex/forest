@@ -1,8 +1,7 @@
 {
-  "parent": "magforest:starting/get_paper",
   "display": {
     "icon": {
-      "item": "magforest:alchemy_table",
+      "item": "magforest:entropy_potion",
       "nbt": "{Damage:0}"
     },
     "title": {
@@ -21,12 +20,32 @@
     "experience": 0
   },
   "criteria": {
-    "paper": {
+    "crystal_phial": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "magforest:alchemy_table"
+            "item": "magforest:crystal_phial"
+          }
+        ]
+      }
+    },
+    "black_toadstool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:black_toadstool"
+          }
+        ]
+      }
+    },
+    "thistle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:thistle"
           }
         ]
       }

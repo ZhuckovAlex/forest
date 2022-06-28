@@ -1,0 +1,74 @@
+{
+  "display": {
+    "icon": {
+      "item": "magforest:alchemical_infusion",
+      "nbt": "{Damage:0}"
+    },
+    "title": {
+      "translate": ""
+    },
+    "description": {
+      "translate": ""
+    },
+    "frame": "challenge",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": true,
+    "background": "magforest:textures/gui/advancements/backgrounds/dark_birch_log.png"
+  },
+  "rewards": {
+    "experience": 0
+  },
+  "criteria": {
+    "crystal_phial": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:crystal_phial"
+          }
+        ]
+      }
+    },
+    "black_toadstool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:black_toadstool"
+          }
+        ]
+      }
+    },
+    "icy_yawn": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:icy_yawn"
+          }
+        ]
+      }
+    },
+    "sleepy_leaf": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:sleepy_leaf"
+          }
+        ]
+      }
+    },
+    "silver_sage": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "magforest:silver_sage"
+          }
+        ]
+      }
+    }
+  }
+}

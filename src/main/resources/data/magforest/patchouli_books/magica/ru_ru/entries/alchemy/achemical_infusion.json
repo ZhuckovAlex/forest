@@ -1,0 +1,16 @@
+{
+  "name": "Алхимический настой",
+  "icon": "magforest:alchemical_infusion",
+  "category": "alchemy",
+  "advancement": "magforest:starting/alchemical_infusion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Собрав некоторые растения, я увидел видение, как мудрый эльф раскладывает на алхимическом столе следующие ингридиенты:[пусто, хрустальный фиал, сонный лист, ледянной зёв, серебряный шалфей, чёрная поганка] и получает алхимический настой. Данный настой является катализатором."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:alchemical_infusion"
+    }
+  ]
+}

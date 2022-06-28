@@ -1,0 +1,16 @@
+{
+  "name": "Alchemical infusion",
+  "icon": "magforest:alchemical_infusion",
+  "category": "alchemy",
+  "advancement": "magforest:starting/alchemical_infusion",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "After collecting some plants, I saw a vision of a wise elf laying out the following ingredients on an alchemical table:[empty, crystal phial, sleepy leaf, icy pharynx, silver sage, black toadstool] and receives an alchemical infusion. This infusion is a catalyst."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:alchemical_infusion"
+    }
+  ]
+}

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "magforest:chiseled_elf_stone_bricks"
+          "name": "magforest:chiseled_ancient_elf_brick"
         }
       ],
       "conditions": [
