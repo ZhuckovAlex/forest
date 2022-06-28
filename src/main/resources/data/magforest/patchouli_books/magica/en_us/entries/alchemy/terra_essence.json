@@ -1,0 +1,16 @@
+{
+  "name": "Terra essence",
+  "icon": "magforest:terra_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/terra_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created an turf extract, I saw a vision of a wise elf laying out the following ingredients on an alchemical table:[empty, empty, essence of ether, redstone dust, turf extract, empty], the CATALYST is an alchemical infusion and receives the essence of terra."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:terra_essence"
+    }
+  ]
+}

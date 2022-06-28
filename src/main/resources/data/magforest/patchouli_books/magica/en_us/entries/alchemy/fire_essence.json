@@ -1,0 +1,16 @@
+{
+  "name": "Fire essence",
+  "icon": "magforest:fire_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/fire_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created firewater, I saw a vision of a wise elf laying out the following ingredients on an alchemical table:[empty, empty, essence of ether, redstone dust, firewater, empty], the CATALYST is an alchemical infusion and receives the essence of fire."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:fire_essence"
+    }
+  ]
+}

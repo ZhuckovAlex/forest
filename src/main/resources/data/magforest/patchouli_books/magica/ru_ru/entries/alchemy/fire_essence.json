@@ -1,0 +1,16 @@
+{
+  "name": "Эссенция огня",
+  "icon": "magforest:fire_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/fire_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав огненную воду, я увидел видение, как мудрый эльф раскладывает на алхимическом столе следующие ингредиенты:[пусто, пусто, эссенция эфира, редстоун пыль, огненная вода, пусто], КАТАЛИЗАТОР - алхимический настой и получает эссенцию огня."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:fire_essence"
+    }
+  ]
+}

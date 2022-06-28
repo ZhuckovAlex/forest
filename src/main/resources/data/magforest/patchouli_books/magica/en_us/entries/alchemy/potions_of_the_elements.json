@@ -1,0 +1,44 @@
+{
+  "name": "Potions of the elements",
+  "icon": "magforest:spirit_of_the_sea",
+  "category": "alchemy",
+  "advancement": "magforest:starting/potions_of_the_elements",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created an alchemical infusion, I saw a vision of the first of the four wise elves laying out the following ingredients on the alchemical table:[empty, crystal phial, kelp, light stone dust, blowfish, empty] and receives the spirit of the sea."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:spirit_of_the_sea"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The second elf puts the following ingredients on the alchemical table:[empty, crystal phial, fire powder, glowstone dust, nether wart, empty] and receives fire water."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:firewater"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The third elf puts the following ingredients on the alchemical table:[empty, crystal phial, grass, glowstone dust, earth, empty] and receives turf extract."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:turf_extract"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "The fourth elf on the alchemical table puts the following ingredients:[empty, crystal phial, feather, glowstone dust, phantom membrane, empty] and receives wind reflection."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:wind_reflection"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Most likely, these are not ready-to-use potions, but ingredients..."
+    }
+  ]
+}

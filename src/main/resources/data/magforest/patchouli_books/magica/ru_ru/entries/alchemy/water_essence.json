@@ -1,0 +1,16 @@
+{
+  "name": "Эссенция воды",
+  "icon": "magforest:water_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/water_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав дух моря, я увидел видение, как мудрый эльф раскладывает на алхимическом столе следующие ингредиенты:[пусто, пусто, эссенция эфира, редстоун пыль, дух моря, пусто], КАТАЛИЗАТОР -алхимический настой и получает эссенцию воды."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:water_essence"
+    }
+  ]
+}

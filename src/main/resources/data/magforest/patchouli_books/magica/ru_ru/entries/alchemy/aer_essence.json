@@ -1,0 +1,16 @@
+{
+  "name": "Эссенция воздуха",
+  "icon": "magforest:aer_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/aer_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав отражение ветра, я увидел видение, как мудрый эльф раскладывает на алхимическом столе следующие ингредиенты:[пусто, пусто, эссенция эфира, редстоун пыль, отражение ветра, пусто], КАТАЛИЗАТОР - алхимический настой и получает эссенцию воздуха."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:aer_essence"
+    }
+  ]
+}

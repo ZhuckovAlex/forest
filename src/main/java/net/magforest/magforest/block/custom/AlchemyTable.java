@@ -2,7 +2,7 @@ package net.magforest.magforest.block.custom;
 
 import net.magforest.magforest.container.AlchemyTableContainer;
 
-import net.magforest.magforest.procedures.Alchemy;
+
 import net.magforest.magforest.tileentity.AlchemicalTableTile;
 
 import net.magforest.magforest.tileentity.ModTileEntities;

@@ -1,0 +1,20 @@
+{
+  "name": "Cristal of the elements",
+  "icon": "magforest:ether_cristal",
+  "category": "alchemy",
+  "advancement": "magforest:starting/crystal_of_the_elements",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "By creating an ether essence and finding quartz, I can collect the following ingredients on the alchemical table:[empty, empty, quartz, ether essence, empty, empty] and get the crystallized essence."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:ether_cristal"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "Thus, depending on the essence, I get the corresponding crystal."
+    }
+  ]
+}

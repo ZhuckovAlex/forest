@@ -1,0 +1,16 @@
+{
+  "name": "Water essence",
+  "icon": "magforest:water_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/water_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Having created the spirit of the sea, I saw a vision of a wise elf laying out the following ingredients on an alchemical table:[empty, empty, ether essence, redstone dust, spirit of the sea, empty], CATALYST - alchemical infusion and receives the essence of water."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:water_essence"
+    }
+  ]
+}

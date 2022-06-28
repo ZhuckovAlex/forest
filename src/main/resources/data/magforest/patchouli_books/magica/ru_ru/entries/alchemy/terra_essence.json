@@ -1,0 +1,16 @@
+{
+  "name": "Эссенция земли",
+  "icon": "magforest:terra_essence",
+  "category": "alchemy",
+  "advancement": "magforest:starting/terra_essence",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Создав экстракт земли, я увидел видение, как мудрый эльф раскладывает на алхимическом столе следующие ингредиенты:[пусто, пусто, эссенция эфира, редстоун пыль, экстракт земли, пусто], КАТАЛИЗАТОР - алхимический настой и получает эссенцию земли."
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "magforest:terra_essence"
+    }
+  ]
+}
