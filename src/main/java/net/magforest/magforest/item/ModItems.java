@@ -240,13 +240,13 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> WIND_REFLECTION = ITEMS.register("wind_reflection",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> TURF_EXTRACT = ITEMS.register("turf_extract",
-        () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+        () -> new Item(new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> SPIRIT_OF_THE_SEA = ITEMS.register("spirit_of_the_sea",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> FIREWATER = ITEMS.register("firewater",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+            () -> new Item(new Item.Properties().group(ModItemGroup.POTIONS)));
     public static final RegistryObject<Item> CRYSTAL_SHARD = ITEMS.register("crystal_shard",
             () -> new Item( new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> WING_OF_THE_MOON_MOTH = ITEMS.register("wing_of_the_moon_moth",
