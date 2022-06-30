@@ -200,56 +200,6 @@ event.enqueueWork(() -> registerRecipes());
                 Ingredient.fromItems(Items.CHORUS_FRUIT),
                 PotionUtils.addPotionToItemStack(new ItemStack(Items.DRAGON_BREATH),null)
         ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Blocks.MAGMA_BLOCK),
-                Ingredient.fromItems(ModItems.MOON_TEAR_POWDER.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModItems.FIRE_ESSENCE.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromStacks(PotionUtils.addPotionToItemStack(new ItemStack(Items.POTION), Potions.WATER)),
-                Ingredient.fromItems(ModItems.MOON_TEAR_POWDER.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModItems.WATER_ESSENCE.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Blocks.DIRT),
-                Ingredient.fromItems(ModItems.MOON_TEAR_POWDER.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModItems.TERRA_ESSENCE.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.GLASS_BOTTLE),
-                Ingredient.fromItems(ModItems.MOON_TEAR_POWDER.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModItems.AER_ESSENCE.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.REDSTONE),
-                Ingredient.fromItems(ModItems.MOON_TEAR_POWDER.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModItems.ETHER_ESSENCE.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.QUARTZ),
-                Ingredient.fromItems(ModItems.FIRE_ESSENCE.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModBlocks.FLAME_CRISTAL.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.QUARTZ),
-                Ingredient.fromItems(ModItems.WATER_ESSENCE.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModBlocks.AQUA_CRISTAL.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.QUARTZ),
-                Ingredient.fromItems(ModItems.TERRA_ESSENCE.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModBlocks.TERRA_CRISTAL.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.QUARTZ),
-                Ingredient.fromItems(ModItems.AER_ESSENCE.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModBlocks.AER_CRISTAL.get()),null)
-        ));
-        BrewingRecipeRegistry.addRecipe(new BrewingRecipe(
-                Ingredient.fromItems(Items.QUARTZ),
-                Ingredient.fromItems(ModItems.ETHER_ESSENCE.get()),
-                PotionUtils.addPotionToItemStack(new ItemStack(ModBlocks.ETHER_CRISTAL.get()),null)
-        ));
     }
 
     private void doClientStuff(final FMLClientSetupEvent event)
