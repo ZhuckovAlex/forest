@@ -2,10 +2,7 @@ package net.magforest.magforest.world;
 
 import com.mojang.serialization.Codec;
 import net.magforest.magforest.magforest;
-import net.magforest.magforest.world.gen.ModFlowerGeneration;
-import net.magforest.magforest.world.gen.ModOreGeneration;
-import net.magforest.magforest.world.gen.ModStructureGeneration;
-import net.magforest.magforest.world.gen.ModTreeGeneration;
+import net.magforest.magforest.world.gen.*;
 import net.magforest.magforest.world.structure.ModStructures;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
@@ -37,6 +34,7 @@ public class ModWorldEvents {
         ModOreGeneration.generateOres(event);
         ModTreeGeneration.generateTrees(event);
         ModFlowerGeneration.generateFlower(event);
+        ModEntityGeneration.onEntitySpawn(event);
     }
 
     @SubscribeEvent
