@@ -14,7 +14,7 @@ import java.util.List;
 
 public class ModEntityGeneration {
     public static void onEntitySpawn(final BiomeLoadingEvent event) {
-        addEntityToSpecificBiomes(event, ModEntityTypes.MOON_MOTH.get(), 1, 1, 7,
+        addEntityToSpecificBiomes(event, ModEntityTypes.MOON_MOTH.get(), 100, 1, 7,
                 MagicForest.MAGIC_FOREST, Biomes.BEACH);
     }
 

@@ -47,54 +47,5 @@ public abstract class ModTreeGeneration {
                     .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
                     .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0, 0.4f, 4))));
         }
-        if (event.getName().equals(MagicForest.MAGIC_FOREST.getLocation())){
-            List<Supplier<ConfiguredFeature<?, ?>>>base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.05f, 1))));
-        }
-        if (event.getName().equals(Biomes.BIRCH_FOREST.getLocation())){
-                List<Supplier<ConfiguredFeature<?, ?>>>base =
-                        event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.05f, 1))));
-        }
-        if (event.getName().equals(Biomes.BIRCH_FOREST_HILLS.getLocation())){
-            List<Supplier<ConfiguredFeature<?, ?>>>base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.05f, 1))));
-        }
-        if (event.getName().equals(Biomes.TALL_BIRCH_FOREST.getLocation())){
-            List<Supplier<ConfiguredFeature<?, ?>>>base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.05f, 1))));
-        }
-        if (event.getName().equals(Biomes.TALL_BIRCH_HILLS.getLocation())){
-            List<Supplier<ConfiguredFeature<?, ?>>>base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.05f, 1))));
-        }
-        if (event.getName().equals(Biomes.SWAMP.getLocation())){
-            List<Supplier<ConfiguredFeature<?, ?>>>base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.1f, 1))));
-        }
-        if (event.getName().equals(Biomes.SWAMP_HILLS.getLocation())){
-            List<Supplier<ConfiguredFeature<?, ?>>>base =
-                    event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION);
-            base.add(() -> ModConfiguredFeatures.DARK_BIRCH
-                    .withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-                    .withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(0,0.1f, 1))));
-        }
     }
 }
