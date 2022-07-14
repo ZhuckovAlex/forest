@@ -392,8 +392,8 @@ public class ModBlocks extends Blocks
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
-            () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 8)));
+            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
