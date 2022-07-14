@@ -392,7 +392,7 @@ public class ModBlocks extends Blocks
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
-            () -> new Block(AbstractBlock.Properties.create(Material.ROCK)
+            () -> new Pedestal(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
 
 
