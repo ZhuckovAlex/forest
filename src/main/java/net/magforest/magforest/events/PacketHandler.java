@@ -1,8 +1,6 @@
 package net.magforest.magforest.events;
 
-import net.magforest.magforest.MagforestModElements;
 import net.magforest.magforest.events.packets.PacketFocusChangeToServer;
-import net.magforest.magforest.magforest;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.network.NetworkDirection;
