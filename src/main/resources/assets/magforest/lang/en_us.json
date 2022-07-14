@@ -223,5 +223,6 @@
   "itemGroup.thaum_items": "Elf items",
   "itemGroup.thaum_blocks": "Elf blocks",
   "itemGroup.spells": "Spells",
-  "itemGroup.potions": "Potions"
+  "itemGroup.potions": "Potions",
+  "key.categories.misc.knob": "Change wand focus"
 }

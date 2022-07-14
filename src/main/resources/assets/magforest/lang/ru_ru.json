@@ -221,5 +221,6 @@
   "itemGroup.thaum_items": "Эльфийские предметы",
   "itemGroup.thaum_blocks": "Эльфийские блоки",
   "itemGroup.spells": "Заклинания",
-  "itemGroup.potions": "Зелья"
+  "itemGroup.potions": "Зелья",
+  "key.categories.misc.knob": "Сменить набалдашник"
 }

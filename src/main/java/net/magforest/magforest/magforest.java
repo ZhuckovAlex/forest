@@ -13,6 +13,8 @@ import net.magforest.magforest.entity.render.MoonMothRender;
 import net.magforest.magforest.entity.renderer.ModCianBoatRenderer;
 import net.magforest.magforest.entity.renderer.ModDarkBirchBoatRenderer;
 import net.magforest.magforest.entity.villager.ModVillager;
+import net.magforest.magforest.events.ClientEvents;
+import net.magforest.magforest.events.PacketHandler;
 import net.magforest.magforest.item.ModItems;
 import net.magforest.magforest.screen.AlchemyTableScreen;
 import net.magforest.magforest.screen.LightingMachineScreen;
@@ -30,6 +32,7 @@ import net.minecraft.client.renderer.Atlases;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.tileentity.SignTileEntityRenderer;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.potion.Potion;
@@ -63,9 +66,7 @@ import java.util.function.Supplier;
 @Mod(magforest.MOD_ID)
 public class magforest
 {
-    private static final String PROTOCOL_VERSION = "1";
-    public static final SimpleChannel PACKET_HANDLER = NetworkRegistry.newSimpleChannel(new ResourceLocation("magforest", "magforest"),
-            () -> PROTOCOL_VERSION, PROTOCOL_VERSION::equals, PROTOCOL_VERSION::equals);
+
 
     public static final String MOD_ID = "magforest";
     // Directly reference a log4j logger.
@@ -75,7 +76,7 @@ public class magforest
         IEventBus eventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MagicForest.BIOMES.register(eventBus);
         MagicForest.registerBiomes();
-
+        PacketHandler.init();
         ModTileEntities.register(eventBus);
         ModContainers.register(eventBus);
 
@@ -202,6 +203,7 @@ event.enqueueWork(() -> registerRecipes());
         ));
     }
 
+    public static KeyBinding keyF = new KeyBinding("key.categories.misc.knob", 89, "key.categories.misc");
     private void doClientStuff(final FMLClientSetupEvent event)
     {
         ScreenManager.registerFactory(ModContainers.LIGHTING_MACHINE_CONTAINER.get(),
@@ -241,6 +243,7 @@ event.enqueueWork(() -> registerRecipes());
 
         RenderingRegistry.registerEntityRenderingHandler(ModCianEntityTypes.CIAN_BOAT.get(), ModCianBoatRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModDarkBirchEntityTypes.DARK_BIRCH_BOAT.get(), ModDarkBirchBoatRenderer::new);
+        ClientRegistry.registerKeyBinding(keyF);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)
