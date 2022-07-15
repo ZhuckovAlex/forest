@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_stairs",
+  "pattern": [
+    " A ",
+    "###"
+  ],
+  "key": {
+    "A": {
+      "item": "magforest:elf_stone_bricks_slab"
+    },
+    "#": {
+      "item": "magforest:elf_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "magforest:center_pedestal",
+    "count": 1
+  }
+}
