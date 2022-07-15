@@ -2,6 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "group": "wooden_stairs",
   "pattern": [
+    "###",
     " A ",
     "###"
   ],
