@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "magforest:block/drawing_table_side",
+    "north": "magforest:block/drawing_table_side",
+    "south": "magforest:block/drawing_table_side",
+    "east": "magforest:block/drawing_table_side",
+    "west": "magforest:block/drawing_table_side",
+    "up": "magforest:block/drawing_table_top",
+    "down": "magforest:block/drawing_table_bottom"
+  }
+}
