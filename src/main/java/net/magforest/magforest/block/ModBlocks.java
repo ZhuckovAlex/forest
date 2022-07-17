@@ -401,6 +401,10 @@ public class ModBlocks extends Blocks
             () -> new FaceHorizontal(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()) {
             });
+    public static final RegistryObject<Block> KNOBS_WORKBENCH = registerBlock("knobs_workbench",
+            () -> new FaceHorizontal(AbstractBlock.Properties.create(Material.WOOD)
+                    .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()) {
+            });
     public static final RegistryObject<Block> CENTER_PEDESTAL = registerBlock("center_pedestal",
             () -> new Pedestal(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
