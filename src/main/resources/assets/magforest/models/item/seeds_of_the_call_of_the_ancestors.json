@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "magforest:item/seeds_of_the_call_of_the_ancestors"
+  }
+}

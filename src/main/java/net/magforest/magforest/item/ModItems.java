@@ -29,6 +29,9 @@ public class ModItems
     public static final RegistryObject<Item> KARAMBOLA = ITEMS.register("karambola",
             () -> new BlockItem(ModBlocks.KARAMBOLA.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> SEEDS_OF_THE_CALL_OF_THE_ANCESTORS = ITEMS.register("seeds_of_the_call_of_the_ancestors",
+            () -> new BlockItem(ModBlocks.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get(), new Item.Properties()
+                    .group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> CIAN_LEAVES = ITEMS.register("cian_leaves",
             () -> new BlockItem(ModBlocks.CIAN_LEAVES.get(), new Item.Properties()

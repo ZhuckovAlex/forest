@@ -103,6 +103,9 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> KARAMBOLA = BLOCKS.register("karambola_crops",
             () -> new KarambolaBlock(AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> SEEDS_OF_THE_CALL_OF_THE_ANCESTORS = BLOCKS.register("seeds_of_the_call_of_the_ancestors",
+            () -> new CallOfAncestorsBlock(AbstractBlock.Properties.create(Material.PLANTS)
+                    .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.CROP)));
     public static final RegistryObject<Block> DARK_BIRCH_LOG = registerBlock("dark_birch_log",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(2).sound(SoundType.WOOD)));

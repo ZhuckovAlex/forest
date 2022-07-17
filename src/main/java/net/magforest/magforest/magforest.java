@@ -116,6 +116,9 @@ event.enqueueWork(() -> {
 event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.KARAMBOLA.get(), 0.35f);
         });
+        event.enqueueWork(() -> {
+            ComposterBlock.CHANCES.put(ModItems.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get(), 0.35f);
+        });
 event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.CIAN_LEAVES.get(), 0.65f);
         });
@@ -228,6 +231,7 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THISTLE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.KARAMBOLA.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.CRIMSON_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_SAPLING.get(), RenderType.getCutout());
