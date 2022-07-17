@@ -1,0 +1,35 @@
+{
+  "type": "magforest:alchemical",
+  "ingredients": [
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "magforest:miraculum_flammas"
+    },
+    {
+      "item": "magforest:the_call_of_the_ancestors"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "magforest:water_essence"
+    },
+    {
+      "item": "magforest:terra_essence"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    },
+    {
+      "item": "minecraft:air"
+    }
+  ],
+  "output": {
+    "item": "magforest:seeds_of_the_call_of_the_ancestors"
+  }
+}
