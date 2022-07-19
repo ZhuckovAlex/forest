@@ -415,7 +415,7 @@ public class ModBlocks extends Blocks
 
     public static final RegistryObject<Block> THE_MAGIC_WEAVER = registerBlock("the_magic_weaver",
             () -> new Block(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(3).sound(SoundType.WOOD).notSolid()));
+                    .hardnessAndResistance(1).sound(SoundType.WOOD).notSolid()));
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
