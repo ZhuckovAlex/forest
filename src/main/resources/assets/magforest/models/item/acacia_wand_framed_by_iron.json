@@ -2,7 +2,7 @@
 	"ambientocclusion": false,
 	"textures": {
 		"0": "minecraft:block/acacia_planks",
-		"1": "minecraft:block/gold_block",
+		"1": "minecraft:block/iron_block",
 		"particle": "minecraft:block/acacia_planks"
 	},
 	"elements": [
