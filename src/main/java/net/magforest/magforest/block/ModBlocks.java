@@ -1,7 +1,10 @@
 package net.magforest.magforest.block;
 
 import net.magforest.magforest.block.custom.*;
-import net.magforest.magforest.block.custom.trees.*;
+import net.magforest.magforest.block.custom.trees.BigCianTree;
+import net.magforest.magforest.block.custom.trees.CrimsonTree;
+import net.magforest.magforest.block.custom.trees.DarkBirchTree;
+import net.magforest.magforest.block.custom.trees.WarpedTree;
 import net.magforest.magforest.item.ModItemGroup;
 import net.magforest.magforest.item.ModItems;
 import net.magforest.magforest.magforest;
@@ -416,10 +419,10 @@ public class ModBlocks extends Blocks
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
-            () -> new CrimsonSapling(new CrimsonTree(), AbstractBlock.Properties.create(Material.PLANTS, MaterialColor.RED)
+            () -> new SaplingBlock(new CrimsonTree(), AbstractBlock.Properties.create(Material.PLANTS, MaterialColor.RED)
                     .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.FUNGUS)));
     public static final RegistryObject<Block> WARPED_SAPLING = BLOCKS.register("warped_sapling",
-            () -> new WarpedSapling(new WarpedTree(), AbstractBlock.Properties.create(Material.PLANTS, MaterialColor.RED)
+            () -> new SaplingBlock(new WarpedTree(), AbstractBlock.Properties.create(Material.PLANTS, MaterialColor.RED)
                     .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.FUNGUS)));
     public static final RegistryObject<Block> WARPED_WART = BLOCKS.register("warped_wart",
             () -> new WarpedWart(AbstractBlock.Properties.create(Material.PLANTS, MaterialColor.RED)
