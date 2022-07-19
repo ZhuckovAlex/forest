@@ -408,9 +408,14 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> CENTER_PEDESTAL = registerBlock("center_pedestal",
             () -> new Pedestal(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
+
     public static final RegistryObject<Block> CRUCIBLE = registerBlock("crucible",
             () -> new Crucible(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(3).sound(SoundType.STONE).notSolid()));
+
+    public static final RegistryObject<Block> THE_MAGIC_WEAVER = registerBlock("the_magic_weaver",
+            () -> new Block(AbstractBlock.Properties.create(Material.WOOD)
+                    .hardnessAndResistance(3).sound(SoundType.WOOD).notSolid()));
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
