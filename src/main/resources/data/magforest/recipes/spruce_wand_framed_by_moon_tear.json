@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sign",
+  "pattern": [
+    "  #",
+    " X ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:moon_tear_cap"
+    },
+    "X": {
+      "item": "magforest:spruce_core"
+    }
+  },
+  "result": {
+    "item": "magforest:spruce_wand_framed_by_moon_tear",
+    "count": 1
+  }
+}
