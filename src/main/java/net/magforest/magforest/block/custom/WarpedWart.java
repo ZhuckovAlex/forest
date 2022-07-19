@@ -61,7 +61,7 @@ public class WarpedWart extends BushBlock {
     }
 
     public ItemStack getItem(IBlockReader worldIn, BlockPos pos, BlockState state) {
-        return new ItemStack(Items.NETHER_WART);
+        return new ItemStack(ModItems.WARPED_WART.get());
     }
 
     protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
