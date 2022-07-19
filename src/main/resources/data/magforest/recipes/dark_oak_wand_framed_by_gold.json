@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "sign",
+  "pattern": [
+    "  #",
+    " X ",
+    "#  "
+  ],
+  "key": {
+    "#": {
+      "item": "magforest:golden_cap"
+    },
+    "X": {
+      "item": "magforest:dark_oak_core"
+    }
+  },
+  "result": {
+    "item": "magforest:dark_oak_wand_framed_by_gold",
+    "count": 1
+  }
+}
