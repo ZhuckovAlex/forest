@@ -1,11 +1,9 @@
 {
-	"credit": "Made with Blockbench",
-	"parent": "Тигель",
 	"ambientocclusion": false,
 	"texture_size": [96, 96],
 	"textures": {
-		"0": "тигель",
-		"particle": "тигель"
+		"0": "magforest:block/crucible",
+		"particle": "magforest:block/crucible"
 	},
 	"elements": [
 		{
