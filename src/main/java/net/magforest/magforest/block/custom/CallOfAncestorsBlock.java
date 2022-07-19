@@ -41,7 +41,7 @@ public class CallOfAncestorsBlock extends CropsBlock {
         BlockPos blockpos = pos.down();
         BlockState groundState = worldIn.getBlockState(blockpos);
         Block ground = groundState.getBlock();
-        return ground == this || (ground == Blocks.RED_SAND)|| (ground == Blocks.SAND);
+        return ground == this || (ground == Blocks.RED_SAND)|| (ground == Blocks.SAND)|| (ground == Blocks.CLAY);
     }
     @Override
     public void randomTick(BlockState state, ServerWorld worldIn, BlockPos pos, Random random) {
@@ -62,7 +62,10 @@ public class CallOfAncestorsBlock extends CropsBlock {
     protected int getBonemealAgeIncrease(World worldIn) {
         return MathHelper.nextInt(worldIn.rand, 0, 1);
     }
-
+    @Override
+    public boolean canUseBonemeal(World worldIn, Random rand, BlockPos pos, BlockState state) {
+        return (double)worldIn.rand.nextFloat() < 0.30D;
+    }
     @Override
     protected IItemProvider getSeedsItem() {
 return ModItems.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get();
