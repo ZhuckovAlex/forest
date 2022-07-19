@@ -139,11 +139,11 @@ public class TurningBirchLogs {
 
                 if (world instanceof World && !world.isRemote()) {
                     ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
+                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.blast")),
                             SoundCategory.NEUTRAL, (float) 1, (float) 1);
                 } else {
                     ((World) world).playSound(x, y, z,
-                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("magforest:craftstart")),
+                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.firework_rocket.blast")),
                             SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
                 }
 
