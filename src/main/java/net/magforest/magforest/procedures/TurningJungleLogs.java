@@ -134,16 +134,16 @@ public class TurningJungleLogs {
                 }.start(world, (int) 30);
 
                 if (world instanceof ServerWorld) {
-                    ((ServerWorld) world).spawnParticle(ParticleTypes.SQUID_INK, x, y, z, (int) 30, 1, 1, 1, 0.1);
+                    ((ServerWorld) world).spawnParticle(ParticleTypes.EXPLOSION, x, y, z, (int) 5, 0.25, 0.25, 0.25, 0.1);
                 }
 
                 if (world instanceof World && !world.isRemote()) {
                     ((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.shoot")),
+                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")),
                             SoundCategory.NEUTRAL, (float) 1, (float) 1);
                 } else {
                     ((World) world).playSound(x, y, z,
-                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.shoot")),
+                            (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.explode")),
                             SoundCategory.NEUTRAL, (float) 1, (float) 1, false);
                 }
 
