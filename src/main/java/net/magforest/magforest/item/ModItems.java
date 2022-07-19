@@ -168,6 +168,8 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> OAK_CORE = ITEMS.register("oak_core",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> BIRCH_CORE = ITEMS.register("birch_core",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> GOLDEN_CAP = ITEMS.register("golden_cap",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> IRON_CAP = ITEMS.register("iron_cap",
@@ -193,6 +195,16 @@ public class ModItems
     public static ItemWand ITEM_OAK_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
     public static final RegistryObject<Item> OAK_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("oak_wand_framed_by_moon_tear",
             () -> ITEM_OAK_WAND_FRAMED_BY_MOON_TEAR);
+
+    public static ItemWand ITEM_BIRCH_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
+    public static final RegistryObject<Item> BIRCH_WAND_FRAMED_BY_GOLD = ITEMS.register("birch_wand_framed_by_gold",
+            () -> ITEM_BIRCH_WAND_FRAMED_BY_GOLD);
+    public static ItemWand ITEM_BIRCH_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
+    public static final RegistryObject<Item> BIRCH_WAND_FRAMED_BY_IRON = ITEMS.register("birch_wand_framed_by_iron",
+            () -> ITEM_BIRCH_WAND_FRAMED_BY_IRON);
+    public static ItemWand ITEM_BIRCH_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
+    public static final RegistryObject<Item> BIRCH_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("birch_wand_framed_by_moon_tear",
+            () -> ITEM_BIRCH_WAND_FRAMED_BY_MOON_TEAR);
 
     public static final RegistryObject<Item> PESTLE = ITEMS.register("pestle",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
