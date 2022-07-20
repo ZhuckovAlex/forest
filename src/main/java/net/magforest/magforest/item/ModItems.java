@@ -96,6 +96,8 @@ public class ModItems
                     .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> MOON_TEAR = ITEMS.register("moon_tear",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> CHALK = ITEMS.register("chalk",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MOON_TEAR_KNIFE = ITEMS.register("moon_tear_knife",
             () -> new SwordItem(ModItemTier.MOON_TEAR, 6,-2,  new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MOON_TEAR_PICKAXE = ITEMS.register("moon_tear_pickaxe",
