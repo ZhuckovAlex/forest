@@ -4,9 +4,11 @@ import net.magforest.magforest.events.packets.PacketFocusChangeToServer;
 import net.magforest.magforest.item.ItemWand;
 import net.magforest.magforest.magforest;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +19,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 @Mod.EventBusSubscriber( modid = magforest.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE,value = Dist.CLIENT)
 public class ClientEvents {
 
+    public static KeyBinding keyF = new KeyBinding("Change Wand Focus", 89, "key.categories.misc");
     private static boolean keyPressedF = false;
     public static boolean radialActive = false;
     public static boolean radialLock = false;
@@ -43,7 +46,7 @@ public class ClientEvents {
         if (event.side.isClient()) {
             if (event.phase == TickEvent.Phase.START)
             {
-                if (magforest.keyF.isKeyDown()) {
+                if (keyF.isKeyDown()) {
                     if (Minecraft.getInstance().isGameFocused()) {
                         PlayerEntity player = event.player;
                         if (player != null) {

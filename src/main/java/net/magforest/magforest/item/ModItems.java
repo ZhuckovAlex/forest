@@ -29,26 +29,23 @@ public class ModItems
     public static final RegistryObject<Item> KARAMBOLA = ITEMS.register("karambola",
             () -> new BlockItem(ModBlocks.KARAMBOLA.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> SEEDS_OF_THE_CALL_OF_THE_ANCESTORS = ITEMS.register("seeds_of_the_call_of_the_ancestors",
-            () -> new BlockItem(ModBlocks.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get(), new Item.Properties()
-                    .group(ModItemGroup.THAUM_ITEMS)));
 
     public static final RegistryObject<Item> CIAN_LEAVES = ITEMS.register("cian_leaves",
             () -> new BlockItem(ModBlocks.CIAN_LEAVES.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
-    public static ItemFocusAerKnob ITEM_AER_KNOB = new ItemFocusAerKnob(new Item.Properties().maxStackSize(1).group(ModItemGroup.SPELLS));
+    public static ItemFocusAerKnob ITEM_AER_KNOB = new ItemFocusAerKnob(new Item.Properties().group(ModItemGroup.SPELLS));
     public static final RegistryObject<Item> AER_KNOB = ITEMS.register("aer_knob",
             () -> ITEM_AER_KNOB);
-    public static ItemFocusAquaKnob ITEM_AQUA_KNOB = new ItemFocusAquaKnob(new Item.Properties().maxStackSize(1).group(ModItemGroup.SPELLS));
+    public static ItemFocusAquaKnob ITEM_AQUA_KNOB = new ItemFocusAquaKnob(new Item.Properties().group(ModItemGroup.SPELLS));
     public static final RegistryObject<Item> AQUA_KNOB = ITEMS.register("aqua_knob",
             () -> ITEM_AQUA_KNOB);
-    public static ItemFocusFlameKnob ITEM_FLAME_KNOB = new ItemFocusFlameKnob(new Item.Properties().maxStackSize(1).group(ModItemGroup.SPELLS));
+    public static ItemFocusFlameKnob ITEM_FLAME_KNOB = new ItemFocusFlameKnob(new Item.Properties().group(ModItemGroup.SPELLS));
     public static final RegistryObject<Item> FLAME_KNOB = ITEMS.register("flame_knob",
             () -> ITEM_FLAME_KNOB);
-    public static ItemFocusInertKnob ITEM_INERT_KNOB = new ItemFocusInertKnob(new Item.Properties().maxStackSize(1).group(ModItemGroup.SPELLS));
+    public static ItemFocusInertKnob ITEM_INERT_KNOB = new ItemFocusInertKnob(new Item.Properties().group(ModItemGroup.SPELLS));
     public static final RegistryObject<Item> INERT_KNOB = ITEMS.register("inert_knob",
             () -> ITEM_INERT_KNOB);
-    public static ItemFocusTerraKnob ITEM_TERRA_KNOB = new ItemFocusTerraKnob(new Item.Properties().maxStackSize(1).group(ModItemGroup.SPELLS));
+    public static ItemFocusTerraKnob ITEM_TERRA_KNOB = new ItemFocusTerraKnob(new Item.Properties().group(ModItemGroup.SPELLS));
     public static final RegistryObject<Item> TERRA_KNOB = ITEMS.register("terra_knob",
             () -> ITEM_TERRA_KNOB);
     public static final RegistryObject<Item> JIRAZOL = ITEMS.register("jirazol",
@@ -95,8 +92,6 @@ public class ModItems
             () -> new BlockItem(ModBlocks.THISTLE.get(), new Item.Properties()
                     .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> MOON_TEAR = ITEMS.register("moon_tear",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> CHALK = ITEMS.register("chalk",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MOON_TEAR_KNIFE = ITEMS.register("moon_tear_knife",
             () -> new SwordItem(ModItemTier.MOON_TEAR, 6,-2,  new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
@@ -168,25 +163,12 @@ public class ModItems
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> DARK_BIRCH_CORE = ITEMS.register("dark_birch_core",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> OAK_CORE = ITEMS.register("oak_core",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> SPRUCE_CORE = ITEMS.register("spruce_core",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> DARK_OAK_CORE = ITEMS.register("dark_oak_core",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> BIRCH_CORE = ITEMS.register("birch_core",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> JUNGLE_CORE = ITEMS.register("jungle_core",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-    public static final RegistryObject<Item> ACACIA_CORE = ITEMS.register("acacia_core",
-            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> GOLDEN_CAP = ITEMS.register("golden_cap",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> IRON_CAP = ITEMS.register("iron_cap",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MOON_TEAR_CAP = ITEMS.register("moon_tear_cap",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
-
     public static ItemWand ITEM_DARK_BIRCH_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
     public static final RegistryObject<Item> DARK_BIRCH_WAND_FRAMED_BY_GOLD = ITEMS.register("dark_birch_wand_framed_by_gold",
             () -> ITEM_DARK_BIRCH_WAND_FRAMED_BY_GOLD);
@@ -196,67 +178,6 @@ public class ModItems
     public static ItemWand ITEM_DARK_BIRCH_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
     public static final RegistryObject<Item> DARK_BIRCH_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("dark_birch_wand_framed_by_moon_tear",
             () -> ITEM_DARK_BIRCH_WAND_FRAMED_BY_MOON_TEAR);
-
-    public static ItemWand ITEM_OAK_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> OAK_WAND_FRAMED_BY_GOLD = ITEMS.register("oak_wand_framed_by_gold",
-            () -> ITEM_OAK_WAND_FRAMED_BY_GOLD);
-    public static ItemWand ITEM_OAK_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> OAK_WAND_FRAMED_BY_IRON = ITEMS.register("oak_wand_framed_by_iron",
-            () -> ITEM_OAK_WAND_FRAMED_BY_IRON);
-    public static ItemWand ITEM_OAK_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> OAK_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("oak_wand_framed_by_moon_tear",
-            () -> ITEM_OAK_WAND_FRAMED_BY_MOON_TEAR);
-
-    public static ItemWand ITEM_SPRUCE_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> SPRUCE_WAND_FRAMED_BY_GOLD = ITEMS.register("spruce_wand_framed_by_gold",
-            () -> ITEM_SPRUCE_WAND_FRAMED_BY_GOLD);
-    public static ItemWand ITEM_SPRUCE_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> SPRUCE_WAND_FRAMED_BY_IRON = ITEMS.register("spruce_wand_framed_by_iron",
-            () -> ITEM_SPRUCE_WAND_FRAMED_BY_IRON);
-    public static ItemWand ITEM_SPRUCE_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> SPRUCE_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("spruce_wand_framed_by_moon_tear",
-            () -> ITEM_SPRUCE_WAND_FRAMED_BY_MOON_TEAR);
-
-    public static ItemWand ITEM_DARK_OAK_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> DARK_OAK_WAND_FRAMED_BY_GOLD = ITEMS.register("dark_oak_wand_framed_by_gold",
-            () -> ITEM_DARK_OAK_WAND_FRAMED_BY_GOLD);
-    public static ItemWand ITEM_DARK_OAK_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> DARK_OAK_WAND_FRAMED_BY_IRON = ITEMS.register("dark_oak_wand_framed_by_iron",
-            () -> ITEM_DARK_OAK_WAND_FRAMED_BY_IRON);
-    public static ItemWand ITEM_DARK_OAK_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> DARK_OAK_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("dark_oak_wand_framed_by_moon_tear",
-            () -> ITEM_DARK_OAK_WAND_FRAMED_BY_MOON_TEAR);
-
-    public static ItemWand ITEM_BIRCH_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> BIRCH_WAND_FRAMED_BY_GOLD = ITEMS.register("birch_wand_framed_by_gold",
-            () -> ITEM_BIRCH_WAND_FRAMED_BY_GOLD);
-    public static ItemWand ITEM_BIRCH_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> BIRCH_WAND_FRAMED_BY_IRON = ITEMS.register("birch_wand_framed_by_iron",
-            () -> ITEM_BIRCH_WAND_FRAMED_BY_IRON);
-    public static ItemWand ITEM_BIRCH_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> BIRCH_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("birch_wand_framed_by_moon_tear",
-            () -> ITEM_BIRCH_WAND_FRAMED_BY_MOON_TEAR);
-
-    public static ItemWand ITEM_ACACIA_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> ACACIA_WAND_FRAMED_BY_GOLD = ITEMS.register("acacia_wand_framed_by_gold",
-            () -> ITEM_ACACIA_WAND_FRAMED_BY_GOLD);
-    public static ItemWand ITEM_ACACIA_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> ACACIA_WAND_FRAMED_BY_IRON = ITEMS.register("acacia_wand_framed_by_iron",
-            () -> ITEM_ACACIA_WAND_FRAMED_BY_IRON);
-    public static ItemWand ITEM_ACACIA_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> ACACIA_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("acacia_wand_framed_by_moon_tear",
-            () -> ITEM_ACACIA_WAND_FRAMED_BY_MOON_TEAR);
-
-    public static ItemWand ITEM_JUNGLE_WAND_FRAMED_BY_GOLD = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> JUNGLE_WAND_FRAMED_BY_GOLD = ITEMS.register("jungle_wand_framed_by_gold",
-            () -> ITEM_JUNGLE_WAND_FRAMED_BY_GOLD);
-    public static ItemWand ITEM_JUNGLE_WAND_FRAMED_BY_IRON = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> JUNGLE_WAND_FRAMED_BY_IRON = ITEMS.register("jungle_wand_framed_by_iron",
-            () -> ITEM_JUNGLE_WAND_FRAMED_BY_IRON);
-    public static ItemWand ITEM_JUNGLE_WAND_FRAMED_BY_MOON_TEAR = new ItemWand(new Item.Properties().maxStackSize(1).group(ModItemGroup.THAUM_ITEMS));
-    public static final RegistryObject<Item> JUNGLE_WAND_FRAMED_BY_MOON_TEAR = ITEMS.register("jungle_wand_framed_by_moon_tear",
-            () -> ITEM_JUNGLE_WAND_FRAMED_BY_MOON_TEAR);
-
     public static final RegistryObject<Item> PESTLE = ITEMS.register("pestle",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> MORTAR_AND_PESTLE = ITEMS.register("mortar_and_pestle",

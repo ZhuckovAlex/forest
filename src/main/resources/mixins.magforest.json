@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "package": "net.magforest.magforest.mixin",
+  "refmap": "mixins.magforest.refmap.json",
+  "mixins": [
+    "MixinEntity"
+  ],
+  "client": [],
+  "server": []
+}

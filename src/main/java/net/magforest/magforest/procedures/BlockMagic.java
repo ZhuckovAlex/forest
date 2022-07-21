@@ -151,20 +151,6 @@ public class BlockMagic {
             }
         }
 
-        if (Blocks.CAULDRON == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() && ModItems.MIRACULUM_FLAMAS.get()
-                .asItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()) {
-            world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
-            world.setBlockState(new BlockPos((int) x, (int) y, (int) z), ModBlocks.CRUCIBLE.get().getDefaultState(), 3);
-            if (entity instanceof PlayerEntity) {
-                ItemStack _stktoremove = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-                ((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-                        ((PlayerEntity) entity).container.func_234641_j_());
-            }
-            if (world instanceof ServerWorld) {
-                ((ServerWorld) world).spawnParticle(ParticleTypes.LAVA, x, y, z, (int) 5, 3, 3, 3, 1);
-            }
-        }
-
         if (Blocks.CORNFLOWER == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() && ModItems.MIRACULUM_FLAMAS.get()
                 .asItem() == ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem()) {
             world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
