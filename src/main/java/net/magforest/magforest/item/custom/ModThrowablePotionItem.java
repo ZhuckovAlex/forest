@@ -19,7 +19,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ModThrowablePotionItem extends Item {
-    public ModThrowablePotionItem(Item.Properties properties) {
+    public ModThrowablePotionItem(Properties properties) {
         super(properties);
     }
 

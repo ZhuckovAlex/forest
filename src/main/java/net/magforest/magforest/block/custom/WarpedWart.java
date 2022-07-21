@@ -26,7 +26,7 @@ public class WarpedWart extends BushBlock {
             Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 11.0D, 16.0D),
             Block.makeCuboidShape(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D)};
 
-    public WarpedWart(AbstractBlock.Properties builder) {
+    public WarpedWart(Properties builder) {
         super(builder);
         this.setDefaultState(this.stateContainer.getBaseState().with(AGE, Integer.valueOf(0)));
     }

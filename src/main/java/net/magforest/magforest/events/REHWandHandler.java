@@ -26,11 +26,13 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 
 import org.lwjgl.opengl.GL11;
 
-
+@OnlyIn(Dist.CLIENT)
 public class REHWandHandler {
 
     static float radialHudScale = 0.0F;
@@ -284,7 +286,7 @@ public class REHWandHandler {
         if(brightness > 0) {
             tessellator.getBuffer().lightmap(brightness);
         }
-        tessellator.getBuffer().color(red, green, blue, opacity);
+        worldRenderer.color(red, green, blue, opacity);
         worldRenderer.addVertex(-0.5f, 0.5F, 0.0F,red,green,blue,opacity,0,1, 1, 1,1,1,1);
         worldRenderer.addVertex(0.5f, 0.5F, 1.0F,red,green,blue,opacity,1,1, 1, 1,1,1,1);
         worldRenderer.addVertex(0.5f, -0.5F, 1.0F,red,green,blue,opacity,1,0, 1, 1,1,1,1);
