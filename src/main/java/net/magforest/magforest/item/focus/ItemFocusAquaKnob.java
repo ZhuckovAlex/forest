@@ -15,7 +15,7 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
 public class ItemFocusAquaKnob extends ItemFocus {
-    private static final AspectList costBase = (new AspectList()).add(Aspect.WATER, 5);
+    private static final AspectList costBase = (new AspectList()).add(Aspect.FIRE, 5);
 
     public ItemFocusAquaKnob(Properties properties) {
         super(properties);

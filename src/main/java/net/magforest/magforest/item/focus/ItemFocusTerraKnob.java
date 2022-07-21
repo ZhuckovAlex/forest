@@ -29,7 +29,7 @@ import net.minecraftforge.event.world.BlockEvent;
 import java.util.HashMap;
 
 public class ItemFocusTerraKnob extends ItemFocus {
-    private static final AspectList cost = (new AspectList()).add(Aspect.EARTH, 5);
+    private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 5);
     static HashMap<String, Long> soundDelay = new HashMap();
     static HashMap<String, Object> beam = new HashMap();
     static HashMap<String, Float> breakcount = new HashMap();
@@ -207,7 +207,8 @@ public class ItemFocusTerraKnob extends ItemFocus {
         } else {
 
             //world.setBlockToAir(x, y, z);
-            world.setBlockState(pos,Blocks.AIR.getDefaultState());
+            world.destroyBlock(pos,true);
+            //world.setBlockState(pos,Blocks.AIR.getDefaultState());
             //world.playAuxSFX(2001, x, y, z, Block.getIdFromBlock(block) + (md << 12));
             return true;
         }

@@ -25,7 +25,7 @@ import net.minecraftforge.common.ForgeHooks;
 import java.util.HashMap;
 
 public class ItemFocusAerKnob extends ItemFocus {
-    private static final AspectList cost = (new AspectList()).add(Aspect.AIR, 2);
+    private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 2);
     static HashMap<String, Long> soundDelay = new HashMap();
     static HashMap<String, Object> beam = new HashMap();
     static HashMap<String, Float> breakcount = new HashMap();
@@ -92,7 +92,7 @@ public class ItemFocusAerKnob extends ItemFocus {
                 EntityAir orb = EntityAir.createAir(ModEntityTypes.AIR_BLOW.get(), p, world);
                 //orb.shoot(orb.getMotion().x,orb.getMotion().y,orb.getMotion().z,orb.func_70182_d(),15F);
                 orb.setPosition(orb.getPosX()+orb.getMotion().x,orb.getPosY()+orb.getMotion().y,orb.getPosZ()+orb.getMotion().z);
-                orb.setKnockbackStrength(2);
+                orb.setKnockbackStrength(5);
 
 
                 orb.setDirectionAndMovement(p, p.rotationPitch, p.rotationYaw, 0.0F, 1.0F, 1.0F);
@@ -113,7 +113,8 @@ public class ItemFocusAerKnob extends ItemFocus {
                         pos = pos.offset(p.getAdjustedHorizontalFacing());
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
-                if(state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.LEAVES){
+                if(state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.PLANTS || state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.FIRE
+                        || state.getMaterial() == Material.WEB){
 
                 //int md = state.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ);
                 float hardness = state.getBlockHardness(world, pos);
@@ -192,7 +193,8 @@ public class ItemFocusAerKnob extends ItemFocus {
         } else {
 
             //world.setBlockToAir(x, y, z);
-            world.setBlockState(pos,Blocks.AIR.getDefaultState());
+            world.destroyBlock(pos,true);
+           // world.setBlockState(pos,Blocks.AIR.getDefaultState());
             //world.playAuxSFX(2001, x, y, z, Block.getIdFromBlock(block) + (md << 12));
             return true;
         }

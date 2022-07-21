@@ -9,7 +9,7 @@ public class ModHellEntityHelper {
 
     public static boolean isHellEntity(Entity entity){
         EntityType type = entity.getType();
-        if(type == EntityType.ENDERMAN||
+        if(type == EntityType.ZOMBIFIED_PIGLIN||
         type == EntityType.GHAST||
         type == EntityType.WITHER_SKELETON||
         type == EntityType.MAGMA_CUBE||

@@ -106,8 +106,10 @@ public class EntityFrostShard extends ThrowableEntity implements IEntityAddition
                 ;
             }
 
-            if(super.world.getBlockState(pos).getMaterial() == Material.FIRE||super.world.getBlockState(pos).getMaterial() == Material.LAVA) {
+            if(super.world.getBlockState(pos).getMaterial() == Material.FIRE) {
                 super.world.setBlockState(pos, Blocks.AIR.getDefaultState());
+            }else if(super.world.getBlockState(pos).getMaterial() == Material.LAVA) {
+                super.world.setBlockState(pos, Blocks.OBSIDIAN.getDefaultState());
             }
 
 //            for(a1 = 0; (float)a1 < this.getDamage(); ++a1) {
