@@ -91,7 +91,7 @@ public class DropAcorn {
             }.checkGamemode(entity)))) {
                 if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.OAK_LEAVES))) {
                     randomChance = (double) Math.random();
-                    if ((randomChance <= 0.025)) {
+                    if ((randomChance <= 0.08)) {
                         if (world instanceof World && !world.isRemote()) {
                             ItemEntity entityToSpawn = new ItemEntity((World) world, (x + 0.5), (y + 0.5), (z + 0.5), new ItemStack(ModItems.ACORN.get()));
                             entityToSpawn.setPickupDelay((int) 10);

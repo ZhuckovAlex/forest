@@ -9,7 +9,6 @@ import net.magforest.magforest.data.recipes.ModLightningRodRecipeTypes;
 import net.magforest.magforest.entity.ModCianEntityTypes;
 import net.magforest.magforest.entity.ModDarkBirchEntityTypes;
 import net.magforest.magforest.entity.ModEntityTypes;
-import net.magforest.magforest.entity.render.EntityFrostShardRenderer;
 import net.magforest.magforest.entity.render.MoonMothRender;
 import net.magforest.magforest.entity.renderer.ModCianBoatRenderer;
 import net.magforest.magforest.entity.renderer.ModDarkBirchBoatRenderer;
@@ -17,7 +16,6 @@ import net.magforest.magforest.entity.villager.ModVillager;
 import net.magforest.magforest.events.ClientEvents;
 import net.magforest.magforest.events.PacketHandler;
 import net.magforest.magforest.item.ModItems;
-import net.magforest.magforest.entity.render.EntityEmberRenderer;
 import net.magforest.magforest.screen.AlchemyTableScreen;
 import net.magforest.magforest.screen.LightingMachineScreen;
 import net.magforest.magforest.screen.SolarConverterScreen;
@@ -26,6 +24,7 @@ import net.magforest.magforest.util.ModSoundEvents;
 import net.magforest.magforest.world.biome.MagicForest;
 import net.magforest.magforest.world.structure.ModStructures;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.ComposterBlock;
 import net.minecraft.block.WoodType;
 import net.minecraft.client.gui.ScreenManager;
@@ -36,10 +35,11 @@ import net.minecraft.client.renderer.tileentity.SignTileEntityRenderer;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.item.*;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionUtils;
 import net.minecraft.potion.Potions;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.datafix.fixes.PotionWater;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.brewing.BrewingRecipe;
 import net.minecraftforge.common.brewing.BrewingRecipeRegistry;
@@ -55,8 +55,12 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.network.NetworkRegistry;
+import net.minecraftforge.fml.network.simple.SimpleChannel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import java.util.function.Supplier;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(magforest.MOD_ID)
@@ -77,6 +81,7 @@ public class magforest
         ModContainers.register(eventBus);
 
         ModStructures.register(eventBus);
+
         ModLightningRodRecipeTypes.register(eventBus);
         AlchemicalRecipeTypes.register(eventBus);
 
@@ -100,6 +105,7 @@ public class magforest
         MinecraftForge.EVENT_BUS.register(this);
         ModVillager.VILLAGER_PROFESSIONS.register(eventBus);
         ModVillager.POINT_OF_INTEREST_TYPES.register(eventBus);
+
     }
 
     private void setup(final FMLCommonSetupEvent event)
@@ -109,6 +115,9 @@ event.enqueueWork(() -> {
         });
 event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.KARAMBOLA.get(), 0.35f);
+        });
+        event.enqueueWork(() -> {
+            ComposterBlock.CHANCES.put(ModItems.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get(), 0.35f);
         });
 event.enqueueWork(() -> {
             ComposterBlock.CHANCES.put(ModItems.CIAN_LEAVES.get(), 0.65f);
@@ -197,7 +206,7 @@ event.enqueueWork(() -> registerRecipes());
         ));
     }
 
-
+    public static KeyBinding keyF = new KeyBinding("key.categories.misc.knob", 89, "key.categories.misc");
     private void doClientStuff(final FMLClientSetupEvent event)
     {
         ScreenManager.registerFactory(ModContainers.LIGHTING_MACHINE_CONTAINER.get(),
@@ -222,14 +231,13 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.THISTLE.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.KARAMBOLA.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.SEEDS_OF_THE_CALL_OF_THE_ANCESTORS.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.CRIMSON_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_WART.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_LEAVES.get(), RenderType.getCutout());
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.MOON_MOTH.get(), MoonMothRender::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMBER.get(), EntityEmberRenderer::new);
-        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.FROST_SHARD.get(), EntityFrostShardRenderer::new);
         ClientRegistry.bindTileEntityRenderer(ModTileEntities.SIGN_TILE_ENTITIES.get(),
                 SignTileEntityRenderer::new);
         Atlases.addWoodType(ModWoodTypes.BIG_CIAN);
@@ -239,7 +247,7 @@ event.enqueueWork(() -> registerRecipes());
 
         RenderingRegistry.registerEntityRenderingHandler(ModCianEntityTypes.CIAN_BOAT.get(), ModCianBoatRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModDarkBirchEntityTypes.DARK_BIRCH_BOAT.get(), ModDarkBirchBoatRenderer::new);
-        ClientRegistry.registerKeyBinding(ClientEvents.keyF);
+        ClientRegistry.registerKeyBinding(keyF);
     }
 
     private void enqueueIMC(final InterModEnqueueEvent event)

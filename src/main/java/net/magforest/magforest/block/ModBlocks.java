@@ -103,6 +103,9 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> KARAMBOLA = BLOCKS.register("karambola_crops",
             () -> new KarambolaBlock(AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.CROP)));
+    public static final RegistryObject<Block> SEEDS_OF_THE_CALL_OF_THE_ANCESTORS = BLOCKS.register("seeds_of_the_call_of_the_ancestors",
+            () -> new CallOfAncestorsBlock(AbstractBlock.Properties.create(Material.PLANTS)
+                    .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.CROP)));
     public static final RegistryObject<Block> DARK_BIRCH_LOG = registerBlock("dark_birch_log",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(2).sound(SoundType.WOOD)));
@@ -390,6 +393,29 @@ public class ModBlocks extends Blocks
     public static final RegistryObject<Block> ANCIENT_ELF_BRICKS_FENCE = registerBlock("ancient_elf_bricks_fence",
             () -> new FenceBlock(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> PEDESTAL = registerBlock("pedestal",
+            () -> new Pedestal(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
+    public static final RegistryObject<Block> DRAWING_TABLE = registerBlock("drawing_table",
+            () -> new FaceHorizontal(AbstractBlock.Properties.create(Material.WOOD)
+                    .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()) {
+            });
+    public static final RegistryObject<Block> KNOBS_WORKBENCH = registerBlock("knobs_workbench",
+            () -> new FaceHorizontal(AbstractBlock.Properties.create(Material.WOOD)
+                    .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()) {
+            });
+    public static final RegistryObject<Block> CENTER_PEDESTAL = registerBlock("center_pedestal",
+            () -> new Pedestal(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
+
+    public static final RegistryObject<Block> CRUCIBLE = registerBlock("crucible",
+            () -> new Crucible(AbstractBlock.Properties.create(Material.ROCK)
+                    .hardnessAndResistance(3).sound(SoundType.STONE).notSolid()));
+
+    public static final RegistryObject<Block> THE_MAGIC_WEAVER = registerBlock("the_magic_weaver",
+            () -> new Block(AbstractBlock.Properties.create(Material.WOOD)
+                    .hardnessAndResistance(1).sound(SoundType.WOOD).notSolid()));
 
 
     public static final RegistryObject<Block> CRIMSON_SAPLING = BLOCKS.register("crimson_sapling",
