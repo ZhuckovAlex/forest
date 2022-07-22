@@ -97,7 +97,7 @@ public class ItemFocusTerraKnob extends ItemFocus {
 
 
             if(world.isRemote) {
-                //beam.put(pp, Thaumcraft.proxy.beamCont(p.worldObj, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
+                //beaFm.put(pp, Thaumcraft.proxy.beamCont(p.worldObj, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
             }
 
             if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(((BlockRayTraceResult)mop).getPos()).canHarvestBlock(world,((BlockRayTraceResult)mop).getPos(),p)) {
@@ -110,12 +110,13 @@ public class ItemFocusTerraKnob extends ItemFocus {
                 if(hardness >= 0.0F) {
                     int pot = 0;
                     float speed = 0.05F + (float)pot * 0.1F;
-                    if(state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
+                    if(state.getMaterial() == Material.ROCK || state.getMaterial() == Material.WOOD || state.getMaterial() == Material.IRON
+                            || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.WEB || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
                         speed = 0.25F + (float)pot * 0.25F;
                     }
 
                     if(bi == Blocks.OBSIDIAN) {
-                        speed *= 3.0F;
+                        speed *= 7.5F;
                     }
 
                     if(((Integer)lastX.get(pp)).intValue() == (int)mop.getHitVec().x && ((Integer)lastY.get(pp)).intValue() == (int)mop.getHitVec().y && ((Integer)lastZ.get(pp)).intValue() == (int)mop.getHitVec().z) {

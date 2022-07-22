@@ -109,14 +109,14 @@ public class ItemFocusAerKnob extends ItemFocus {
 
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
-                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.OCEAN_PLANT || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.SNOW || state.getMaterial() == Material.SNOW_BLOCK){
+                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.OCEAN_PLANT || state.getMaterial() == Material.WEB || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.SNOW || state.getMaterial() == Material.SNOW_BLOCK){
 
                 //int md = state.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ);
                 float hardness = state.getBlockHardness(world, pos);
                 if (hardness >= 0.0F) {
                     int pot = 0;
                     float speed = 0.05F + (float) pot * 0.1F;
-                    if (state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
+                    if (state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.WEB || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
                         speed = 0.25F + (float) pot * 0.25F;
                     }
 
