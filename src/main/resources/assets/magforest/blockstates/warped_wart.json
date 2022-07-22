@@ -11,18 +11,6 @@
     },
     "age=3": {
       "model": "magforest:block/warped_wart_stage3"
-    },
-    "age=4": {
-      "model": "magforest:block/warped_wart_stage4"
-    },
-    "age=5": {
-      "model": "magforest:block/warped_wart_stage5"
-    },
-    "age=6": {
-      "model": "magforest:block/warped_wart_stage6"
-    },
-    "age=7": {
-      "model": "magforest:block/warped_wart_stage7"
     }
   }
 }

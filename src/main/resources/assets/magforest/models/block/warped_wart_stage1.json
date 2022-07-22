@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/crop",
   "textures": {
-    "crop": "magforest:block/warped_wart_stage1"
+    "crop": "magforest:block/warped_wart_stage0"
   }
 }
