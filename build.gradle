@@ -18,9 +18,9 @@ apply plugin: 'maven-publish'
 
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.16.5-2.2.0.BETA'
+version = '1.16.5-0.0.1.ALPHA'
 group = 'net.magforest.magforest' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'magforest'
+archivesBaseName = 'Legends of Elf Magic'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8) // Mojang ships Java 8 to end users, so your mod should target Java 8.
 repositories {

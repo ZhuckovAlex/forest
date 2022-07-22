@@ -19,33 +19,27 @@ modId="magforest" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 # ${file.jarVersion} will substitute the value of the Implementation-Version as read from the mod's JAR file metadata
 # see the associated build.gradle script for how to populate this completely automatically during a build
-version="1.16.5-2.0.1" #mandatory
+version="1.16.5-0.0.1" #mandatory
  # A display name for the mod
-displayName="magforest" #mandatory
+displayName="Legends of Elf Magic" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification https://mcforge.readthedocs.io/en/latest/gettingstarted/autoupdate/
 #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="ThaumForest.jpg" #optional
+logoFile="legends_elf.jpg" #optional
 # A text field displayed in the mod UI
 credits="Майнкрафт Борщ" #optional
 # A text field displayed in the mod UI
 authors="Майнкрафт Борщ" #optional
 # The description text for the mod (multi line!) (#mandatory)
-description='''Теперь волшебный лес обновился! 1 версия это только начало!
-Кроме деревьев появилась новая механика - разрядник молний крафтит предметы
- с помощью молний и может плавить метал - рубинит, то есть аналог незерита,
- но мощнее, также деревья из незера можно перенести в мир!
-Разрядник - предмет, который обладает возможностью превращать одно в другое
-с помощью грубой магии за счёт молний, так как молнии когда бьют в разрядник
- энергия проходя через рубин трансформируется в грубую силу, которая сжигает
-  всё на пути, но рубин это магический камень и он плавя и сжигая предметы преобразует
-   новые забирая их аспекты и возвращая их создавая новые.
-               Волшебный лес теперь ожил. Деревья, пчёлы, трава.
-               Рубиновая руда спавнится на высоте между 20 и 45....'''
+description='''Однажды произошла катастрофа, которая расколола мир эльфов. Дело было так: эльфы в один момент разделились на тёмных и светлых.
+Тёмные эльфы хотели больше силы и свободы в магии, но светлые были на стороне природы и гармонии, что породило спор между ними.
+У мира были кристальные спутники, которые давалии силу и однажды тёмным эльфам удалось дистабилизировать планету и спутники начали падать на неё и откололи верхний слой.
+На верхнем слое остались тёмные эльфы, а внизу светлые, но куда последние исчезли не извесно. Знаю одно, что у меня есть дневник, который у меня и остался.
+В нём моя история...'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.examplemod]] #optional
+[[dependencies.magforest]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -57,7 +51,7 @@ description='''Теперь волшебный лес обновился! 1 ве
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.examplemod]]
+[[dependencies.magforest]]
     modId="minecraft"
     mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

@@ -109,7 +109,7 @@ public class ItemFocusAerKnob extends ItemFocus {
 
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
-                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.OCEAN_PLANT || state.getMaterial() == Material.WEB || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.SNOW || state.getMaterial() == Material.SNOW_BLOCK){
+                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.PLANTS || state.getMaterial() == Material.OCEAN_PLANT || state.getMaterial() == Material.WEB || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.SNOW || state.getMaterial() == Material.SNOW_BLOCK){
 
                 //int md = state.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ);
                 float hardness = state.getBlockHardness(world, pos);
