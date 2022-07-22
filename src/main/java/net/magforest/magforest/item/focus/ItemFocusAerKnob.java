@@ -14,6 +14,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.GameType;
@@ -92,7 +93,7 @@ public class ItemFocusAerKnob extends ItemFocus {
                 EntityAir orb = EntityAir.createAir(ModEntityTypes.AIR_BLOW.get(), p, world);
                 //orb.shoot(orb.getMotion().x,orb.getMotion().y,orb.getMotion().z,orb.func_70182_d(),15F);
                 orb.setPosition(orb.getPosX()+orb.getMotion().x,orb.getPosY()+orb.getMotion().y,orb.getPosZ()+orb.getMotion().z);
-                orb.setKnockbackStrength(2);
+                orb.setKnockbackStrength(4);
 
 
                 orb.setDirectionAndMovement(p, p.rotationPitch, p.rotationYaw, 0.0F, 1.0F, 1.0F);
@@ -103,17 +104,12 @@ public class ItemFocusAerKnob extends ItemFocus {
                 //beam.put(pp, Thaumcraft.proxy.beamCont(p.worldObj, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
             }
 
-            if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(new BlockPos(mop.getHitVec().x, mop.getHitVec().y, mop.getHitVec().z)).canHarvestBlock(world,new BlockPos(mop.getHitVec().x, mop.getHitVec().y, mop.getHitVec().z),p)) {
-                BlockPos pos = new BlockPos(mop.getHitVec().x, mop.getHitVec().y, mop.getHitVec().z);
+            if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(((BlockRayTraceResult)mop).getPos()).canHarvestBlock(world,((BlockRayTraceResult)mop).getPos(),p)) {
+                BlockPos pos = ((BlockRayTraceResult)mop).getPos();
 
-                if (world.getBlockState(pos).getBlock() == Blocks.AIR)
-                    if (world.getBlockState(pos.down()).getBlock() != Blocks.AIR)
-                        pos = pos.down();
-                    else
-                        pos = pos.offset(p.getAdjustedHorizontalFacing());
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
-                if(state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.PLANTS || state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.OCEAN_PLANT){
+                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.OCEAN_PLANT || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.SNOW || state.getMaterial() == Material.SNOW_BLOCK){
 
                 //int md = state.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ);
                 float hardness = state.getBlockHardness(world, pos);
@@ -171,6 +167,39 @@ public class ItemFocusAerKnob extends ItemFocus {
 
         }
 
+    }
+
+    public void onPlayerStoppedUsingFocus(ItemStack stack, World world, PlayerEntity p, int count) {
+        String pp = "R" + p.getName();
+        if(!world.isRemote) {
+            pp = "S" + p.getName();
+        }
+
+        if(soundDelay.get(pp) == null) {
+            soundDelay.put(pp, Long.valueOf(0L));
+        }
+
+        if(breakcount.get(pp) == null) {
+            breakcount.put(pp, Float.valueOf(0.0F));
+        }
+
+        if(lastX.get(pp) == null) {
+            lastX.put(pp, Integer.valueOf(0));
+        }
+
+        if(lastY.get(pp) == null) {
+            lastY.put(pp, Integer.valueOf(0));
+        }
+
+        if(lastZ.get(pp) == null) {
+            lastZ.put(pp, Integer.valueOf(0));
+        }
+
+        beam.put(pp, (Object)null);
+        lastX.put(pp, Integer.valueOf(Integer.MAX_VALUE));
+        lastY.put(pp, Integer.valueOf(Integer.MAX_VALUE));
+        lastZ.put(pp, Integer.valueOf(Integer.MAX_VALUE));
+        breakcount.put(pp, Float.valueOf(0.0F));
     }
     @OnlyIn(Dist.CLIENT)
     public void excavateFX(BlockPos pos , PlayerEntity p, World world, int progress) {

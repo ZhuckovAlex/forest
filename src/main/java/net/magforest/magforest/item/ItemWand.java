@@ -4,6 +4,7 @@ import net.magforest.magforest.item.aspect.Aspect;
 import net.magforest.magforest.item.aspect.AspectList;
 import net.magforest.magforest.magforest;
 import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
@@ -244,6 +245,22 @@ public class ItemWand extends Item {
                 items.add(w1);
             }
         }
+
+    }
+    public void onPlayerStoppedUsing(ItemStack stack, World worldIn, LivingEntity entityLiving, int timeLeft) {
+
+        if(entityLiving instanceof PlayerEntity) {
+            ItemFocus focus = this.getFocus(stack);
+            if (focus != null) {
+                focus.onPlayerStoppedUsingFocus(stack, worldIn, (PlayerEntity)entityLiving, timeLeft);
+            }
+        }
+
+    }
+
+    public boolean canHarvestBlock(ItemStack stack, BlockState state) {
+        ItemFocus focus = this.getFocus(stack);
+        return focus != null?focus == ModItems.ITEM_TERRA_KNOB||focus == ModItems.ITEM_AER_KNOB:false;
 
     }
     public ItemFocus getFocus(ItemStack stack) {

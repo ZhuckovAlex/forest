@@ -7,6 +7,7 @@ import net.magforest.magforest.item.ItemFocus;
 import net.magforest.magforest.item.ItemWand;
 import net.magforest.magforest.item.aspect.Aspect;
 import net.magforest.magforest.item.aspect.AspectList;
+import net.magforest.magforest.magforest;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -17,6 +18,8 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
+import net.minecraft.util.math.RayTraceContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.GameType;
@@ -73,7 +76,7 @@ public class ItemFocusTerraKnob extends ItemFocus {
             }
 
 
-            RayTraceResult mop = p.pick(20,0,false);
+            RayTraceResult mop = p.pick(20.0D,0.0F,false);
             Vector3d v = p.getLookVec();
             double tx = p.getPosX() + v.x * 10.0D;
             double ty = p.getPosY() + v.y * 10.0D;
@@ -97,14 +100,8 @@ public class ItemFocusTerraKnob extends ItemFocus {
                 //beam.put(pp, Thaumcraft.proxy.beamCont(p.worldObj, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
             }
 
-            if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(new BlockPos(mop.getHitVec().x, mop.getHitVec().y, mop.getHitVec().z)).canHarvestBlock(world,new BlockPos(mop.getHitVec().x, mop.getHitVec().y, mop.getHitVec().z),p)) {
-                BlockPos pos = new BlockPos(mop.getHitVec().x, mop.getHitVec().y, mop.getHitVec().z);
-
-                if(world.getBlockState(pos).getBlock() == Blocks.AIR)
-                    if(world.getBlockState(pos.down()).getBlock() != Blocks.AIR)
-                        pos = pos.down();
-                    else
-                        pos = pos.offset(p.getAdjustedHorizontalFacing());
+            if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(((BlockRayTraceResult)mop).getPos()).canHarvestBlock(world,((BlockRayTraceResult)mop).getPos(),p)) {
+                BlockPos pos = ((BlockRayTraceResult)mop).getPos();
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
 
@@ -165,6 +162,41 @@ public class ItemFocusTerraKnob extends ItemFocus {
 
         }
     }
+
+
+    public void onPlayerStoppedUsingFocus(ItemStack stack, World world, PlayerEntity p, int count) {
+        String pp = "R" + p.getName();
+        if(!world.isRemote) {
+            pp = "S" + p.getName();
+        }
+
+        if(soundDelay.get(pp) == null) {
+            soundDelay.put(pp, Long.valueOf(0L));
+        }
+
+        if(breakcount.get(pp) == null) {
+            breakcount.put(pp, Float.valueOf(0.0F));
+        }
+
+        if(lastX.get(pp) == null) {
+            lastX.put(pp, Integer.valueOf(0));
+        }
+
+        if(lastY.get(pp) == null) {
+            lastY.put(pp, Integer.valueOf(0));
+        }
+
+        if(lastZ.get(pp) == null) {
+            lastZ.put(pp, Integer.valueOf(0));
+        }
+
+        beam.put(pp, (Object)null);
+        lastX.put(pp, Integer.valueOf(Integer.MAX_VALUE));
+        lastY.put(pp, Integer.valueOf(Integer.MAX_VALUE));
+        lastZ.put(pp, Integer.valueOf(Integer.MAX_VALUE));
+        breakcount.put(pp, Float.valueOf(0.0F));
+    }
+
 //    @OnlyIn(Dist.CLIENT)
 //    public Object beamCont(World worldObj, EntityPlayer p, double tx, double ty, double tz, int type, int color, boolean reverse, float endmod, Object input, int impact) {
 //        FXBeamWand beamcon = null;

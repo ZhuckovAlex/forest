@@ -90,15 +90,7 @@ public class EntityFrostShard extends ThrowableEntity implements IEntityAddition
 
             BlockPos pos = new BlockPos(mop.getHitVec());
 
-            if(super.getShooter().getAdjustedHorizontalFacing() != null)
-                if(world.getBlockState(pos).getBlock() == Blocks.AIR)
-                    if(world.getBlockState(pos.down()).getBlock() != Blocks.AIR)
-                        pos = pos.down();
-                    else
-                        pos = pos.offset(super.getShooter().getAdjustedHorizontalFacing());
-                else
-                if(super.world.getBlockState(pos).getBlock() == Blocks.AIR)
-                    pos=  pos.down();
+
             Block var12 = super.world.getBlockState(pos).getBlock();
             try {
                 this.playSound(var12.getSoundType(var12.getDefaultState()).getBreakSound(), 0.3F, 1.2F / (super.rand.nextFloat() * 0.2F + 0.9F));

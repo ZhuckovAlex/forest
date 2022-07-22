@@ -48,6 +48,8 @@ public class ItemFocus extends Item {
 
         return itemstack;
     }
+
+    public void onPlayerStoppedUsingFocus(ItemStack wandstack, World world, PlayerEntity player, int count) {}
     public void onUsingFocusTick(ItemStack wandstack, PlayerEntity player, World world) {}
     public AspectList getVisCost(ItemStack focusstack) {
         return null;

@@ -12,6 +12,7 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
@@ -85,16 +86,7 @@ public class EntityEmber extends ThrowableEntity implements IEntityAdditionalSpa
 
                 }
             } else if(result.getType() == RayTraceResult.Type.BLOCK) {
-                BlockPos pos = new BlockPos(result.getHitVec());
-                if(super.getShooter().getAdjustedHorizontalFacing() != null)
-                    if(world.getBlockState(pos).getBlock() == Blocks.AIR)
-                        if(world.getBlockState(pos.down()).getBlock() != Blocks.AIR)
-                            pos = pos.down();
-                        else
-                            pos = pos.offset(super.getShooter().getAdjustedHorizontalFacing());
-                else
-                    if(super.world.getBlockState(pos).getBlock() == Blocks.AIR)
-                        pos=  pos.down();
+                BlockPos pos =  ((BlockRayTraceResult)result).getPos();
                 if(super.world.getBlockState(pos).getMaterial().getColor() == MaterialColor.ICE) {
                     super.world.setBlockState(pos, Blocks.WATER.getDefaultState());
                 }
