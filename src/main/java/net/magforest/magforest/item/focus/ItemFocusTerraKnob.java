@@ -1,5 +1,6 @@
 package net.magforest.magforest.item.focus;
 
+import net.magforest.magforest.block.ModBlocks;
 import net.magforest.magforest.entity.ModEntityTypes;
 import net.magforest.magforest.entity.projectile.EntityAir;
 import net.magforest.magforest.entity.projectile.EntityEmber;
@@ -115,8 +116,11 @@ public class ItemFocusTerraKnob extends ItemFocus {
                         speed = 0.25F + (float)pot * 0.25F;
                     }
 
-                    if(bi == Blocks.OBSIDIAN) {
+                    if(bi == Blocks.OBSIDIAN){
                         speed *= 7.5F;
+                    }
+                    if(bi == ModBlocks.MOON_TEAR_OBSIDIAN_ORE.get()){
+                        speed *= 5.0F;
                     }
 
                     if(((Integer)lastX.get(pp)).intValue() == (int)mop.getHitVec().x && ((Integer)lastY.get(pp)).intValue() == (int)mop.getHitVec().y && ((Integer)lastZ.get(pp)).intValue() == (int)mop.getHitVec().z) {
