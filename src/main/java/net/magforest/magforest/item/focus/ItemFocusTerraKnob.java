@@ -117,7 +117,10 @@ public class ItemFocusTerraKnob extends ItemFocus {
                     }
 
                     if(bi == Blocks.OBSIDIAN){
-                        speed *= 7.5F;
+                        speed *= 5.5F;
+                    }
+                    if(bi == Blocks.CRYING_OBSIDIAN){
+                        speed *= 4.0F;
                     }
                     if(bi == ModBlocks.MOON_TEAR_OBSIDIAN_ORE.get()){
                         speed *= 5.0F;
