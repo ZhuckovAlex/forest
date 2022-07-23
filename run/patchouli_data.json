@@ -1,1 +1,18 @@
-{"bookGuiScale":0,"clickedVisualize":false,"bookData":{}}
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "magforest:magica": {
+      "viewedEntries": [
+        "magforest:beginning/begining",
+        "magforest:beginning/starting"
+      ],
+      "bookmarks": [],
+      "history": [
+        "magforest:beginning/starting",
+        "magforest:beginning/begining"
+      ],
+      "completedManualQuests": []
+    }
+  }
+}

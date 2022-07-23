@@ -27,7 +27,7 @@ displayName="Legends of Elf Magic" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="legends_elf.jpg" #optional
+logoFile="legends_elf.png" #optional
 # A text field displayed in the mod UI
 credits="Майнкрафт Борщ" #optional
 # A text field displayed in the mod UI
