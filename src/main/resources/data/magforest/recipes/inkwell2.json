@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "magforest:miraculum_flammas"
+    },
+    {
+      "item": "minecraft:ink_sac"
+    },
+    {
+      "item": "minecraft:feather"
+    },
+    {
+      "item": "magforest:crystal_phial"
+    }
+  ],
+  "result": {
+    "item": "magforest:inkwell",
+    "count": 1
+  }
+}
