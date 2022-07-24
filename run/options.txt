@@ -14,7 +14,7 @@ reducedDebugInfo:false
 snooperEnabled:false
 showSubtitles:false
 touchscreen:false
-fullscreen:false
+fullscreen:true
 bobView:true
 toggleCrouch:false
 toggleSprint:false
@@ -25,7 +25,7 @@ fovEffectScale:1.0
 gamma:0.5070422535211268
 renderDistance:12
 entityDistanceScaling:1.0
-guiScale:2
+guiScale:4
 particles:0
 maxFps:120
 difficulty:2
