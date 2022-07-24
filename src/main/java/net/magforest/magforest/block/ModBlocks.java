@@ -1,7 +1,8 @@
 package net.magforest.magforest.block;
 
 import net.magforest.magforest.block.custom.*;
-import net.magforest.magforest.block.custom.trees.BigCianTree;
+
+import net.magforest.magforest.block.custom.trees.CianTree;
 import net.magforest.magforest.block.custom.trees.CrimsonTree;
 import net.magforest.magforest.block.custom.trees.DarkBirchTree;
 import net.magforest.magforest.block.custom.trees.WarpedTree;
@@ -34,50 +35,50 @@ public class ModBlocks extends Blocks
 
     public static final RegistryObject<Block> CIAN_LOG = registerBlock("cian_log",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 8)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_WOOD = registerBlock("cian_wood",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 8)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> STRIPPED_CIAN_LOG = registerBlock("stripped_cian_log",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 8)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> STRIPPED_CIAN_WOOD = registerBlock("stripped_cian_wood",
             () -> new FlameBlockRotate(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 8)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_PLANKS = registerBlock("cian_planks",
             () -> new FlameBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_LEAVES = BLOCKS.register("cian_leaves",
             () -> new FlameLeaves(AbstractBlock.Properties.from(Blocks.OAK_LEAVES)
                     .hardnessAndResistance(0.2f).tickRandomly().sound(SoundType.PLANT).notSolid()));
     public static final RegistryObject<Block> CIAN_SAPLING = BLOCKS.register("cian_sapling",
-            () -> new FlameSaplings(new BigCianTree(), AbstractBlock.Properties.create(Material.PLANTS)
-                    .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.PLANT).setLightLevel(value -> 12)));
+            () -> new FlameSaplings(new CianTree(), AbstractBlock.Properties.create(Material.PLANTS)
+                    .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.PLANT)));
     public static final RegistryObject<Block> CIAN_STAIRS = registerBlock("cian_stairs",
             () -> new FlameStairsBlock(() -> CIAN_PLANKS.get().getDefaultState(),
-                    AbstractBlock.Properties.create(Material.WOOD).hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6)));
+                    AbstractBlock.Properties.create(Material.WOOD).hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_FENCE = registerBlock("cian_fence",
             () -> new FlameFenceBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD).setLightLevel(value -> 6)));
+                    .hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_FENCE_GATE = registerBlock("cian_fence_gate",
             () -> new FlameGateFenceBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD).setLightLevel(value -> 6)));
+                    .hardnessAndResistance(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_SLAB = registerBlock("cian_slab",
             () -> new FlameSlabBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_BUTTON = registerBlock("cian_button",
             () -> new FlameButton(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(2).sound(SoundType.WOOD)
                     .setLightLevel(value -> 6).doesNotBlockMovement()));
     public static final RegistryObject<Block> CIAN_PRESSURE_PLATE = registerBlock("cian_pressure_plate",
             () -> new FlamePressurePlate(PressurePlateBlock.Sensitivity.EVERYTHING, AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6)));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> CIAN_DOOR = registerBlock("cian_door",
             () -> new DoorBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6).notSolid()));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()));
     public static final RegistryObject<Block> CIAN_TRAPDOOR = registerBlock("cian_trapdoor",
             () -> new TrapDoorBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(2).sound(SoundType.WOOD).setLightLevel(value -> 6).notSolid()));
+                    .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()));
     public static final RegistryObject<Block> HYACINTH = BLOCKS.register("hyacinth",
             () -> new FlowerBlock(Effects.REGENERATION,80, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT).setLightLevel(value -> 2)));
@@ -96,10 +97,10 @@ public class ModBlocks extends Blocks
 
     public static final RegistryObject<Block> CIAN_SIGN = BLOCKS.register("cian_sign",
             () -> new ModStandingSignBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(1).sound(SoundType.WOOD).setLightLevel(value -> 6), ModWoodTypes.CIAN));
+                    .hardnessAndResistance(1).sound(SoundType.WOOD), ModWoodTypes.CIAN));
     public static final RegistryObject<Block> CIAN_WALL_SIGN = BLOCKS.register("cian_wall_sign",
             () -> new ModWallSignBlock(AbstractBlock.Properties.create(Material.WOOD)
-                    .hardnessAndResistance(1).sound(SoundType.WOOD).setLightLevel(value -> 6), ModWoodTypes.CIAN));
+                    .hardnessAndResistance(1).sound(SoundType.WOOD), ModWoodTypes.CIAN));
     public static final RegistryObject<Block> KARAMBOLA = BLOCKS.register("karambola_crops",
             () -> new KarambolaBlock(AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().tickRandomly().zeroHardnessAndResistance().sound(SoundType.CROP)));

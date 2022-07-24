@@ -1,14 +1,14 @@
-[23июл.2022 22:23:11.092] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mixin.config, mixins.magforest.json, --gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.0, --assetIndex, 1.16, --assetsDir, C:\Users\Свет в будущее\.gradle\caches\forge_gradle\assets, --version, MOD_DEV, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
-[23июл.2022 22:23:11.095] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 16.0.2 by Amazon.com Inc.
-[23июл.2022 22:23:11.314] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
-[23июл.2022 22:23:11.361] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/%d0%a1%d0%b2%d0%b5%d1%82%20%d0%b2%20%d0%b1%d1%83%d0%b4%d1%83%d1%89%d0%b5%d0%b5/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
-[23июл.2022 22:23:21.671] [main/FATAL] [net.minecraftforge.fml.loading.progress.ClientVisualization/]: WARNING : glfwInit took 10.1869844 seconds to start.
-[23июл.2022 22:23:22.927] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [vazkii.patchouli.common.MixinConnector]
-[23июл.2022 22:23:22.929] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Свет в будущее\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
-[23июл.2022 22:23:22.936] [main/WARN] [mixin/]: Reference map 'mixins.magforest.refmap.json' for mixins.magforest.json could not be read. If this is a development environment you can ignore this message
-[23июл.2022 22:23:23.077] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using C:\Users\Свет в будущее\Desktop\Моды 1.16.5\forest/build/createSrgToMcp/output.srg
-[23июл.2022 22:23:28.455] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[23июл.2022 22:23:28.982] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
+[24июл.2022 10:55:42.779] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--mixin.config, mixins.magforest.json, --gameDir, ., --launchTarget, fmluserdevclient, --fml.mcpVersion, 20210115.111550, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.forgeVersion, 36.2.0, --assetIndex, 1.16, --assetsDir, C:\Users\Свет в будущее\.gradle\caches\forge_gradle\assets, --version, MOD_DEV, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[24июл.2022 10:55:42.782] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 16.0.2 by Amazon.com Inc.
+[24июл.2022 10:55:43.044] [main/INFO] [net.minecraftforge.fml.loading.FixSSL/CORE]: Added Lets Encrypt root certificates as additional trust
+[24июл.2022 10:55:43.095] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.2 Source=file:/C:/Users/%d0%a1%d0%b2%d0%b5%d1%82%20%d0%b2%20%d0%b1%d1%83%d0%b4%d1%83%d1%89%d0%b5%d0%b5/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.2/1cf212283d26f706fd3074318870bebd14d2a9ed/mixin-0.8.2.jar Service=ModLauncher Env=CLIENT
+[24июл.2022 10:55:48.409] [main/FATAL] [net.minecraftforge.fml.loading.progress.ClientVisualization/]: WARNING : glfwInit took 5.1938889 seconds to start.
+[24июл.2022 10:55:49.649] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [vazkii.patchouli.common.MixinConnector]
+[24июл.2022 10:55:49.651] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'fmluserdevclient' with arguments [--version, MOD_DEV, --gameDir, ., --assetsDir, C:\Users\Свет в будущее\.gradle\caches\forge_gradle\assets, --assetIndex, 1.16, --username, Dev, --accessToken, ❄❄❄❄❄❄❄❄, --userProperties, {}]
+[24июл.2022 10:55:49.658] [main/WARN] [mixin/]: Reference map 'mixins.magforest.refmap.json' for mixins.magforest.json could not be read. If this is a development environment you can ignore this message
+[24июл.2022 10:55:49.841] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using C:\Users\Свет в будущее\Desktop\Моды 1.16.5\forest/build/createSrgToMcp/output.srg
+[24июл.2022 10:55:55.248] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[24июл.2022 10:55:55.833] [Render thread/ERROR] [net.minecraft.client.Minecraft/]: Failed to verify authentication
 com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.checkPrivileges(YggdrasilSocialInteractionsService.java:97) ~[authlib-2.1.28.jar:?]
 	at com.mojang.authlib.yggdrasil.YggdrasilSocialInteractionsService.<init>(YggdrasilSocialInteractionsService.java:40) ~[authlib-2.1.28.jar:?]
@@ -27,42 +27,42 @@ com.mojang.authlib.exceptions.AuthenticationUnavailableException: null
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-[23июл.2022 22:23:28.992] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[23июл.2022 22:23:29.123] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
-[23июл.2022 22:23:29.902] [modloading-worker-11/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.0, for MC 1.16.5 with MCP 20210115.111550
-[23июл.2022 22:23:29.902] [modloading-worker-11/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.0 Initialized
-[23июл.2022 22:23:30.286] [Render thread/INFO] [net.magforest.magforest.magforest/]: HELLO from Register Block
-[23июл.2022 22:23:30.352] [Render thread/INFO] [patchouli/]: Loaded book jsons on Thread[Render thread,5,main] in 25 ms
-[23июл.2022 22:23:31.584] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
-[23июл.2022 22:23:31.643] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
-[23июл.2022 22:23:31.789] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
-[23июл.2022 22:23:32.438] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 36.2.0 Target: 36.2.34
-[23июл.2022 22:23:36.360] [Worker-Main-9/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'magforest:blockstates/seeds_of_the_call_of_the_ancestors.json' missing model for variant: 'magforest:seeds_of_the_call_of_the_ancestors#age=5'
-[23июл.2022 22:23:36.361] [Worker-Main-9/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'magforest:blockstates/seeds_of_the_call_of_the_ancestors.json' missing model for variant: 'magforest:seeds_of_the_call_of_the_ancestors#age=6'
-[23июл.2022 22:23:36.361] [Worker-Main-9/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'magforest:blockstates/seeds_of_the_call_of_the_ancestors.json' missing model for variant: 'magforest:seeds_of_the_call_of_the_ancestors#age=7'
-[23июл.2022 22:23:39.486] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
-[23июл.2022 22:23:39.487] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
-[23июл.2022 22:23:39.811] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
-[23июл.2022 22:23:39.811] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[23июл.2022 22:23:39.821] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
-[23июл.2022 22:23:39.822] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[23июл.2022 22:23:39.823] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[23июл.2022 22:23:39.823] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[23июл.2022 22:23:39.824] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[23июл.2022 22:23:39.824] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[23июл.2022 22:23:40.184] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
-[23июл.2022 22:23:40.185] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
-[23июл.2022 22:23:40.186] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[23июл.2022 22:23:40.905] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
-[23июл.2022 22:23:45.066] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:45.067] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:45.068] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:45.068] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:45.069] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:45.072] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
-[23июл.2022 22:23:46.016] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
-[23июл.2022 22:23:46.043] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
-[23июл.2022 22:23:46.678] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
+[24июл.2022 10:55:55.845] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[24июл.2022 10:55:55.995] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.2.2 build 10
+[24июл.2022 10:55:56.852] [modloading-worker-2/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 36.2.0, for MC 1.16.5 with MCP 20210115.111550
+[24июл.2022 10:55:56.852] [modloading-worker-2/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v36.2.0 Initialized
+[24июл.2022 10:55:57.286] [Render thread/INFO] [net.magforest.magforest.magforest/]: HELLO from Register Block
+[24июл.2022 10:55:57.388] [Render thread/INFO] [patchouli/]: Loaded book jsons on Thread[Render thread,5,main] in 47 ms
+[24июл.2022 10:55:59.256] [Render thread/INFO] [com.mojang.text2speech.NarratorWindows/]: Narrator library for x64 successfully loaded
+[24июл.2022 10:55:59.337] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, Mod Resources
+[24июл.2022 10:56:01.850] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[24июл.2022 10:56:02.455] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 36.2.0 Target: 36.2.34
+[24июл.2022 10:56:04.596] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'magforest:blockstates/seeds_of_the_call_of_the_ancestors.json' missing model for variant: 'magforest:seeds_of_the_call_of_the_ancestors#age=5'
+[24июл.2022 10:56:04.597] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'magforest:blockstates/seeds_of_the_call_of_the_ancestors.json' missing model for variant: 'magforest:seeds_of_the_call_of_the_ancestors#age=6'
+[24июл.2022 10:56:04.597] [Worker-Main-10/WARN] [net.minecraft.client.renderer.model.ModelBakery/]: Exception loading blockstate definition: 'magforest:blockstates/seeds_of_the_call_of_the_ancestors.json' missing model for variant: 'magforest:seeds_of_the_call_of_the_ancestors#age=7'
+[24июл.2022 10:56:07.991] [Render thread/INFO] [net.minecraft.client.audio.SoundSystem/]: OpenAL initialized.
+[24июл.2022 10:56:07.992] [Render thread/INFO] [net.minecraft.client.audio.SoundEngine/SOUNDS]: Sound engine started
+[24июл.2022 10:56:08.349] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x0 jei:textures/atlas/gui.png-atlas
+[24июл.2022 10:56:08.350] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[24июл.2022 10:56:08.360] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[24июл.2022 10:56:08.360] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[24июл.2022 10:56:08.361] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[24июл.2022 10:56:08.362] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[24июл.2022 10:56:08.363] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[24июл.2022 10:56:08.363] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[24июл.2022 10:56:08.735] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[24июл.2022 10:56:08.736] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[24июл.2022 10:56:08.736] [Render thread/INFO] [net.minecraft.client.renderer.texture.AtlasTexture/]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[24июл.2022 10:56:09.451] [Realms Notification Availability checker #1/INFO] [com.mojang.realmsclient.client.RealmsClient/]: Could not authorize you against Realms server: Invalid session id
+[24июл.2022 10:56:12.571] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:12.572] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:12.572] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:12.573] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:12.574] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:12.577] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
+[24июл.2022 10:56:13.514] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
+[24июл.2022 10:56:13.541] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
+[24июл.2022 10:56:14.171] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'magforest:chiseled_ancient_elf_stone'
 	at net.minecraft.util.JSONUtils.lambda$getItem$0(JSONUtils.java:111) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -145,17 +145,17 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-[23июл.2022 22:23:46.919] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
-[23июл.2022 22:23:47.107] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[23июл.2022 22:23:47.465] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:47.465] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:47.466] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:47.466] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:47.467] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:47.467] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
-[23июл.2022 22:23:48.295] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
-[23июл.2022 22:23:48.306] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
-[23июл.2022 22:23:48.881] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
+[24июл.2022 10:56:14.416] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
+[24июл.2022 10:56:14.611] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[24июл.2022 10:56:14.987] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:14.987] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:14.988] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:14.988] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:14.988] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:14.989] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
+[24июл.2022 10:56:15.863] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
+[24июл.2022 10:56:15.872] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
+[24июл.2022 10:56:16.439] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'magforest:chiseled_ancient_elf_stone'
 	at net.minecraft.util.JSONUtils.lambda$getItem$0(JSONUtils.java:111) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -238,17 +238,17 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-[23июл.2022 22:23:49.043] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
-[23июл.2022 22:23:49.152] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[23июл.2022 22:23:51.495] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:51.495] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:51.495] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:51.496] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:51.496] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:51.497] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
-[23июл.2022 22:23:52.333] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
-[23июл.2022 22:23:52.341] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
-[23июл.2022 22:23:52.921] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
+[24июл.2022 10:56:16.599] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
+[24июл.2022 10:56:16.700] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[24июл.2022 10:56:18.066] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:18.067] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:18.067] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:18.068] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:18.068] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:18.068] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
+[24июл.2022 10:56:18.898] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
+[24июл.2022 10:56:18.906] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
+[24июл.2022 10:56:19.476] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'magforest:chiseled_ancient_elf_stone'
 	at net.minecraft.util.JSONUtils.lambda$getItem$0(JSONUtils.java:111) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -315,10 +315,9 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at net.minecraft.client.MouseHelper.lambda$registerCallbacks$5(MouseHelper.java:190) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
-	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) ~[lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:93) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-	at net.minecraft.client.MainWindow.flipFrame(MainWindow.java:305) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1022) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar:build 10]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:112) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1025) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:612) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -332,17 +331,17 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-[23июл.2022 22:23:53.086] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
-[23июл.2022 22:23:53.189] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[23июл.2022 22:23:53.480] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:53.481] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:53.481] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:53.482] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[23июл.2022 22:23:53.482] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[23июл.2022 22:23:53.482] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
-[23июл.2022 22:23:54.297] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
-[23июл.2022 22:23:54.304] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
-[23июл.2022 22:23:54.877] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
+[24июл.2022 10:56:19.642] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
+[24июл.2022 10:56:19.747] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[24июл.2022 10:56:20.071] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:20.072] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:20.072] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:20.072] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[24июл.2022 10:56:20.073] [Render thread/WARN] [net.minecraft.command.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[24июл.2022 10:56:20.073] [Render thread/INFO] [net.minecraft.resources.SimpleReloadableResourceManager/]: Reloading ResourceManager: Default, main, forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar, Patchouli-1.16.4-53.2_mapped_snapshot_20210309-1.16.5.jar, jei-1.16.5-7.7.1.121_mapped_snapshot_20210309-1.16.5.jar
+[24июл.2022 10:56:20.922] [Render thread/ERROR] [net.minecraft.tags.TagCollectionReader/]: Couldn't load item tag minecraft:crops as it is missing following references: magforest:karambola_crops (from Default),magforest:karambola_crops (from main)
+[24июл.2022 10:56:20.929] [Render thread/INFO] [net.minecraft.item.crafting.RecipeManager/]: Loaded 9 recipes
+[24июл.2022 10:56:21.494] [Render thread/ERROR] [net.minecraft.loot.LootTableManager/]: Couldn't parse loot table magforest:blocks/chiseled_ancient_elf_stone
 com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown string 'magforest:chiseled_ancient_elf_stone'
 	at net.minecraft.util.JSONUtils.lambda$getItem$0(JSONUtils.java:111) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at java.util.Optional.orElseThrow(Optional.java:403) ~[?:?]
@@ -409,10 +408,9 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at net.minecraft.client.MouseHelper.lambda$registerCallbacks$5(MouseHelper.java:190) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at org.lwjgl.glfw.GLFWMouseButtonCallbackI.callback(GLFWMouseButtonCallbackI.java:36) ~[lwjgl-glfw-3.2.2.jar:build 10]
 	at org.lwjgl.system.JNI.invokeV(Native Method) ~[lwjgl-3.2.2.jar:build 10]
-	at org.lwjgl.glfw.GLFW.glfwPollEvents(GLFW.java:3101) ~[lwjgl-glfw-3.2.2.jar:build 10]
-	at com.mojang.blaze3d.systems.RenderSystem.flipFrame(RenderSystem.java:93) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-	at net.minecraft.client.MainWindow.flipFrame(MainWindow.java:305) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1022) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at org.lwjgl.glfw.GLFW.glfwWaitEventsTimeout(GLFW.java:3174) ~[lwjgl-glfw-3.2.2.jar:build 10]
+	at com.mojang.blaze3d.systems.RenderSystem.limitDisplayFPS(RenderSystem.java:112) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1025) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at net.minecraft.client.Minecraft.run(Minecraft.java:612) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at net.minecraft.client.main.Main.main(Main.java:184) ~[forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
 	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
@@ -426,32 +424,36 @@ com.google.gson.JsonSyntaxException: Expected name to be an item, was unknown st
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-[23июл.2022 22:23:55.037] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
-[23июл.2022 22:23:55.143] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
-[23июл.2022 22:23:55.669] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[23июл.2022 22:23:55.692] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
-[23июл.2022 22:23:55.692] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[23июл.2022 22:23:55.847] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[23июл.2022 22:23:56.267] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 0%
-[23июл.2022 22:23:56.369] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 11%
-[23июл.2022 22:23:56.458] [Server thread/INFO] [net.magforest.magforest.magforest/]: HELLO from server starting
-[23июл.2022 22:23:56.469] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 601 ms
-[23июл.2022 22:23:56.583] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
-[23июл.2022 22:23:57.514] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
-[23июл.2022 22:23:57.547] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@57590057
-[23июл.2022 22:23:57.581] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:0a41382d] logged in with entity id 175 at (2088.3278299390176, 76.0, -651.7638538912968)
-[23июл.2022 22:23:57.627] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev присоединился к игре
-[23июл.2022 22:23:57.824] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[23июл.2022 22:23:57.839] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
-[23июл.2022 22:23:57.845] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI...
-[23июл.2022 22:23:57.977] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list...
-[23июл.2022 22:23:57.980] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list took 3.267 ms
-[23июл.2022 22:23:57.980] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter...
-[23июл.2022 22:23:58.113] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter took 132.9 ms
-[23июл.2022 22:23:58.113] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks...
-[23июл.2022 22:23:58.114] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks took 826.0 μs
-[23июл.2022 22:23:58.114] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry...
-[23июл.2022 22:23:58.134] [Render thread/ERROR] [mezz.jei.recipes.RecipeManagerInternal/]: Found a broken recipe: Legends of Elf Magic magforest:alchemical_silver class net.magforest.magforest.data.recipes.LightRodRecipe
+[24июл.2022 10:56:21.651] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 957 advancements
+[24июл.2022 10:56:21.752] [Render thread/INFO] [net.minecraftforge.registries.GameData/REGISTRIES]: Injecting existing registry data into this CLIENT instance
+[24июл.2022 10:56:22.254] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[24июл.2022 10:56:22.278] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Starting integrated minecraft server version 1.16.5
+[24июл.2022 10:56:22.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[24июл.2022 10:56:22.394] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[24июл.2022 10:56:22.937] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 0%
+[24июл.2022 10:56:22.937] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 0%
+[24июл.2022 10:56:24.370] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 83%
+[24июл.2022 10:56:24.370] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 83%
+[24июл.2022 10:56:24.438] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 95%
+[24июл.2022 10:56:24.940] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Подготовка области возрождения: 97%
+[24июл.2022 10:56:25.088] [Server thread/INFO] [net.magforest.magforest.magforest/]: HELLO from server starting
+[24июл.2022 10:56:25.104] [Render thread/INFO] [net.minecraft.world.chunk.listener.LoggingChunkStatusListener/]: Time elapsed: 2699 ms
+[24июл.2022 10:56:25.191] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Changing view distance to 11, from 10
+[24июл.2022 10:56:26.094] [Netty Local Client IO #0/INFO] [net.minecraftforge.fml.network.NetworkHooks/]: Connected to a modded server.
+[24июл.2022 10:56:26.115] [Server thread/INFO] [net.minecraftforge.common.AdvancementLoadFix/]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@3cb44e61
+[24июл.2022 10:56:26.126] [Server thread/INFO] [net.minecraft.server.management.PlayerList/]: Dev[local:E:52eba659] logged in with entity id 79 at (-1105.133252463102, 67.74293160172489, -290.08815235589066)
+[24июл.2022 10:56:26.144] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev присоединился к игре
+[24июл.2022 10:56:26.345] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[24июл.2022 10:56:26.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
+[24июл.2022 10:56:26.361] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI...
+[24июл.2022 10:56:26.507] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list...
+[24июл.2022 10:56:26.510] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient list took 2.811 ms
+[24июл.2022 10:56:26.510] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter...
+[24июл.2022 10:56:26.619] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building ingredient filter took 108.7 ms
+[24июл.2022 10:56:26.619] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks...
+[24июл.2022 10:56:26.620] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building bookmarks took 938.2 μs
+[24июл.2022 10:56:26.620] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry...
+[24июл.2022 10:56:26.641] [Render thread/ERROR] [mezz.jei.recipes.RecipeManagerInternal/]: Found a broken recipe: Legends of Elf Magic magforest:alchemical_silver class net.magforest.magforest.data.recipes.LightRodRecipe
 Outputs:
 net.minecraft.item.ItemStack: [[1 alchemical_silver magforest:alchemical_silver]]
 Inputs:
@@ -499,46 +501,38 @@ java.lang.IllegalArgumentException: ItemStack value must not be empty. 1 air min
 	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
 	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
 	at net.minecraftforge.userdev.LaunchTesting.main(LaunchTesting.java:108) [forge-1.16.5-36.2.0_mapped_snapshot_20210309-1.16.5-recomp.jar:?]
-[23июл.2022 22:23:58.155] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry took 40.21 ms
-[23июл.2022 22:23:58.159] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
-[23июл.2022 22:23:58.160] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
-[23июл.2022 22:23:58.161] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime...
-[23июл.2022 22:23:58.192] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime took 31.10 ms
-[23июл.2022 22:23:58.213] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI took 368.3 ms
-[23июл.2022 22:23:58.231] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 255 advancements
-[23июл.2022 22:24:40.067] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Установлено значение игрового правила randomTickSpeed: 150]
-[23июл.2022 22:24:40.086] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Установлено значение игрового правила randomTickSpeed: 150
-[23июл.2022 22:25:15.359] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[23июл.2022 22:25:15.368] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
-[23июл.2022 22:25:15.638] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
-[23июл.2022 22:25:15.639] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
-[23июл.2022 22:25:21.714] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Установлено время: 1000]
-[23июл.2022 22:25:21.715] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Установлено время: 1000
-[23июл.2022 22:26:06.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Ваш режим игры изменён на Режим выживания]
-[23июл.2022 22:26:06.413] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Ваш режим игры изменён на Режим выживания
-[23июл.2022 22:28:12.442] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Ваш режим игры изменён на Творческий режим]
-[23июл.2022 22:28:12.443] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Ваш режим игры изменён на Творческий режим
-[23июл.2022 22:29:10.059] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[23июл.2022 22:29:10.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
-[23июл.2022 22:29:10.115] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
-[23июл.2022 22:29:10.116] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
-[23июл.2022 23:06:12.910] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
-[23июл.2022 23:06:12.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
-[23июл.2022 23:06:13.425] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
-[23июл.2022 23:06:13.426] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
-[23июл.2022 23:06:13.444] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Отключение
-[23июл.2022 23:06:13.444] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev покинул игру
-[23июл.2022 23:06:13.450] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
-[23июл.2022 23:06:13.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[23июл.2022 23:06:13.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[23июл.2022 23:06:13.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[23июл.2022 23:06:13.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
-[23июл.2022 23:06:14.291] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (Новый мир): All chunks are saved
-[23июл.2022 23:06:14.291] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
-[23июл.2022 23:06:14.292] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23июл.2022 23:06:14.292] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
-[23июл.2022 23:06:14.293] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23июл.2022 23:06:14.305] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (Новый мир): All chunks are saved
-[23июл.2022 23:06:14.338] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[23июл.2022 23:06:14.338] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[23июл.2022 23:06:15.694] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[24июл.2022 10:56:26.664] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building recipe registry took 44.01 ms
+[24июл.2022 10:56:26.665] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
+[24июл.2022 10:56:26.666] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
+[24июл.2022 10:56:26.671] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime...
+[24июл.2022 10:56:26.701] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Building runtime took 30.15 ms
+[24июл.2022 10:56:26.721] [Render thread/INFO] [mezz.jei.util.LoggedTimer/]: Starting JEI took 360.2 ms
+[24июл.2022 10:56:26.741] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 11 advancements
+[24июл.2022 10:56:26.800] [Render thread/WARN] [net.minecraft.client.network.play.ClientPlayNetHandler/]: Received passengers for unknown entity
+[24июл.2022 10:56:38.330] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Dev телепортирован в точку 5000.5, 67.0, 5000.5]
+[24июл.2022 10:56:38.343] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev телепортирован в точку 5000.5, 67.0, 5000.5
+[24июл.2022 10:56:38.840] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 17 advancements
+[24июл.2022 10:56:42.556] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Ближайший биом типа magforest:magic_forest находится по координатам [5480, ~, 5320] (в 576 блоках отсюда)
+[24июл.2022 10:56:48.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Dev: Dev телепортирован в точку 5480.5, 73.10064062085482, 5320.5]
+[24июл.2022 10:56:48.021] [Render thread/INFO] [net.minecraft.client.gui.NewChatGui/]: [CHAT] Dev телепортирован в точку 5480.5, 73.10064062085482, 5320.5
+[24июл.2022 10:59:00.449] [Render thread/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 19 advancements
+[24июл.2022 10:59:35.588] [Server thread/INFO] [net.minecraft.server.integrated.IntegratedServer/]: Saving and pausing game...
+[24июл.2022 10:59:35.593] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
+[24июл.2022 10:59:36.276] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
+[24июл.2022 10:59:36.277] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
+[24июл.2022 10:59:38.501] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Dev lost connection: Отключение
+[24июл.2022 10:59:38.501] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev покинул игру
+[24июл.2022 10:59:38.508] [Server thread/INFO] [net.minecraft.network.play.ServerPlayNetHandler/]: Stopping singleplayer server as player logged out
+[24июл.2022 10:59:38.546] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[24июл.2022 10:59:38.547] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[24июл.2022 10:59:38.547] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[24июл.2022 10:59:38.547] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:overworld
+[24июл.2022 10:59:39.279] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (Новый мир): All chunks are saved
+[24июл.2022 10:59:39.279] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_nether
+[24июл.2022 10:59:39.280] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[24июл.2022 10:59:39.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Новый мир]'/minecraft:the_end
+[24июл.2022 10:59:39.280] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[24июл.2022 10:59:39.293] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (Новый мир): All chunks are saved
+[24июл.2022 10:59:39.327] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[24июл.2022 10:59:39.327] [Server thread/INFO] [net.minecraft.world.server.ChunkManager/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[24июл.2022 10:59:40.573] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!

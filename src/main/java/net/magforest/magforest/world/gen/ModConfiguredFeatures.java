@@ -12,7 +12,9 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.foliageplacer.AcaciaFoliagePlacer;
 import net.minecraft.world.gen.foliageplacer.BlobFoliagePlacer;
 import net.minecraft.world.gen.foliageplacer.DarkOakFoliagePlacer;
+import net.minecraft.world.gen.foliageplacer.FancyFoliagePlacer;
 import net.minecraft.world.gen.trunkplacer.DarkOakTrunkPlacer;
+import net.minecraft.world.gen.trunkplacer.FancyTrunkPlacer;
 import net.minecraft.world.gen.trunkplacer.ForkyTrunkPlacer;
 import net.minecraft.world.gen.trunkplacer.StraightTrunkPlacer;
 
@@ -40,24 +42,15 @@ public class ModConfiguredFeatures {
                             new TwoLayerFeature(1, 0, 2))).setIgnoreVines().build()));
 
 
-    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> BIG_CIAN =
-            register("big_cian", Feature.TREE.withConfiguration((
-                    new BaseTreeFeatureConfig.Builder(
-                    new SimpleBlockStateProvider(ModBlocks.CIAN_LOG.get().getDefaultState()),
-                    new SimpleBlockStateProvider(ModBlocks.CIAN_LEAVES.get().getDefaultState()),
-                            new DarkOakFoliagePlacer(FeatureSpread.create(0), FeatureSpread.create(0)),
-                            new DarkOakTrunkPlacer(6, 2, 1),
-                            new ThreeLayerFeature(1, 1, 0, 1, 2, OptionalInt.empty())))
-                      .setMaxWaterDepth(Integer.MAX_VALUE).setHeightmap(Heightmap.Type.MOTION_BLOCKING).setIgnoreVines().build()));
 
-    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> CIAN =
-            register("cian", Feature.TREE.withConfiguration((
+    public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> CIAN = register("cian",
+            Feature.TREE.withConfiguration((
                     new BaseTreeFeatureConfig.Builder(
                             new SimpleBlockStateProvider(ModBlocks.CIAN_LOG.get().getDefaultState()),
                             new SimpleBlockStateProvider(ModBlocks.CIAN_LEAVES.get().getDefaultState()),
-                            new BlobFoliagePlacer(FeatureSpread.create(2), FeatureSpread.create(0), 3),
-                            new StraightTrunkPlacer(4, 2, 1),
-                            new TwoLayerFeature(1, 0, 1))).setIgnoreVines().build()));
+                            new FancyFoliagePlacer(FeatureSpread.create(3), FeatureSpread.create(4), 4),
+                            new FancyTrunkPlacer(10, 15, 7), new TwoLayerFeature(0, 0, 0,
+                            OptionalInt.of(4)))).setIgnoreVines().setHeightmap(Heightmap.Type.MOTION_BLOCKING).build()));
 
     public static final ConfiguredFeature<BaseTreeFeatureConfig, ?> BEE_CIAN =
             register("bee_cian", Feature.TREE.withConfiguration((
