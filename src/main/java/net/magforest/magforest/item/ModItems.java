@@ -96,6 +96,8 @@ public class ModItems
                     .group(ModItemGroup.THAUM_BLOCKS)));
     public static final RegistryObject<Item> MOON_TEAR = ITEMS.register("moon_tear",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
+    public static final RegistryObject<Item> ELVEN_DUST = ITEMS.register("elven_dust",
+            () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS)));
     public static final RegistryObject<Item> CHALK = ITEMS.register("chalk",
             () -> new Item(new Item.Properties().group(ModItemGroup.THAUM_ITEMS).maxStackSize(1).maxDamage(120)));
     public static final RegistryObject<Item> INKWELL = ITEMS.register("inkwell",

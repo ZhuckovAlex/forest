@@ -55,6 +55,21 @@
         },
         {
           "type": "minecraft:item",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2.0,
+                "max": 5.0,
+                "type": "minecraft:uniform"
+              }
+            }
+          ],
+          "name": "magforest:elven_dust"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 6,
           "functions": [
             {
