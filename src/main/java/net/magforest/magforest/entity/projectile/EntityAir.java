@@ -71,9 +71,9 @@ public class EntityAir extends ThrowableEntity implements IEntityAdditionalSpawn
 
                     if(((EntityRayTraceResult)result).getEntity().attackEntityFrom(DamageSource.IN_FIRE, this.damage)) {
                         if (this.knockbackStrength > 0) {
-                            Vector3d vector3d = this.getMotion().mul(1.0D, 0.0D, 1.0D).normalize().scale((double)this.knockbackStrength * 0.6D);
+                            Vector3d vector3d = this.getMotion().mul(1.0D, 0.1D, 1.0D).normalize().scale((double)this.knockbackStrength * 0.6D);
                             if (vector3d.lengthSquared() > 0.0D) {
-                                ((EntityRayTraceResult)result).getEntity().addVelocity(vector3d.x, 0.1D, vector3d.z);
+                                ((EntityRayTraceResult)result).getEntity().addVelocity(vector3d.x, 0.5D, vector3d.z);
                             }
                         }
 

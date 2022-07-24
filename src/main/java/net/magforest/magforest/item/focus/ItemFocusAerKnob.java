@@ -70,7 +70,7 @@ public class ItemFocusAerKnob extends ItemFocus {
             }
 
 
-            RayTraceResult mop = p.pick(20,0,false);
+            RayTraceResult mop = p.pick(13,0,false);
             Vector3d v = p.getLookVec();
             double tx = p.getPosX() + v.x * 10.0D;
             double ty = p.getPosY() + v.y * 10.0D;
@@ -93,7 +93,7 @@ public class ItemFocusAerKnob extends ItemFocus {
                 EntityAir orb = EntityAir.createAir(ModEntityTypes.AIR_BLOW.get(), p, world);
                 //orb.shoot(orb.getMotion().x,orb.getMotion().y,orb.getMotion().z,orb.func_70182_d(),15F);
                 orb.setPosition(orb.getPosX()+orb.getMotion().x,orb.getPosY()+orb.getMotion().y,orb.getPosZ()+orb.getMotion().z);
-                orb.setKnockbackStrength(4);
+                orb.setKnockbackStrength(6);
 
 
                 orb.setDirectionAndMovement(p, p.rotationPitch, p.rotationYaw, 0.0F, 1.0F, 1.0F);
