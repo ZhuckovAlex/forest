@@ -4,7 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import net.magforest.magforest.block.ModBlocks;
 import net.magforest.magforest.block.ModWoodTypes;
 import net.magforest.magforest.container.ModContainers;
-import net.magforest.magforest.data.recipes.AlchemicalRecipeTypes;
 import net.magforest.magforest.data.recipes.ModLightningRodRecipeTypes;
 import net.magforest.magforest.entity.ModCianEntityTypes;
 import net.magforest.magforest.entity.ModDarkBirchEntityTypes;
@@ -78,7 +77,7 @@ public class magforest
 
         ModStructures.register(eventBus);
         ModLightningRodRecipeTypes.register(eventBus);
-        AlchemicalRecipeTypes.register(eventBus);
+
 
         ModCianEntityTypes.register(eventBus);
         ModDarkBirchEntityTypes.register(eventBus);

@@ -6,10 +6,13 @@ import net.magforest.magforest.item.ItemFocus;
 import net.magforest.magforest.item.ItemWand;
 import net.magforest.magforest.item.aspect.Aspect;
 import net.magforest.magforest.item.aspect.AspectList;
+import net.magforest.magforest.particles.BeamParticle;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -23,6 +26,7 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.ForgeHooks;
 
+import java.awt.*;
 import java.util.HashMap;
 
 public class ItemFocusAerKnob extends ItemFocus {
@@ -70,16 +74,16 @@ public class ItemFocusAerKnob extends ItemFocus {
             }
 
 
-            RayTraceResult mop = p.pick(13,0,false);
+            RayTraceResult mop = p.pick(20,0,false);
             Vector3d v = p.getLookVec();
             double tx = p.getPosX() + v.x * 10.0D;
             double ty = p.getPosY() + v.y * 10.0D;
             double tz = p.getPosZ() + v.z * 10.0D;
             byte impact = 0;
-            /*if(mop != null) {
-                tx = mop.getHitVec().getX();
-                ty = mop.getHitVec().getY();
-                tz = mop.getHitVec().getZ();
+            if(mop != null) {
+                //tx = mop.getHitVec().getX();
+                //ty = mop.getHitVec().getY();
+                //tz = mop.getHitVec().getZ();
                 impact = 5;
                 if(!world.isRemote && ((Long)soundDelay.get(pp)).longValue() < System.currentTimeMillis()) {
                     //p.world.playSound(tx, ty, tz, "thaumcraft:rumble", 0.3F, 1.0F);
@@ -87,13 +91,13 @@ public class ItemFocusAerKnob extends ItemFocus {
                 }
             } else {
                 soundDelay.put(pp, Long.valueOf(0L));
-            }*/
+            }
 
             if(!world.isRemote){
                 EntityAir orb = EntityAir.createAir(ModEntityTypes.AIR_BLOW.get(), p, world);
                 //orb.shoot(orb.getMotion().x,orb.getMotion().y,orb.getMotion().z,orb.func_70182_d(),15F);
                 orb.setPosition(orb.getPosX()+orb.getMotion().x,orb.getPosY()+orb.getMotion().y,orb.getPosZ()+orb.getMotion().z);
-                orb.setKnockbackStrength(6);
+                orb.setKnockbackStrength(2);
 
 
                 orb.setDirectionAndMovement(p, p.rotationPitch, p.rotationYaw, 0.0F, 1.0F, 1.0F);
@@ -101,7 +105,7 @@ public class ItemFocusAerKnob extends ItemFocus {
                 world.addEntity(orb);
             }
             if(world.isRemote) {
-                //beam.put(pp, Thaumcraft.proxy.beamCont(p.worldObj, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
+                beam.put(pp, beamCont(world, p, tx, ty, tz, 2, Color.YELLOW.getRGB(), false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
             }
 
             if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(((BlockRayTraceResult)mop).getPos()).canHarvestBlock(world,((BlockRayTraceResult)mop).getPos(),p)) {
@@ -109,14 +113,14 @@ public class ItemFocusAerKnob extends ItemFocus {
 
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
-                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.PLANTS || state.getMaterial() == Material.OCEAN_PLANT || state.getMaterial() == Material.WEB || state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.TALL_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.SNOW || state.getMaterial() == Material.SNOW_BLOCK){
+                if(state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.LEAVES){
 
                 //int md = state.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ);
                 float hardness = state.getBlockHardness(world, pos);
                 if (hardness >= 0.0F) {
                     int pot = 0;
                     float speed = 0.05F + (float) pot * 0.1F;
-                    if (state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.WEB || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
+                    if (state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
                         speed = 0.25F + (float) pot * 0.25F;
                     }
 
@@ -168,7 +172,32 @@ public class ItemFocusAerKnob extends ItemFocus {
         }
 
     }
+    @OnlyIn(Dist.CLIENT)
+    public Object beamCont(World world, PlayerEntity p, double tx, double ty, double tz, int type, int color, boolean reverse, float endmod, Object input, int impact) {
+        Color c = new Color(color);
+        //BeamParticleData data = new BeamParticleData(c, 8);
+        BeamParticle beamcon = null;
+        if(input instanceof BeamParticle) {
+            beamcon = (BeamParticle)input;
+        }
 
+        if(beamcon != null && beamcon.isAlive()) {
+            beamcon.updateBeam(tx, ty, tz);
+            beamcon.setEndMod(endmod);
+            beamcon.impact = impact;
+        } else {
+            //beamcon =  (BeamParticle)BeamParticleFactory.FACTORY.makeParticle(data,(ClientWorld) world,tx, ty, tz,0,0,0);
+            beamcon = new BeamParticle((ClientWorld) world, p, tx, ty, tz, new Color((float)c.getRed() / 255.0F, (float)c.getGreen() / 255.0F, (float)c.getBlue() / 255.0F), 8);
+            beamcon.setType(type);
+            beamcon.setEndMod(endmod);
+            beamcon.setReverse(reverse);
+            Minecraft.getInstance().particles.addEffect(beamcon);
+            //world.addParticle(beamcon,tx, ty, tz,0,0,0);
+            //FMLClientHandler.instance().getClient().effectRenderer.addEffect(beamcon);
+        }
+
+        return beamcon;
+    }
     public void onPlayerStoppedUsingFocus(ItemStack stack, World world, PlayerEntity p, int count) {
         String pp = "R" + p.getName();
         if(!world.isRemote) {

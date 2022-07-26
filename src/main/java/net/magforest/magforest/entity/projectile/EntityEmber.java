@@ -9,6 +9,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.network.IPacket;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.math.BlockPos;
@@ -18,6 +19,7 @@ import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
+import net.minecraftforge.fml.network.NetworkHooks;
 
 public class EntityEmber extends ThrowableEntity implements IEntityAdditionalSpawnData {
 
@@ -50,7 +52,7 @@ public class EntityEmber extends ThrowableEntity implements IEntityAdditionalSpa
 
 
 
-
+    public IPacket<?> createSpawnPacket() {return NetworkHooks.getEntitySpawningPacket(this);}
     @Override
     protected void registerData() {
 
@@ -107,12 +109,14 @@ public class EntityEmber extends ThrowableEntity implements IEntityAdditionalSpa
         return 0.0F;
     }
 
-    public float func_70182_d() {
-        return 1.0F;
+
+
+    public boolean canBeCollidedWith() {
+        return false;
     }
-
-
-
+    public boolean attackEntityFrom(DamageSource p_70097_1_, float p_70097_2_) {
+        return false;
+    }
 
     public void writeAdditional(CompoundNBT par1NBTTagCompound) {
         super.writeAdditional(par1NBTTagCompound);

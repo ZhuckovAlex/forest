@@ -1,8 +1,6 @@
 package net.magforest.magforest.tileentity;
 
-import net.magforest.magforest.data.recipes.AlchemicalRecipe;
-import net.magforest.magforest.data.recipes.AlchemicalRecipeTypes;
-import net.magforest.magforest.item.ModItems;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
@@ -53,12 +51,7 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
 
             @Override
             public boolean isItemValid(int slot, @Nonnull ItemStack stack) {
-                switch (slot) {
-                    case 6: return stack.getItem() == ModItems.ALCHEMICAL_INFUSION.get();
-                    case 7: return stack.getItem() == ModItems.ENTROPY_POTION.get();
-                    default:
-                        return true;
-                }
+                return true;
             }
 
             @Nonnull
@@ -84,53 +77,10 @@ public class AlchemicalTableTile extends TileEntity implements ITickableTileEnti
         return super.getCapability(cap, side);
     }
 
-
-    public void craft(){
-        Inventory inv = new Inventory(itemHandler.getSlots());
-        for (int i = 0; i < itemHandler.getSlots(); i++) {
-            inv.setInventorySlotContents(i, itemHandler.getStackInSlot(i));
-        }
-
-        Optional<AlchemicalRecipe> recipe = world.getRecipeManager()
-                .getRecipe(AlchemicalRecipeTypes.ALCHEMY_RECIPE, inv, world);
-
-        recipe.ifPresent(iRecipe ->{
-            ItemStack output = iRecipe.getRecipeOutput();
-            craftTheItem(output);
-            markDirty();
-        });
-    }
-    private void craftTheItem(ItemStack output) {
-        itemHandler.extractItem(0, 1, false);
-        itemHandler.extractItem(1, 1, false);
-        itemHandler.extractItem(2, 1, false);
-        itemHandler.extractItem(3, 1, false);
-        itemHandler.extractItem(4, 1, false);
-        itemHandler.extractItem(5, 1, false);
-        itemHandler.getStackInSlot(6).attemptDamageItem(1, new Random(),null);
-        itemHandler.getStackInSlot(7).attemptDamageItem(1, new Random(),null);
-        itemHandler.insertItem(8, output, false);
-
-        if (itemHandler instanceof IItemHandlerModifiable) {
-            ItemStack _stk = itemHandler.getStackInSlot(7).copy();
-            if (_stk.attemptDamageItem(0, new Random(), null)) {
-                _stk.shrink(1);
-            }
-            ((IItemHandlerModifiable) itemHandler).setStackInSlot(7, _stk);
-        }
-        if (itemHandler instanceof IItemHandlerModifiable) {
-            ItemStack _stk = itemHandler.getStackInSlot(6).copy();
-            if (_stk.attemptDamageItem(0, new Random(), null)) {
-                _stk.shrink(1);
-            }
-            ((IItemHandlerModifiable) itemHandler).setStackInSlot(6, _stk);
-        }
-}
-
     @Override
     public void tick() {
         if(world.isRemote)
             return;
-        craft();
+
     }
 }

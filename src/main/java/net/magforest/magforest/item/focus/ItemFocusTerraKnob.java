@@ -1,19 +1,23 @@
 package net.magforest.magforest.item.focus;
 
-import net.magforest.magforest.block.ModBlocks;
 import net.magforest.magforest.entity.ModEntityTypes;
 import net.magforest.magforest.entity.projectile.EntityAir;
 import net.magforest.magforest.entity.projectile.EntityEmber;
+import net.magforest.magforest.events.CommonEvents;
 import net.magforest.magforest.item.ItemFocus;
 import net.magforest.magforest.item.ItemWand;
 import net.magforest.magforest.item.aspect.Aspect;
 import net.magforest.magforest.item.aspect.AspectList;
 import net.magforest.magforest.magforest;
+import net.magforest.magforest.particles.BeamParticle;
+import net.magforest.magforest.particles.BeamParticleData;
+import net.magforest.magforest.particles.BeamParticleFactory;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.world.ClientWorld;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -31,7 +35,7 @@ import net.minecraftforge.common.ForgeHooks;
 import net.minecraftforge.event.world.BlockEvent;
 
 import java.util.HashMap;
-
+import java.awt.*;
 public class ItemFocusTerraKnob extends ItemFocus {
     private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 5);
     static HashMap<String, Long> soundDelay = new HashMap();
@@ -83,10 +87,10 @@ public class ItemFocusTerraKnob extends ItemFocus {
             double ty = p.getPosY() + v.y * 10.0D;
             double tz = p.getPosZ() + v.z * 10.0D;
             byte impact = 0;
-            /*if(mop != null) {
-                tx = mop.getHitVec().getX();
-                ty = mop.getHitVec().getY();
-                tz = mop.getHitVec().getZ();
+            if(mop != null) {
+                //tx = mop.getHitVec().getX();
+                //ty = mop.getHitVec().getY();
+                //tz = mop.getHitVec().getZ();
                 impact = 5;
                 if(!world.isRemote && ((Long)soundDelay.get(pp)).longValue() < System.currentTimeMillis()) {
                     //p.world.playSound(tx, ty, tz, "thaumcraft:rumble", 0.3F, 1.0F);
@@ -94,11 +98,11 @@ public class ItemFocusTerraKnob extends ItemFocus {
                 }
             } else {
                 soundDelay.put(pp, Long.valueOf(0L));
-            }*/
+            }
 
 
             if(world.isRemote) {
-                //beaFm.put(pp, Thaumcraft.proxy.beamCont(p.worldObj, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
+                beam.put(pp, beamCont(world, p, tx, ty, tz, 2, '\uff66', false, impact > 0?2.0F:0.0F, beam.get(pp), impact));
             }
 
             if(mop != null && mop.getType() == RayTraceResult.Type.BLOCK && world.getBlockState(((BlockRayTraceResult)mop).getPos()).canHarvestBlock(world,((BlockRayTraceResult)mop).getPos(),p)) {
@@ -111,19 +115,12 @@ public class ItemFocusTerraKnob extends ItemFocus {
                 if(hardness >= 0.0F) {
                     int pot = 0;
                     float speed = 0.05F + (float)pot * 0.1F;
-                    if(state.getMaterial() == Material.ROCK || state.getMaterial() == Material.WOOD || state.getMaterial() == Material.IRON
-                            || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.WEB || state.getMaterial() == Material.LEAVES || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
+                    if(state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
                         speed = 0.25F + (float)pot * 0.25F;
                     }
 
-                    if(bi == Blocks.OBSIDIAN){
-                        speed *= 5.5F;
-                    }
-                    if(bi == Blocks.CRYING_OBSIDIAN){
-                        speed *= 4.0F;
-                    }
-                    if(bi == ModBlocks.MOON_TEAR_OBSIDIAN_ORE.get()){
-                        speed *= 5.0F;
+                    if(bi == Blocks.OBSIDIAN) {
+                        speed *= 3.0F;
                     }
 
                     if(((Integer)lastX.get(pp)).intValue() == (int)mop.getHitVec().x && ((Integer)lastY.get(pp)).intValue() == (int)mop.getHitVec().y && ((Integer)lastZ.get(pp)).intValue() == (int)mop.getHitVec().z) {
@@ -205,28 +202,32 @@ public class ItemFocusTerraKnob extends ItemFocus {
         breakcount.put(pp, Float.valueOf(0.0F));
     }
 
-//    @OnlyIn(Dist.CLIENT)
-//    public Object beamCont(World worldObj, EntityPlayer p, double tx, double ty, double tz, int type, int color, boolean reverse, float endmod, Object input, int impact) {
-//        FXBeamWand beamcon = null;
-//        Color c = new Color(color);
-//        if(input instanceof FXBeamWand) {
-//            beamcon = (FXBeamWand)input;
-//        }
-//
-//        if(beamcon != null && !beamcon.isDead) {
-//            beamcon.updateBeam(tx, ty, tz);
-//            beamcon.setEndMod(endmod);
-//            beamcon.impact = impact;
-//        } else {
-//            beamcon = new FXBeamWand(worldObj, p, tx, ty, tz, (float)c.getRed() / 255.0F, (float)c.getGreen() / 255.0F, (float)c.getBlue() / 255.0F, 8);
-//            beamcon.setType(type);
-//            beamcon.setEndMod(endmod);
-//            beamcon.setReverse(reverse);
-//            FMLClientHandler.instance().getClient().effectRenderer.addEffect(beamcon);
-//        }
-//
-//        return beamcon;
-//    }
+    @OnlyIn(Dist.CLIENT)
+    public Object beamCont(World world, PlayerEntity p, double tx, double ty, double tz, int type, int color, boolean reverse, float endmod, Object input, int impact) {
+        Color c = new Color(color);
+        //BeamParticleData data = new BeamParticleData(c, 8);
+        BeamParticle beamcon = null;
+        if(input instanceof BeamParticle) {
+            beamcon = (BeamParticle)input;
+        }
+
+        if(beamcon != null && beamcon.isAlive()) {
+            beamcon.updateBeam(tx, ty, tz);
+            beamcon.setEndMod(endmod);
+            beamcon.impact = impact;
+        } else {
+            //beamcon =  (BeamParticle)BeamParticleFactory.FACTORY.makeParticle(data,(ClientWorld) world,tx, ty, tz,0,0,0);
+            beamcon = new BeamParticle((ClientWorld) world, p, tx, ty, tz, new Color((float)c.getRed() / 255.0F, (float)c.getGreen() / 255.0F, (float)c.getBlue() / 255.0F), 8);
+            beamcon.setType(type);
+            beamcon.setEndMod(endmod);
+            beamcon.setReverse(reverse);
+            Minecraft.getInstance().particles.addEffect(beamcon);
+            //world.addParticle(beamcon,tx, ty, tz,0,0,0);
+            //FMLClientHandler.instance().getClient().effectRenderer.addEffect(beamcon);
+        }
+
+        return beamcon;
+    }
     @OnlyIn(Dist.CLIENT)
     public void excavateFX(BlockPos pos , PlayerEntity p, World world, int progress) {
         world.sendBlockBreakProgress(p.getEntityId(), pos, progress);

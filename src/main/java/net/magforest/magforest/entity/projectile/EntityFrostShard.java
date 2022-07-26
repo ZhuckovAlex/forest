@@ -1,5 +1,6 @@
 package net.magforest.magforest.entity.projectile;
 
+import net.magforest.magforest.magforest;
 import net.magforest.magforest.util.ModHellEntityHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -9,18 +10,21 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
+import net.minecraft.network.IPacket;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.particles.BasicParticleType;
 import net.minecraft.particles.BlockParticleData;
 import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.EntityRayTraceResult;
-import net.minecraft.util.math.MathHelper;
-import net.minecraft.util.math.RayTraceResult;
+import net.minecraft.util.math.*;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
+import net.minecraftforge.fml.network.FMLNetworkConstants;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.network.NetworkDirection;
+import net.minecraftforge.fml.network.NetworkHooks;
 
 public class EntityFrostShard extends ThrowableEntity implements IEntityAdditionalSpawnData {
     public double bounce = 0.5D;
@@ -88,9 +92,9 @@ public class EntityFrostShard extends ThrowableEntity implements IEntityAddition
                 //super.motionY *= -0.9D;
             }
 
-            BlockPos pos = new BlockPos(mop.getHitVec());
+            BlockPos pos = ((BlockRayTraceResult)mop).getPos();
 
-
+            //magforest.LOGGER.debug(pos);
             Block var12 = super.world.getBlockState(pos).getBlock();
             try {
                 this.playSound(var12.getSoundType(var12.getDefaultState()).getBreakSound(), 0.3F, 1.2F / (super.rand.nextFloat() * 0.2F + 0.9F));
@@ -133,7 +137,7 @@ public class EntityFrostShard extends ThrowableEntity implements IEntityAddition
         }
 
     }
-
+    public IPacket<?> createSpawnPacket() {return NetworkHooks.getEntitySpawningPacket(this);}
     public float getDamage() {
         return 1F;
     }
@@ -141,7 +145,13 @@ public class EntityFrostShard extends ThrowableEntity implements IEntityAddition
         super.tick();
         float var20;
 
-
+        Vector3d vector3d = this.getMotion();
+        Vector3d vector3d1 = this.getPositionVec();
+        Vector3d vector3d2 = vector3d1.add(vector3d);
+        RayTraceResult raytraceresult = world.rayTraceBlocks(new RayTraceContext(vector3d1, vector3d2, RayTraceContext.BlockMode.COLLIDER, RayTraceContext.FluidMode.ANY, this));
+        if (raytraceresult.getType() != RayTraceResult.Type.MISS  && !net.minecraftforge.event.ForgeEventFactory.onProjectileImpact(this, raytraceresult)) {
+            this.onImpact(raytraceresult);
+        }
         var20 = MathHelper.sqrt(super.getMotion().getX() * super.getMotion().getX() + super.getMotion().getZ() * super.getMotion().getZ());
         super.rotationYaw = (float)(Math.atan2(super.getMotion().getX(), super.getMotion().getZ()) * 180.0D / 3.141592653589793D);
 

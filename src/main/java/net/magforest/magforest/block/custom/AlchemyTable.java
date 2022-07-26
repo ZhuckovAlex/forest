@@ -1,22 +1,22 @@
 package net.magforest.magforest.block.custom;
 
 import net.magforest.magforest.container.AlchemyTableContainer;
+import net.magforest.magforest.procedures.AlchemyTableRecipes;
 
-
+import net.magforest.magforest.procedures.SolarMagic;
 import net.magforest.magforest.tileentity.AlchemicalTableTile;
-
 import net.magforest.magforest.tileentity.ModTileEntities;
+
+
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.HorizontalBlock;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.RenderTypeLookup;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.inventory.IInventory;
-import net.minecraft.inventory.InventoryHelper;
+
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.item.BlockItemUseContext;
@@ -53,14 +53,7 @@ public class AlchemyTable extends HorizontalBlock {
         super(properties);
         this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
     }
-    @Override
-    public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-        super.onBlockAdded(blockstate, world, pos, oldState, moving);
-        int x = pos.getX();
-        int y = pos.getY();
-        int z = pos.getZ();
-        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
-    }
+
 
 
     private static final VoxelShape SHAPE_N = Stream.of(
@@ -98,6 +91,7 @@ public class AlchemyTable extends HorizontalBlock {
 
 
 
+
     @Override
     public VoxelShape getShape(BlockState state, IBlockReader worldIn, BlockPos pos, ISelectionContext context) {
         switch (state.get(FACING)) {
@@ -111,6 +105,8 @@ public class AlchemyTable extends HorizontalBlock {
                 return SHAPE_N;
         }
     }
+
+
     @SuppressWarnings("deprecation")
     @Override
     public BlockState mirror(BlockState state, Mirror mirrorIn) {
@@ -132,8 +128,6 @@ public class AlchemyTable extends HorizontalBlock {
         super.fillStateContainer(builder);
         builder.add(FACING);
     }
-
-
     @Override
     public boolean hasTileEntity(BlockState state) {
         return true;
@@ -169,6 +163,30 @@ public class AlchemyTable extends HorizontalBlock {
             }
         };
     }
+
+    @Override
+    public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
+        super.onBlockAdded(blockstate, world, pos, oldState, moving);
+        int x = pos.getX();
+        int y = pos.getY();
+        int z = pos.getZ();
+        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
+    }
+
+    @Override
+    public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+        super.tick(blockstate, world, pos, random);
+        int x = pos.getX();
+        int y = pos.getY();
+        int z = pos.getZ();
+
+        AlchemyTableRecipes.executeProcedure(Stream
+                .of(new AbstractMap.SimpleEntry<>("world", world), new AbstractMap.SimpleEntry<>("x", x), new AbstractMap.SimpleEntry<>("y", y),
+                        new AbstractMap.SimpleEntry<>("z", z))
+                .collect(HashMap::new, (_m, _e) -> _m.put(_e.getKey(), _e.getValue()), Map::putAll));
+        world.getPendingBlockTicks().scheduleTick(pos, this, 10);
+    }
+
     @Nullable
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world) {

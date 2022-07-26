@@ -12,6 +12,7 @@ public class ModHellEntityHelper {
         if(type == EntityType.ZOMBIFIED_PIGLIN||
         type == EntityType.GHAST||
         type == EntityType.WITHER_SKELETON||
+        type == EntityType.STRIDER||
         type == EntityType.MAGMA_CUBE||
         type == EntityType.BLAZE)
             return true;

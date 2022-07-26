@@ -9,6 +9,8 @@ import java.util.TreeMap;
 import net.magforest.magforest.events.packets.PacketFocusChangeToServer;
 import net.magforest.magforest.item.ItemFocus;
 import net.magforest.magforest.item.ItemWand;
+import net.magforest.magforest.item.ModItems;
+import net.magforest.magforest.item.aspect.Aspect;
 import net.magforest.magforest.magforest;
 import net.minecraft.client.Minecraft;
 
@@ -17,6 +19,7 @@ import net.minecraft.client.renderer.ItemRenderer;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.Tessellator;
 
+import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.client.renderer.vertex.DefaultVertexFormats;
 import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
@@ -52,7 +55,44 @@ public class REHWandHandler {
         mc.setGameFocused(true);
         mc.gameSettings.pauseOnLostFocus = true;
     }
+    public void manabar(Minecraft mc, long time, RenderGameOverlayEvent event) {
+        if(mc.player.getHeldItem(Hand.MAIN_HAND) != ItemStack.EMPTY && mc.player.getHeldItem(Hand.MAIN_HAND).getItem() instanceof ItemWand){
+            ItemStack stack = mc.player.getHeldItem(Hand.MAIN_HAND);
+            ItemWand wand = (ItemWand)stack.getItem();
+            //mc.textureManager.bindTexture(new ResourceLocation(magforest.MOD_ID, "textures/gui/manabar.png"));
 
+            GL11.glPushMatrix();
+            mc.textureManager.bindTexture(new ResourceLocation(magforest.MOD_ID, "textures/gui/manabar.png"));
+            float red = 1F;
+            float green = 1F;
+            float blue = 1F;
+            float opacity = 1F;
+            Tessellator tessellator = Tessellator.getInstance();
+            BufferBuilder worldRenderer = tessellator.getBuffer();
+            worldRenderer.begin(GL11.GL_QUADS, DefaultVertexFormats.POSITION_COLOR_TEX_LIGHTMAP);
+
+            GL11.glScalef(2.0F,2.0F,42.0F);
+            GL11.glEnable(3042);
+            GL11.glBlendFunc(770, 771);
+            float x = 2;
+            float y = 2;
+
+            worldRenderer.addVertex((x + 0), (y + 5), 0,red,green,blue,opacity, 0.08F, 0.545F, 1, 220,1,1,1);
+            worldRenderer.addVertex((x + 48), (y + 5), 0,red,green,blue,opacity, 0.92F, 0.545F, 1, 220,1,1,1);
+            worldRenderer.addVertex((x + 48), (y + 0), 0, red,green,blue,opacity,0.92F, 0.455F,1, 220,1,1,1);
+            worldRenderer.addVertex((x + 0), (y + 0), 0,red,green,blue,opacity, 0.08F, 0.455F, 1, 220,1,1,1);
+
+            //magforest.LOGGER.debug(((float)wand.getVis(stack,Aspect.FIRE)/(float)wand.getMaxVis(stack)));
+            float mnoz = (((float)wand.getVis(stack,Aspect.FIRE))/((float)wand.getMaxVis(stack)));
+            worldRenderer.addVertex((x + 0), (y + 5), 0,red,green,blue,opacity, 0.08F, 0.295F, 1, 220,1,1,1);
+            worldRenderer.addVertex((x + 48*mnoz), (y + 5), 0,red,green,blue,opacity, 0.08F+0.84F*mnoz, 0.295F, 1, 220,1,1,1);
+            worldRenderer.addVertex((x + 48*mnoz), (y + 0), 0, red,green,blue,opacity,0.08F+0.84F*mnoz, 0.205F,1, 220,1,1,1);
+            worldRenderer.addVertex((x + 0), (y + 0), 0,red,green,blue,opacity, 0.08F, 0.205F, 1, 220,1,1,1);
+
+            tessellator.draw();
+            GL11.glPopMatrix();
+        }
+    }
 
     public void handleFociRadial(Minecraft mc, long time, RenderGameOverlayEvent event) {
         if(ClientEvents.radialActive || radialHudScale > 0.0F) {

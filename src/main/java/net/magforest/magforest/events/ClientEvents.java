@@ -3,12 +3,16 @@ package net.magforest.magforest.events;
 import net.magforest.magforest.events.packets.PacketFocusChangeToServer;
 import net.magforest.magforest.item.ItemWand;
 import net.magforest.magforest.magforest;
+import net.magforest.magforest.particles.BeamParticle;
+import net.magforest.magforest.particles.BeamParticleFactory;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.particle.MobAppearanceParticle;
 import net.minecraft.client.settings.KeyBinding;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Hand;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.ParticleFactoryRegisterEvent;
 import net.minecraftforge.client.event.RenderGameOverlayEvent;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -26,7 +30,6 @@ public class ClientEvents {
     public static long lastPressF = 0L;
     public static REHWandHandler wandHandler;
 
-
     @SubscribeEvent
     public static void renderOverlay(RenderGameOverlayEvent event)
     {
@@ -38,6 +41,7 @@ public class ClientEvents {
           if (event.getType() == RenderGameOverlayEvent.ElementType.TEXT)
                 {
                   wandHandler.handleFociRadial(mc, time, event);
+                  wandHandler.manabar(mc, time, event);
               }
 
      }
@@ -71,6 +75,16 @@ public class ClientEvents {
                 ClientEvents.keyPressedF = false;
            }
             }
+        }
+    }
+
+
+    @Mod.EventBusSubscriber( modid = magforest.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
+    public static class ModBus {
+
+        @SubscribeEvent
+        public static void onParticleFactoryRegistration(ParticleFactoryRegisterEvent event) {
+            Minecraft.getInstance().particles.registerFactory(CommonEvents.beamParticleType, new BeamParticleFactory());
         }
     }
 }
