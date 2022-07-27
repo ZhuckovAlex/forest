@@ -1,4 +1,4 @@
-package net.magforest.magforest.util;
+package net.magforest.magforest.item.custom.util;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;

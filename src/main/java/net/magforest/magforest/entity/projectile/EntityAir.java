@@ -1,15 +1,11 @@
 package net.magforest.magforest.entity.projectile;
 
-import net.magforest.magforest.util.ModHellEntityHelper;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.vector.Vector3d;
@@ -19,7 +15,7 @@ import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 public class EntityAir extends ThrowableEntity implements IEntityAdditionalSpawnData {
 
     public int duration = 20;
-    public float damage = 2.0F;
+    public float damage = 4.0F;
 
     public EntityAir(EntityType<? extends ThrowableEntity> entityEmberEntityType, World world) {
         super(entityEmberEntityType,world);

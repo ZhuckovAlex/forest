@@ -1,5 +1,6 @@
 package net.magforest.magforest.item.focus;
 
+import net.magforest.magforest.block.ModBlocks;
 import net.magforest.magforest.entity.ModEntityTypes;
 import net.magforest.magforest.entity.projectile.EntityAir;
 import net.magforest.magforest.entity.projectile.EntityEmber;
@@ -37,7 +38,7 @@ import net.minecraftforge.event.world.BlockEvent;
 import java.util.HashMap;
 import java.awt.*;
 public class ItemFocusTerraKnob extends ItemFocus {
-    private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 5);
+    private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 10);
     static HashMap<String, Long> soundDelay = new HashMap();
     static HashMap<String, Object> beam = new HashMap();
     static HashMap<String, Float> breakcount = new HashMap();
@@ -115,13 +116,19 @@ public class ItemFocusTerraKnob extends ItemFocus {
                 if(hardness >= 0.0F) {
                     int pot = 0;
                     float speed = 0.05F + (float)pot * 0.1F;
-                    if(state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
+                    if(state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH ||
+                            state.getMaterial() == Material.SAND || state.getMaterial() == Material.PLANTS || state.getMaterial() == Material.TALL_PLANTS ||
+                            state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.LEAVES ||
+                            state.getMaterial() == Material.NETHER_WOOD || state.getMaterial() == Material.WOOD) {
                         speed = 0.25F + (float)pot * 0.25F;
                     }
-
-                    if(bi == Blocks.OBSIDIAN) {
-                        speed *= 3.0F;
+                    if(state.getMaterial() == Material.WEB) {
+                        speed = 0.50F + (float)pot * 0.25F;
                     }
+
+                    if (bi == Blocks.OBSIDIAN) { speed *= 6.0F; }
+                    if (bi == Blocks.CRYING_OBSIDIAN) { speed *= 6.0F; }
+                    if (bi == ModBlocks.MOON_TEAR_OBSIDIAN_ORE.get()) { speed *= 6.0F; }
 
                     if(((Integer)lastX.get(pp)).intValue() == (int)mop.getHitVec().x && ((Integer)lastY.get(pp)).intValue() == (int)mop.getHitVec().y && ((Integer)lastZ.get(pp)).intValue() == (int)mop.getHitVec().z) {
                         float bc = ((Float)breakcount.get(pp)).floatValue();

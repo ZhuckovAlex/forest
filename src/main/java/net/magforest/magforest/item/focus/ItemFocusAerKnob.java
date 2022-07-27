@@ -1,5 +1,6 @@
 package net.magforest.magforest.item.focus;
 
+import net.magforest.magforest.block.ModBlocks;
 import net.magforest.magforest.entity.ModEntityTypes;
 import net.magforest.magforest.entity.projectile.EntityAir;
 import net.magforest.magforest.item.ItemFocus;
@@ -30,7 +31,7 @@ import java.awt.*;
 import java.util.HashMap;
 
 public class ItemFocusAerKnob extends ItemFocus {
-    private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 2);
+    private static final AspectList cost = (new AspectList()).add(Aspect.FIRE, 10);
     static HashMap<String, Long> soundDelay = new HashMap();
     static HashMap<String, Object> beam = new HashMap();
     static HashMap<String, Float> breakcount = new HashMap();
@@ -113,7 +114,9 @@ public class ItemFocusAerKnob extends ItemFocus {
 
                 BlockState state = world.getBlockState(pos);
                 Block bi = state.getBlock();
-                if(state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.LEAVES){
+                if(state.getMaterial() == Material.SEA_GRASS || state.getMaterial() == Material.PLANTS || state.getMaterial() == Material.TALL_PLANTS ||
+                        state.getMaterial() == Material.NETHER_PLANTS || state.getMaterial() == Material.FIRE || state.getMaterial() == Material.LEAVES
+                        || state.getBlock() == Blocks.NETHER_WART_BLOCK || state.getBlock() == Blocks.WARPED_WART_BLOCK || state.getMaterial() == Material.WEB){
 
                 //int md = state.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ);
                 float hardness = state.getBlockHardness(world, pos);
@@ -123,10 +126,12 @@ public class ItemFocusAerKnob extends ItemFocus {
                     if (state.getMaterial() == Material.ROCK || state.getMaterial() == Material.ORGANIC || state.getMaterial() == Material.EARTH || state.getMaterial() == Material.SAND) {
                         speed = 0.25F + (float) pot * 0.25F;
                     }
-
-                    if (bi == Blocks.OBSIDIAN) {
-                        speed *= 3.0F;
+                    if(state.getMaterial() == Material.WEB) {
+                        speed = 1.0F + (float)pot * 0.25F;
                     }
+                    if (bi == Blocks.OBSIDIAN) { speed *= 6.0F; }
+                    if (bi == Blocks.CRYING_OBSIDIAN) { speed *= 6.0F; }
+                    if (bi == ModBlocks.MOON_TEAR_OBSIDIAN_ORE.get()) { speed *= 6.0F; }
 
                     if (((Integer) lastX.get(pp)).intValue() == (int) mop.getHitVec().x && ((Integer) lastY.get(pp)).intValue() == (int) mop.getHitVec().y && ((Integer) lastZ.get(pp)).intValue() == (int) mop.getHitVec().z) {
                         float bc = ((Float) breakcount.get(pp)).floatValue();

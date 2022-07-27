@@ -69,11 +69,47 @@ public class ItemWand extends Item {
     }
     public int getMaxVis(ItemStack stack) {
         if(stack.getItem() == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_IRON)
-            return  25*100;
+            return  10 * 100;
         else if(stack.getItem() == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_GOLD)
-            return 100 * 100;
+            return 30 * 100;
         else if(stack.getItem() == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_MOON_TEAR)
-            return 500 * 100;
+            return 90 * 100;
+        else if(stack.getItem() == ModItems.ITEM_BIRCH_WAND_FRAMED_BY_IRON)
+            return 5 * 100;
+        else if(stack.getItem() == ModItems.ITEM_BIRCH_WAND_FRAMED_BY_GOLD)
+            return 15 * 100;
+        else if(stack.getItem() == ModItems.ITEM_BIRCH_WAND_FRAMED_BY_MOON_TEAR)
+            return 45 * 100;
+        else if(stack.getItem() == ModItems.ITEM_OAK_WAND_FRAMED_BY_IRON)
+            return 5 * 100;
+        else if(stack.getItem() == ModItems.ITEM_OAK_WAND_FRAMED_BY_GOLD)
+            return 15 * 100;
+        else if(stack.getItem() == ModItems.ITEM_OAK_WAND_FRAMED_BY_MOON_TEAR)
+            return 45 * 100;
+        else if(stack.getItem() == ModItems.ITEM_JUNGLE_WAND_FRAMED_BY_IRON)
+            return 5 * 100;
+        else if(stack.getItem() == ModItems.ITEM_JUNGLE_WAND_FRAMED_BY_GOLD)
+            return 15 * 100;
+        else if(stack.getItem() == ModItems.ITEM_JUNGLE_WAND_FRAMED_BY_MOON_TEAR)
+            return 45 * 100;
+        else if(stack.getItem() == ModItems.ITEM_ACACIA_WAND_FRAMED_BY_IRON)
+            return 5 * 100;
+        else if(stack.getItem() == ModItems.ITEM_ACACIA_WAND_FRAMED_BY_GOLD)
+            return 15 * 100;
+        else if(stack.getItem() == ModItems.ITEM_ACACIA_WAND_FRAMED_BY_MOON_TEAR)
+            return 45 * 100;
+        else if(stack.getItem() == ModItems.ITEM_DARK_OAK_WAND_FRAMED_BY_IRON)
+            return 5 * 100;
+        else if(stack.getItem() == ModItems.ITEM_DARK_OAK_WAND_FRAMED_BY_GOLD)
+            return 15 * 100;
+        else if(stack.getItem() == ModItems.ITEM_DARK_OAK_WAND_FRAMED_BY_MOON_TEAR)
+            return 45 * 100;
+        else if(stack.getItem() == ModItems.ITEM_SPRUCE_WAND_FRAMED_BY_IRON)
+            return 5 * 100;
+        else if(stack.getItem() == ModItems.ITEM_SPRUCE_WAND_FRAMED_BY_GOLD)
+            return 15 * 100;
+        else if(stack.getItem() == ModItems.ITEM_SPRUCE_WAND_FRAMED_BY_MOON_TEAR)
+            return 45 * 100;
        return 0;
     }
     public void fillItemGroup(ItemGroup group, NonNullList<ItemStack> items) {
@@ -86,7 +122,8 @@ public class ItemWand extends Item {
                     ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
                 }
                 items.add(w1);
-            }else if(this == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_IRON){
+            }
+            else if(this == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_IRON){
                 ItemStack w1 = new ItemStack(this, 1);
                 Iterator i$ = Aspect.getPrimalAspects().iterator();
                 while(i$.hasNext()) {
@@ -94,7 +131,170 @@ public class ItemWand extends Item {
                     ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
                 }
                 items.add(w1);
-            }else if(this == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_MOON_TEAR){
+            }
+            else if(this == ModItems.ITEM_DARK_BIRCH_WAND_FRAMED_BY_MOON_TEAR){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_BIRCH_WAND_FRAMED_BY_GOLD){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_BIRCH_WAND_FRAMED_BY_IRON){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_BIRCH_WAND_FRAMED_BY_MOON_TEAR){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_OAK_WAND_FRAMED_BY_GOLD){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_OAK_WAND_FRAMED_BY_IRON){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_OAK_WAND_FRAMED_BY_MOON_TEAR){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_DARK_OAK_WAND_FRAMED_BY_GOLD){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_DARK_OAK_WAND_FRAMED_BY_IRON){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_DARK_OAK_WAND_FRAMED_BY_MOON_TEAR){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_SPRUCE_WAND_FRAMED_BY_GOLD){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_SPRUCE_WAND_FRAMED_BY_IRON){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_SPRUCE_WAND_FRAMED_BY_MOON_TEAR){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_JUNGLE_WAND_FRAMED_BY_GOLD){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_JUNGLE_WAND_FRAMED_BY_IRON){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_JUNGLE_WAND_FRAMED_BY_MOON_TEAR){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_ACACIA_WAND_FRAMED_BY_GOLD){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_ACACIA_WAND_FRAMED_BY_IRON){
+                ItemStack w1 = new ItemStack(this, 1);
+                Iterator i$ = Aspect.getPrimalAspects().iterator();
+                while(i$.hasNext()) {
+                    Aspect aspect = (Aspect)i$.next();
+                    ((ItemWand)w1.getItem()).addVis(w1, aspect, this.getMaxVis(w1), true);
+                }
+                items.add(w1);
+            }
+            else if(this == ModItems.ITEM_ACACIA_WAND_FRAMED_BY_MOON_TEAR){
                 ItemStack w1 = new ItemStack(this, 1);
                 Iterator i$ = Aspect.getPrimalAspects().iterator();
                 while(i$.hasNext()) {

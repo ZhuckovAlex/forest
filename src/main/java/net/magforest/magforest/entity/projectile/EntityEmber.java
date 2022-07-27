@@ -1,10 +1,8 @@
 package net.magforest.magforest.entity.projectile;
 
-import net.magforest.magforest.magforest;
-import net.magforest.magforest.util.ModHellEntityHelper;
+import net.magforest.magforest.item.custom.util.ModHellEntityHelper;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.MaterialColor;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
@@ -16,7 +14,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.EntityRayTraceResult;
 import net.minecraft.util.math.RayTraceResult;
-import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -91,6 +88,18 @@ public class EntityEmber extends ThrowableEntity implements IEntityAdditionalSpa
                 BlockPos pos =  ((BlockRayTraceResult)result).getPos();
                 if(super.world.getBlockState(pos).getMaterial().getColor() == MaterialColor.ICE) {
                     super.world.setBlockState(pos, Blocks.WATER.getDefaultState());
+                }
+               if(super.world.getBlockState(pos).getBlock() == Blocks.OBSIDIAN) {
+                    super.world.setBlockState(pos, Blocks.LAVA.getDefaultState());
+                }
+                if(super.world.getBlockState(pos).getBlock() == Blocks.BASALT) {
+                    super.world.setBlockState(pos, Blocks.MAGMA_BLOCK.getDefaultState());
+                }
+                if(super.world.getBlockState(pos).getBlock() == Blocks.SAND) {
+                    super.world.setBlockState(pos, Blocks.GLASS.getDefaultState());
+                }
+                if(super.world.getBlockState(pos).getBlock() == Blocks.RED_SAND) {
+                    super.world.setBlockState(pos, Blocks.GLASS.getDefaultState());
                 }
             }
         }

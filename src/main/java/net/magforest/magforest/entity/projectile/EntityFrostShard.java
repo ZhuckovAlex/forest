@@ -1,29 +1,21 @@
 package net.magforest.magforest.entity.projectile;
 
-import net.magforest.magforest.magforest;
-import net.magforest.magforest.util.ModHellEntityHelper;
+import net.magforest.magforest.item.custom.util.ModHellEntityHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.material.MaterialColor;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.projectile.ThrowableEntity;
 import net.minecraft.network.IPacket;
 import net.minecraft.network.PacketBuffer;
-import net.minecraft.particles.BasicParticleType;
-import net.minecraft.particles.BlockParticleData;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.Direction;
 import net.minecraft.util.math.*;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.registry.IEntityAdditionalSpawnData;
-import net.minecraftforge.fml.network.FMLNetworkConstants;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.network.NetworkDirection;
 import net.minecraftforge.fml.network.NetworkHooks;
 
 public class EntityFrostShard extends ThrowableEntity implements IEntityAdditionalSpawnData {
@@ -93,20 +85,30 @@ public class EntityFrostShard extends ThrowableEntity implements IEntityAddition
             }
 
             BlockPos pos = ((BlockRayTraceResult)mop).getPos();
+            BlockPos pos2 = new BlockPos(mop.getHitVec());
 
-            //magforest.LOGGER.debug(pos);
             Block var12 = super.world.getBlockState(pos).getBlock();
+            if(super.world.getBlockState(pos2).getMaterial() == Material.FIRE)
+                var12 = super.world.getBlockState(pos2).getBlock();
             try {
                 this.playSound(var12.getSoundType(var12.getDefaultState()).getBreakSound(), 0.3F, 1.2F / (super.rand.nextFloat() * 0.2F + 0.9F));
             } catch (Exception var9) {
                 ;
             }
 
-            if(super.world.getBlockState(pos).getMaterial() == Material.FIRE) {
-                super.world.setBlockState(pos, Blocks.AIR.getDefaultState());
-            }else if(super.world.getBlockState(pos).getMaterial() == Material.LAVA) {
+            if(super.world.getBlockState(pos2).getMaterial() == Material.FIRE) {
+                super.world.setBlockState(pos2, Blocks.AIR.getDefaultState());
+            }
+            else if(super.world.getBlockState(pos).getMaterial() == Material.LAVA) {
                 super.world.setBlockState(pos, Blocks.OBSIDIAN.getDefaultState());
             }
+            else if(super.world.getBlockState(pos).getBlock() == Blocks.MAGMA_BLOCK) {
+                super.world.setBlockState(pos, Blocks.BASALT.getDefaultState());
+            }
+            else if(super.world.getBlockState(pos).getBlock() == Blocks.FIRE) {
+                super.world.setBlockState(pos, Blocks.AIR.getDefaultState());
+            }
+
 
 //            for(a1 = 0; (float)a1 < this.getDamage(); ++a1) {
 //                super.worldObj.spawnParticle("blockcrack_" + Block.getIdFromBlock(var12) + "_" + super.worldObj.getBlockMetadata(mop.blockX, mop.blockY, mop.blockZ), super.posX, super.posY, super.posZ, 4.0D * ((double)super.rand.nextFloat() - 0.5D), 0.5D, ((double)super.rand.nextFloat() - 0.5D) * 4.0D);

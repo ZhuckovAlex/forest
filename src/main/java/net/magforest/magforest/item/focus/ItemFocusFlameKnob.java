@@ -16,7 +16,7 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
 public class ItemFocusFlameKnob extends ItemFocus {
-    private static final AspectList costBase = (new AspectList()).add(Aspect.FIRE, 5);
+    private static final AspectList costBase = (new AspectList()).add(Aspect.FIRE, 75);
     long soundDelay = 0L;
     public ItemFocusFlameKnob(Properties properties) {
         super(properties);
