@@ -16,7 +16,7 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.world.World;
 
 public class ItemFocusFlameKnob extends ItemFocus {
-    private static final AspectList costBase = (new AspectList()).add(Aspect.FIRE, 75);
+    private static final AspectList costBase = (new AspectList()).add(Aspect.FIRE, 8);
     long soundDelay = 0L;
     public ItemFocusFlameKnob(Properties properties) {
         super(properties);
@@ -24,7 +24,7 @@ public class ItemFocusFlameKnob extends ItemFocus {
     public AspectList getVisCost(ItemStack itemstack) {
         return costBase;
     }
-    public void onUsingFocusTick(ItemStack itemstack, PlayerEntity p, World world) {
+    public ItemStack onFocusRightClick(ItemStack itemstack, World world, PlayerEntity p, BlockRayTraceResult movingobjectposition) {
         ItemWand wand = (ItemWand)itemstack.getItem();
         if(!wand.consumeAllVis(itemstack, p, this.getVisCost(itemstack), false, false)) {
             p.resetActiveHand();
@@ -38,7 +38,7 @@ public class ItemFocusFlameKnob extends ItemFocus {
             if(!world.isRemote && wand.consumeAllVis(itemstack, p, this.getVisCost(itemstack), true, false)) {
                 float scatter = 15.0F;
 
-                for(int a = 0; a < 2 ; ++a) {
+                for(int a = 0; a < 1 ; ++a) {
                     EntityEmber orb = EntityEmber.createEmber(ModEntityTypes.EMBER.get(), p,world );
                     //orb.shoot(orb.getMotion().x,orb.getMotion().y,orb.getMotion().z,orb.func_70182_d(),15F);
                     orb.setPosition(orb.getPosX()+orb.getMotion().x,orb.getPosY()+orb.getMotion().y,orb.getPosZ()+orb.getMotion().z);
@@ -53,6 +53,7 @@ public class ItemFocusFlameKnob extends ItemFocus {
             }
 
         }
+        return itemstack;
     }
 
     public String getSortingHelper(ItemStack focusstack) {
