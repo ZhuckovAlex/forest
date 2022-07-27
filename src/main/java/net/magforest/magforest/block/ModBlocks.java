@@ -313,7 +313,7 @@ public class ModBlocks extends Blocks
                     .hardnessAndResistance(4).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool().sound(SoundType.STONE)));
     public static final RegistryObject<Block> ALCHEMY_TABLE = registerBlock("alchemy_table",
             () -> new AlchemyTable(AbstractBlock.Properties.create(Material.ROCK)
-                    .hardnessAndResistance(4).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool().sound(SoundType.NETHER_ORE)));
+                    .hardnessAndResistance(4).harvestTool(ToolType.PICKAXE).harvestLevel(1).setRequiresTool().notSolid().sound(SoundType.NETHER_ORE)));
     public static final RegistryObject<Block> THE_CALL_OF_THE_ANCESTORS = BLOCKS.register("the_call_of_the_ancestors",
             () -> new FlowerBlock(Effects.INVISIBILITY, 30, AbstractBlock.Properties.create(Material.PLANTS)
                     .doesNotBlockMovement().zeroHardnessAndResistance().sound(SoundType.PLANT)));
@@ -398,7 +398,7 @@ public class ModBlocks extends Blocks
             () -> new Pedestal(AbstractBlock.Properties.create(Material.ROCK)
                     .hardnessAndResistance(2).sound(SoundType.STONE).notSolid()));
     public static final RegistryObject<Block> DRAWING_TABLE = registerBlock("drawing_table",
-            () -> new FaceHorizontal(AbstractBlock.Properties.create(Material.WOOD)
+            () -> new DrawingTable(AbstractBlock.Properties.create(Material.WOOD)
                     .hardnessAndResistance(2).sound(SoundType.WOOD).notSolid()) {
             });
     public static final RegistryObject<Block> KNOBS_WORKBENCH = registerBlock("knobs_workbench",
