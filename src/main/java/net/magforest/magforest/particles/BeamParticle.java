@@ -59,7 +59,6 @@ public class BeamParticle extends Particle
         motionX = velocityX;
         motionY = velocityY;
         motionZ = velocityZ;
-
         this.canCollide = true;
     }
 
@@ -119,10 +118,12 @@ public class BeamParticle extends Particle
 
     }
     public void renderParticle(IVertexBuilder buffer, ActiveRenderInfo renderInfo, float partialTicks) {
+        if(this.player.getEntityId() != Minecraft.getInstance().player.getEntityId())
+            return;
         double interpPosX = this.prevPosX + (this.posX - this.prevPosX) * (float)partialTicks;
         double interpPosY = this.prevPosY + (this.posY - this.prevPosY) * (float)partialTicks;
         double interpPosZ = this.prevPosZ + (this.posZ - this.prevPosZ) * (float)partialTicks;
-       //tessellator.draw();
+        //tessellator.draw();
         //float f = partialTicks;
         Tessellator tessellator = Tessellator.getInstance();
         Minecraft mc = Minecraft.getInstance();
@@ -191,7 +192,7 @@ public class BeamParticle extends Particle
         float xx = (float)(prex + (px - prex) * (double)partialTicks - interpPosX);
         float yy = (float)(prey + (py - prey) * (double)partialTicks - interpPosY);
         float zz = (float)(prez + (pz - prez) * (double)partialTicks - interpPosZ);
-        GL11.glTranslated((double)xx, (double)yy, (double)zz);
+        GL11.glTranslated(xx, yy,zz);
         float ry = (float)((double)this.prevYaw + (double)(this.rotYaw - this.prevYaw) * (double)partialTicks);
         float rp = (float)((double)this.prevPitch + (double)(this.rotPitch - this.prevPitch) * (double)partialTicks);
         GL11.glRotatef(90.0F, 1.0F, 0.0F, 0.0F);
