@@ -227,6 +227,7 @@ event.enqueueWork(() -> registerRecipes());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_SAPLING.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.WARPED_WART.get(), RenderType.getCutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.DARK_BIRCH_LEAVES.get(), RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.DRAWING_TABLE.get(), RenderType.getCutout());
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.MOON_MOTH.get(), MoonMothRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.EMBER.get(), EntityEmberRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.FROST_SHARD.get(), EntityFrostShardRenderer::new);
